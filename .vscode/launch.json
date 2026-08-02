@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Kaggriculture Agent",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/debug_local.py",
+            "args": [
+                "--steps",
+                "100",
+                "--seed",
+                "17",
+                "--opponent",
+                "starter"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}

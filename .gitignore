@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Generated notebook outputs and local benchmark artifacts.
+artifacts/*
+!artifacts/README.md
+
+# Local replays and experiment outputs.
+replays/*
+!replays/README.md
+experiments/output/*
+!experiments/output/.gitkeep
+
+# Local debug logs.
+log/*
+!log/README.md
+*.log
+
+# Local notebook execution output.
+**/scenario-executed.ipynb
