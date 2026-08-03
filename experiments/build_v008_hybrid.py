@@ -195,7 +195,7 @@ def _v008_hand_count(obs):
     return 0
 
 
-def agent(obs, config=None):
+def _v008_agent_impl(obs, config=None):
     global V008_ROUTE, V008_MODE, V008_DISTANCE
     global V008_FALLBACKS, V008_ROUTE_SWITCHES, V008_ROUTE_HISTORY
     step = int(obs.get("step", 0) or 0)
@@ -267,6 +267,10 @@ def _normalize_action_for_v008(route, step):
     if route_index is None or not (0 <= route_index < len(TRACES)):
         return {"farmer": ["PASS"], "hands": [], "market": []}
     return copy.deepcopy(TRACES[route_index][step])
+
+
+def agent(obs, config=None):
+    return _v008_agent_impl(obs, config)
 '''
 
 
