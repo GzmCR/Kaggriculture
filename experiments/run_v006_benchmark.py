@@ -49,7 +49,7 @@ def _notebook_blob(notebook_text: str, name: str) -> str:
 
 
 def load_hamburger_agent(notebook_path: Path):
-    notebook = json.loads(notebook_path.read_text())
+    notebook = json.loads(notebook_path.read_text(encoding="utf-8"))
     cell_text = "\n".join(
         "".join(cell.get("source", []))
         for cell in notebook.get("cells", [])
