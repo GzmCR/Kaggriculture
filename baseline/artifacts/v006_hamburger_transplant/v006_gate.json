@@ -1,0 +1,70 @@
+{
+  "matrix_games": 144,
+  "control_mean_money": 123633.69444444444,
+  "control_min_money": 88730.0,
+  "control_win_rate": 0.6666666666666666,
+  "thresholds": {
+    "mean_gain_pct": 0.005,
+    "min_cash_ratio": 0.97,
+    "p99_ms": 1000.0,
+    "hamburger_regression_ratio": 0.95
+  },
+  "candidates": {
+    "current": {
+      "mean_money": 123633.69444444444,
+      "mean_gain_pct": 0.0,
+      "min_money": 88730.0,
+      "min_cash_ratio": 1.0,
+      "win_rate": 0.6666666666666666,
+      "all_done": true,
+      "agent_errors": 0,
+      "invalid_action_shapes": 0,
+      "p99_ms_max": 2.138214940000001,
+      "hamburger_mean_money": 100186.41666666667,
+      "hamburger_ratio": 1.0,
+      "pass": false
+    },
+    "v006a_fertilizer_terminal": {
+      "mean_money": 86800.69444444444,
+      "mean_gain_pct": -0.2979204024073804,
+      "min_money": 65775.0,
+      "min_cash_ratio": 0.7412938126901837,
+      "win_rate": 0.6666666666666666,
+      "all_done": true,
+      "agent_errors": 0,
+      "invalid_action_shapes": 0,
+      "p99_ms_max": 1.9692074400000008,
+      "hamburger_mean_money": 73107.33333333333,
+      "hamburger_ratio": 0.7297130266328519,
+      "pass": false
+    },
+    "v006b_livestock_wheat": {
+      "mean_money": 121368.77777777778,
+      "mean_gain_pct": -0.018319574423818707,
+      "min_money": 76565.0,
+      "min_cash_ratio": 0.86289868139299,
+      "win_rate": 0.6666666666666666,
+      "all_done": true,
+      "agent_errors": 0,
+      "invalid_action_shapes": 0,
+      "p99_ms_max": 2.0707513200000034,
+      "hamburger_mean_money": 95803.91666666667,
+      "hamburger_ratio": 0.956256545090527,
+      "pass": false
+    },
+    "v006c_combined": {
+      "mean_money": 95509.88888888889,
+      "mean_gain_pct": -0.2274768677093375,
+      "min_money": 57647.0,
+      "min_cash_ratio": 0.6496900710019159,
+      "win_rate": 0.6666666666666666,
+      "all_done": true,
+      "agent_errors": 0,
+      "invalid_action_shapes": 0,
+      "p99_ms_max": 2.0558651200000058,
+      "hamburger_mean_money": 76294.16666666667,
+      "hamburger_ratio": 0.7615220626215963,
+      "pass": false
+    }
+  }
+}

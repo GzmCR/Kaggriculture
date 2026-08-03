@@ -1,0 +1,70 @@
+{
+  "matrix_games": 144,
+  "control_mean_money": 123918.38888888889,
+  "control_min_money": 88730.0,
+  "control_win_rate": 0.6666666666666666,
+  "thresholds": {
+    "mean_gain_pct": 0.005,
+    "min_cash_ratio": 0.97,
+    "p99_ms": 1000.0,
+    "hamburger_regression_ratio": 0.95
+  },
+  "candidates": {
+    "current": {
+      "mean_money": 123918.38888888889,
+      "mean_gain_pct": 0.0,
+      "min_money": 88730.0,
+      "min_cash_ratio": 1.0,
+      "win_rate": 0.6666666666666666,
+      "all_done": true,
+      "agent_errors": 0,
+      "invalid_action_shapes": 0,
+      "p99_ms_max": 2.425600000000009,
+      "hamburger_mean_money": 100186.41666666667,
+      "hamburger_ratio": 1.0,
+      "pass": false
+    },
+    "v007a_terminal_safe": {
+      "mean_money": 123905.25,
+      "mean_gain_pct": -0.00010602856449881681,
+      "min_money": 88730.0,
+      "min_cash_ratio": 1.0,
+      "win_rate": 0.6666666666666666,
+      "all_done": true,
+      "agent_errors": 0,
+      "invalid_action_shapes": 0,
+      "p99_ms_max": 2.244580620000008,
+      "hamburger_mean_money": 100186.41666666667,
+      "hamburger_ratio": 1.0,
+      "pass": false
+    },
+    "v007b_idle_fertilizer": {
+      "mean_money": 118918.55555555556,
+      "mean_gain_pct": -0.040347791624505525,
+      "min_money": 82985.0,
+      "min_cash_ratio": 0.9352530147638904,
+      "win_rate": 0.6666666666666666,
+      "all_done": true,
+      "agent_errors": 0,
+      "invalid_action_shapes": 0,
+      "p99_ms_max": 2.2769481200000015,
+      "hamburger_mean_money": 95566.91666666667,
+      "hamburger_ratio": 0.9538909549448237,
+      "pass": false
+    },
+    "v007c_combined": {
+      "mean_money": 119784.97222222222,
+      "mean_gain_pct": -0.033355958738076286,
+      "min_money": 82985.0,
+      "min_cash_ratio": 0.9352530147638904,
+      "win_rate": 0.6666666666666666,
+      "all_done": true,
+      "agent_errors": 0,
+      "invalid_action_shapes": 0,
+      "p99_ms_max": 2.693543060000005,
+      "hamburger_mean_money": 95566.91666666667,
+      "hamburger_ratio": 0.9538909549448237,
+      "pass": false
+    }
+  }
+}
