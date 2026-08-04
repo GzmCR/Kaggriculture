@@ -1,0 +1,2 @@
+candidate,opponent,games,mean_cash,mean_opponent_cash,mean_margin,min_cash,wins,ties,losses,win_rate,done_rate,agent_errors,max_route_switches,max_p99_ms,max_runtime_ms
+top5_replaced_v18,original_v18,12,125111.25,124707.16666666667,404.0833333333333,103410.0,10,0,2,0.8333333333333334,1,0,2,0.077125,131.151083

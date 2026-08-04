@@ -1,0 +1,2861 @@
+{
+  "games": 18,
+  "all_done": true,
+  "points": 540,
+  "min": 0.0,
+  "max": 136.67620000000002,
+  "quantiles": {
+    "0.0": 0.0,
+    "0.25": 40.19545,
+    "0.5": 64.60640000000001,
+    "0.75": 110.5348,
+    "0.9": 119.81134000000002,
+    "1.0": 136.67620000000002
+  },
+  "rows": [
+    {
+      "opponent": "starter",
+      "seed": 17,
+      "seat": 0,
+      "game_done": true,
+      "distances": [
+        {
+          "step": 0,
+          "route": 0,
+          "distance": 0.0
+        },
+        {
+          "step": 24,
+          "route": 1,
+          "distance": 39.6756
+        },
+        {
+          "step": 48,
+          "route": 0,
+          "distance": 39.2066
+        },
+        {
+          "step": 72,
+          "route": 2,
+          "distance": 39.875400000000006
+        },
+        {
+          "step": 96,
+          "route": 4,
+          "distance": 46.318999999999996
+        },
+        {
+          "step": 120,
+          "route": 4,
+          "distance": 43.544799999999995
+        },
+        {
+          "step": 144,
+          "route": 4,
+          "distance": 43.672999999999995
+        },
+        {
+          "step": 168,
+          "route": 3,
+          "distance": 45.5672
+        },
+        {
+          "step": 192,
+          "route": 1,
+          "distance": 65.4264
+        },
+        {
+          "step": 216,
+          "route": 1,
+          "distance": 72.6964
+        },
+        {
+          "step": 240,
+          "route": 1,
+          "distance": 70.2578
+        },
+        {
+          "step": 264,
+          "route": 3,
+          "distance": 77.3162
+        },
+        {
+          "step": 288,
+          "route": 3,
+          "distance": 96.3452
+        },
+        {
+          "step": 312,
+          "route": 3,
+          "distance": 103.9382
+        },
+        {
+          "step": 336,
+          "route": 3,
+          "distance": 107.03979999999999
+        },
+        {
+          "step": 360,
+          "route": 1,
+          "distance": 109.0808
+        },
+        {
+          "step": 384,
+          "route": 0,
+          "distance": 117.47059999999999
+        },
+        {
+          "step": 408,
+          "route": 0,
+          "distance": 107.8386
+        },
+        {
+          "step": 432,
+          "route": 0,
+          "distance": 117.3476
+        },
+        {
+          "step": 456,
+          "route": 0,
+          "distance": 118.9874
+        },
+        {
+          "step": 480,
+          "route": 0,
+          "distance": 116.01899999999999
+        },
+        {
+          "step": 504,
+          "route": 0,
+          "distance": 122.3606
+        },
+        {
+          "step": 528,
+          "route": 0,
+          "distance": 114.67840000000001
+        },
+        {
+          "step": 552,
+          "route": 0,
+          "distance": 118.322
+        },
+        {
+          "step": 576,
+          "route": 0,
+          "distance": 115.9902
+        },
+        {
+          "step": 600,
+          "route": 0,
+          "distance": 125.90800000000002
+        },
+        {
+          "step": 624,
+          "route": 0,
+          "distance": 120.86500000000001
+        },
+        {
+          "step": 648,
+          "route": 0,
+          "distance": 110.52660000000002
+        },
+        {
+          "step": 672,
+          "route": 3,
+          "distance": 96.0652
+        },
+        {
+          "step": 696,
+          "route": 2,
+          "distance": 103.7346
+        }
+      ]
+    },
+    {
+      "opponent": "starter",
+      "seed": 17,
+      "seat": 1,
+      "game_done": true,
+      "distances": [
+        {
+          "step": 0,
+          "route": 0,
+          "distance": 0.0
+        },
+        {
+          "step": 24,
+          "route": 1,
+          "distance": 39.6756
+        },
+        {
+          "step": 48,
+          "route": 0,
+          "distance": 39.7066
+        },
+        {
+          "step": 72,
+          "route": 1,
+          "distance": 39.875400000000006
+        },
+        {
+          "step": 96,
+          "route": 4,
+          "distance": 46.439
+        },
+        {
+          "step": 120,
+          "route": 4,
+          "distance": 43.6506
+        },
+        {
+          "step": 144,
+          "route": 4,
+          "distance": 43.913199999999996
+        },
+        {
+          "step": 168,
+          "route": 3,
+          "distance": 45.3284
+        },
+        {
+          "step": 192,
+          "route": 3,
+          "distance": 55.56139999999999
+        },
+        {
+          "step": 216,
+          "route": 3,
+          "distance": 65.9844
+        },
+        {
+          "step": 240,
+          "route": 1,
+          "distance": 70.7866
+        },
+        {
+          "step": 264,
+          "route": 0,
+          "distance": 91.966
+        },
+        {
+          "step": 288,
+          "route": 1,
+          "distance": 89.19539999999999
+        },
+        {
+          "step": 312,
+          "route": 0,
+          "distance": 95.20100000000001
+        },
+        {
+          "step": 336,
+          "route": 3,
+          "distance": 102.8502
+        },
+        {
+          "step": 360,
+          "route": 1,
+          "distance": 101.0954
+        },
+        {
+          "step": 384,
+          "route": 0,
+          "distance": 107.1256
+        },
+        {
+          "step": 408,
+          "route": 1,
+          "distance": 105.05160000000001
+        },
+        {
+          "step": 432,
+          "route": 5,
+          "distance": 110.298
+        },
+        {
+          "step": 456,
+          "route": 5,
+          "distance": 113.1282
+        },
+        {
+          "step": 480,
+          "route": 3,
+          "distance": 110.7388
+        },
+        {
+          "step": 504,
+          "route": 3,
+          "distance": 116.88060000000002
+        },
+        {
+          "step": 528,
+          "route": 0,
+          "distance": 110.6138
+        },
+        {
+          "step": 552,
+          "route": 3,
+          "distance": 117.71100000000001
+        },
+        {
+          "step": 576,
+          "route": 0,
+          "distance": 117.6202
+        },
+        {
+          "step": 600,
+          "route": 3,
+          "distance": 118.07879999999999
+        },
+        {
+          "step": 624,
+          "route": 3,
+          "distance": 120.7134
+        },
+        {
+          "step": 648,
+          "route": 7,
+          "distance": 115.425
+        },
+        {
+          "step": 672,
+          "route": 3,
+          "distance": 84.486
+        },
+        {
+          "step": 696,
+          "route": 2,
+          "distance": 91.811
+        }
+      ]
+    },
+    {
+      "opponent": "starter",
+      "seed": 42,
+      "seat": 0,
+      "game_done": true,
+      "distances": [
+        {
+          "step": 0,
+          "route": 0,
+          "distance": 0.0
+        },
+        {
+          "step": 24,
+          "route": 1,
+          "distance": 39.6756
+        },
+        {
+          "step": 48,
+          "route": 2,
+          "distance": 39.8036
+        },
+        {
+          "step": 72,
+          "route": 2,
+          "distance": 39.875400000000006
+        },
+        {
+          "step": 96,
+          "route": 4,
+          "distance": 46.47899999999999
+        },
+        {
+          "step": 120,
+          "route": 7,
+          "distance": 43.3772
+        },
+        {
+          "step": 144,
+          "route": 4,
+          "distance": 44.073
+        },
+        {
+          "step": 168,
+          "route": 3,
+          "distance": 45.2868
+        },
+        {
+          "step": 192,
+          "route": 3,
+          "distance": 64.4086
+        },
+        {
+          "step": 216,
+          "route": 3,
+          "distance": 70.55319999999999
+        },
+        {
+          "step": 240,
+          "route": 1,
+          "distance": 68.28920000000001
+        },
+        {
+          "step": 264,
+          "route": 0,
+          "distance": 81.1486
+        },
+        {
+          "step": 288,
+          "route": 3,
+          "distance": 97.8414
+        },
+        {
+          "step": 312,
+          "route": 3,
+          "distance": 113.74560000000001
+        },
+        {
+          "step": 336,
+          "route": 3,
+          "distance": 114.33619999999999
+        },
+        {
+          "step": 360,
+          "route": 1,
+          "distance": 116.3522
+        },
+        {
+          "step": 384,
+          "route": 0,
+          "distance": 120.32480000000001
+        },
+        {
+          "step": 408,
+          "route": 0,
+          "distance": 111.0192
+        },
+        {
+          "step": 432,
+          "route": 0,
+          "distance": 117.533
+        },
+        {
+          "step": 456,
+          "route": 0,
+          "distance": 120.37859999999999
+        },
+        {
+          "step": 480,
+          "route": 0,
+          "distance": 122.50459999999998
+        },
+        {
+          "step": 504,
+          "route": 0,
+          "distance": 126.68260000000001
+        },
+        {
+          "step": 528,
+          "route": 0,
+          "distance": 120.0886
+        },
+        {
+          "step": 552,
+          "route": 0,
+          "distance": 123.47420000000002
+        },
+        {
+          "step": 576,
+          "route": 0,
+          "distance": 123.65440000000002
+        },
+        {
+          "step": 600,
+          "route": 0,
+          "distance": 135.2272
+        },
+        {
+          "step": 624,
+          "route": 0,
+          "distance": 127.53220000000002
+        },
+        {
+          "step": 648,
+          "route": 0,
+          "distance": 110.7916
+        },
+        {
+          "step": 672,
+          "route": 3,
+          "distance": 105.6912
+        },
+        {
+          "step": 696,
+          "route": 2,
+          "distance": 106.71640000000001
+        }
+      ]
+    },
+    {
+      "opponent": "starter",
+      "seed": 42,
+      "seat": 1,
+      "game_done": true,
+      "distances": [
+        {
+          "step": 0,
+          "route": 0,
+          "distance": 0.0
+        },
+        {
+          "step": 24,
+          "route": 1,
+          "distance": 39.6756
+        },
+        {
+          "step": 48,
+          "route": 0,
+          "distance": 39.7066
+        },
+        {
+          "step": 72,
+          "route": 1,
+          "distance": 39.875400000000006
+        },
+        {
+          "step": 96,
+          "route": 3,
+          "distance": 46.299
+        },
+        {
+          "step": 120,
+          "route": 7,
+          "distance": 43.0972
+        },
+        {
+          "step": 144,
+          "route": 3,
+          "distance": 43.633
+        },
+        {
+          "step": 168,
+          "route": 3,
+          "distance": 44.5268
+        },
+        {
+          "step": 192,
+          "route": 3,
+          "distance": 64.4896
+        },
+        {
+          "step": 216,
+          "route": 3,
+          "distance": 70.0936
+        },
+        {
+          "step": 240,
+          "route": 1,
+          "distance": 70.14800000000001
+        },
+        {
+          "step": 264,
+          "route": 0,
+          "distance": 77.9452
+        },
+        {
+          "step": 288,
+          "route": 3,
+          "distance": 102.3296
+        },
+        {
+          "step": 312,
+          "route": 1,
+          "distance": 106.7406
+        },
+        {
+          "step": 336,
+          "route": 3,
+          "distance": 111.40099999999998
+        },
+        {
+          "step": 360,
+          "route": 1,
+          "distance": 111.17999999999999
+        },
+        {
+          "step": 384,
+          "route": 0,
+          "distance": 117.80120000000001
+        },
+        {
+          "step": 408,
+          "route": 0,
+          "distance": 111.59340000000002
+        },
+        {
+          "step": 432,
+          "route": 0,
+          "distance": 121.5496
+        },
+        {
+          "step": 456,
+          "route": 0,
+          "distance": 123.01700000000001
+        },
+        {
+          "step": 480,
+          "route": 0,
+          "distance": 123.1762
+        },
+        {
+          "step": 504,
+          "route": 0,
+          "distance": 126.6482
+        },
+        {
+          "step": 528,
+          "route": 0,
+          "distance": 120.45060000000001
+        },
+        {
+          "step": 552,
+          "route": 0,
+          "distance": 124.25800000000001
+        },
+        {
+          "step": 576,
+          "route": 0,
+          "distance": 124.29960000000001
+        },
+        {
+          "step": 600,
+          "route": 0,
+          "distance": 131.6446
+        },
+        {
+          "step": 624,
+          "route": 0,
+          "distance": 121.85300000000002
+        },
+        {
+          "step": 648,
+          "route": 0,
+          "distance": 114.23939999999999
+        },
+        {
+          "step": 672,
+          "route": 3,
+          "distance": 104.5124
+        },
+        {
+          "step": 696,
+          "route": 2,
+          "distance": 112.3554
+        }
+      ]
+    },
+    {
+      "opponent": "starter",
+      "seed": 2026,
+      "seat": 0,
+      "game_done": true,
+      "distances": [
+        {
+          "step": 0,
+          "route": 0,
+          "distance": 0.0
+        },
+        {
+          "step": 24,
+          "route": 1,
+          "distance": 39.6756
+        },
+        {
+          "step": 48,
+          "route": 2,
+          "distance": 39.8036
+        },
+        {
+          "step": 72,
+          "route": 2,
+          "distance": 39.875400000000006
+        },
+        {
+          "step": 96,
+          "route": 4,
+          "distance": 46.439
+        },
+        {
+          "step": 120,
+          "route": 4,
+          "distance": 43.6506
+        },
+        {
+          "step": 144,
+          "route": 4,
+          "distance": 43.913199999999996
+        },
+        {
+          "step": 168,
+          "route": 3,
+          "distance": 45.44840000000001
+        },
+        {
+          "step": 192,
+          "route": 1,
+          "distance": 65.51079999999999
+        },
+        {
+          "step": 216,
+          "route": 1,
+          "distance": 69.76700000000001
+        },
+        {
+          "step": 240,
+          "route": 1,
+          "distance": 70.88320000000002
+        },
+        {
+          "step": 264,
+          "route": 0,
+          "distance": 70.9906
+        },
+        {
+          "step": 288,
+          "route": 0,
+          "distance": 89.21659999999999
+        },
+        {
+          "step": 312,
+          "route": 1,
+          "distance": 94.90360000000001
+        },
+        {
+          "step": 336,
+          "route": 3,
+          "distance": 105.75259999999999
+        },
+        {
+          "step": 360,
+          "route": 1,
+          "distance": 105.84519999999999
+        },
+        {
+          "step": 384,
+          "route": 0,
+          "distance": 116.3056
+        },
+        {
+          "step": 408,
+          "route": 1,
+          "distance": 111.70240000000001
+        },
+        {
+          "step": 432,
+          "route": 5,
+          "distance": 118.5276
+        },
+        {
+          "step": 456,
+          "route": 5,
+          "distance": 119.8396
+        },
+        {
+          "step": 480,
+          "route": 3,
+          "distance": 119.80820000000001
+        },
+        {
+          "step": 504,
+          "route": 3,
+          "distance": 125.2946
+        },
+        {
+          "step": 528,
+          "route": 3,
+          "distance": 116.5142
+        },
+        {
+          "step": 552,
+          "route": 3,
+          "distance": 125.41219999999998
+        },
+        {
+          "step": 576,
+          "route": 3,
+          "distance": 118.82220000000002
+        },
+        {
+          "step": 600,
+          "route": 1,
+          "distance": 127.43299999999999
+        },
+        {
+          "step": 624,
+          "route": 3,
+          "distance": 118.0716
+        },
+        {
+          "step": 648,
+          "route": 3,
+          "distance": 115.4974
+        },
+        {
+          "step": 672,
+          "route": 3,
+          "distance": 98.51
+        },
+        {
+          "step": 696,
+          "route": 2,
+          "distance": 99.85740000000001
+        }
+      ]
+    },
+    {
+      "opponent": "starter",
+      "seed": 2026,
+      "seat": 1,
+      "game_done": true,
+      "distances": [
+        {
+          "step": 0,
+          "route": 0,
+          "distance": 0.0
+        },
+        {
+          "step": 24,
+          "route": 1,
+          "distance": 39.6756
+        },
+        {
+          "step": 48,
+          "route": 2,
+          "distance": 39.8036
+        },
+        {
+          "step": 72,
+          "route": 2,
+          "distance": 39.875400000000006
+        },
+        {
+          "step": 96,
+          "route": 4,
+          "distance": 46.439
+        },
+        {
+          "step": 120,
+          "route": 4,
+          "distance": 43.6506
+        },
+        {
+          "step": 144,
+          "route": 4,
+          "distance": 43.913199999999996
+        },
+        {
+          "step": 168,
+          "route": 3,
+          "distance": 45.44840000000001
+        },
+        {
+          "step": 192,
+          "route": 1,
+          "distance": 65.51079999999999
+        },
+        {
+          "step": 216,
+          "route": 1,
+          "distance": 69.76700000000001
+        },
+        {
+          "step": 240,
+          "route": 1,
+          "distance": 70.88320000000002
+        },
+        {
+          "step": 264,
+          "route": 0,
+          "distance": 71.4906
+        },
+        {
+          "step": 288,
+          "route": 0,
+          "distance": 88.21659999999999
+        },
+        {
+          "step": 312,
+          "route": 1,
+          "distance": 96.20360000000001
+        },
+        {
+          "step": 336,
+          "route": 3,
+          "distance": 104.95259999999999
+        },
+        {
+          "step": 360,
+          "route": 1,
+          "distance": 108.34519999999999
+        },
+        {
+          "step": 384,
+          "route": 1,
+          "distance": 116.44699999999999
+        },
+        {
+          "step": 408,
+          "route": 1,
+          "distance": 111.60040000000001
+        },
+        {
+          "step": 432,
+          "route": 5,
+          "distance": 119.6214
+        },
+        {
+          "step": 456,
+          "route": 5,
+          "distance": 118.76440000000001
+        },
+        {
+          "step": 480,
+          "route": 5,
+          "distance": 120.62079999999999
+        },
+        {
+          "step": 504,
+          "route": 3,
+          "distance": 122.48780000000002
+        },
+        {
+          "step": 528,
+          "route": 3,
+          "distance": 116.45480000000002
+        },
+        {
+          "step": 552,
+          "route": 3,
+          "distance": 122.37
+        },
+        {
+          "step": 576,
+          "route": 3,
+          "distance": 121.2734
+        },
+        {
+          "step": 600,
+          "route": 3,
+          "distance": 125.35079999999999
+        },
+        {
+          "step": 624,
+          "route": 3,
+          "distance": 119.2174
+        },
+        {
+          "step": 648,
+          "route": 7,
+          "distance": 110.9272
+        },
+        {
+          "step": 672,
+          "route": 3,
+          "distance": 92.2052
+        },
+        {
+          "step": 696,
+          "route": 2,
+          "distance": 99.535
+        }
+      ]
+    },
+    {
+      "opponent": "random",
+      "seed": 17,
+      "seat": 0,
+      "game_done": true,
+      "distances": [
+        {
+          "step": 0,
+          "route": 0,
+          "distance": 0.0
+        },
+        {
+          "step": 24,
+          "route": 1,
+          "distance": 39.275600000000004
+        },
+        {
+          "step": 48,
+          "route": 0,
+          "distance": 38.3066
+        },
+        {
+          "step": 72,
+          "route": 1,
+          "distance": 39.5754
+        },
+        {
+          "step": 96,
+          "route": 4,
+          "distance": 46.039
+        },
+        {
+          "step": 120,
+          "route": 4,
+          "distance": 43.2506
+        },
+        {
+          "step": 144,
+          "route": 4,
+          "distance": 43.6132
+        },
+        {
+          "step": 168,
+          "route": 3,
+          "distance": 45.04800000000001
+        },
+        {
+          "step": 192,
+          "route": 3,
+          "distance": 55.361
+        },
+        {
+          "step": 216,
+          "route": 3,
+          "distance": 70.604
+        },
+        {
+          "step": 240,
+          "route": 1,
+          "distance": 71.8218
+        },
+        {
+          "step": 264,
+          "route": 1,
+          "distance": 92.07120000000002
+        },
+        {
+          "step": 288,
+          "route": 0,
+          "distance": 92.23079999999999
+        },
+        {
+          "step": 312,
+          "route": 0,
+          "distance": 94.7134
+        },
+        {
+          "step": 336,
+          "route": 3,
+          "distance": 103.52040000000001
+        },
+        {
+          "step": 360,
+          "route": 1,
+          "distance": 100.2492
+        },
+        {
+          "step": 384,
+          "route": 1,
+          "distance": 105.0722
+        },
+        {
+          "step": 408,
+          "route": 0,
+          "distance": 104.5936
+        },
+        {
+          "step": 432,
+          "route": 0,
+          "distance": 115.8336
+        },
+        {
+          "step": 456,
+          "route": 0,
+          "distance": 115.9326
+        },
+        {
+          "step": 480,
+          "route": 3,
+          "distance": 110.12559999999999
+        },
+        {
+          "step": 504,
+          "route": 3,
+          "distance": 119.088
+        },
+        {
+          "step": 528,
+          "route": 0,
+          "distance": 111.89900000000002
+        },
+        {
+          "step": 552,
+          "route": 0,
+          "distance": 124.1182
+        },
+        {
+          "step": 576,
+          "route": 0,
+          "distance": 117.03060000000002
+        },
+        {
+          "step": 600,
+          "route": 1,
+          "distance": 120.91939999999998
+        },
+        {
+          "step": 624,
+          "route": 3,
+          "distance": 118.944
+        },
+        {
+          "step": 648,
+          "route": 7,
+          "distance": 120.77539999999999
+        },
+        {
+          "step": 672,
+          "route": 3,
+          "distance": 108.5354
+        },
+        {
+          "step": 696,
+          "route": 2,
+          "distance": 101.04499999999999
+        }
+      ]
+    },
+    {
+      "opponent": "random",
+      "seed": 17,
+      "seat": 1,
+      "game_done": true,
+      "distances": [
+        {
+          "step": 0,
+          "route": 0,
+          "distance": 0.0
+        },
+        {
+          "step": 24,
+          "route": 1,
+          "distance": 39.275600000000004
+        },
+        {
+          "step": 48,
+          "route": 0,
+          "distance": 38.7066
+        },
+        {
+          "step": 72,
+          "route": 1,
+          "distance": 39.375400000000006
+        },
+        {
+          "step": 96,
+          "route": 4,
+          "distance": 47.199
+        },
+        {
+          "step": 120,
+          "route": 7,
+          "distance": 42.563
+        },
+        {
+          "step": 144,
+          "route": 4,
+          "distance": 43.373200000000004
+        },
+        {
+          "step": 168,
+          "route": 3,
+          "distance": 45.0268
+        },
+        {
+          "step": 192,
+          "route": 0,
+          "distance": 54.9022
+        },
+        {
+          "step": 216,
+          "route": 3,
+          "distance": 62.982
+        },
+        {
+          "step": 240,
+          "route": 1,
+          "distance": 70.96119999999999
+        },
+        {
+          "step": 264,
+          "route": 0,
+          "distance": 73.94500000000001
+        },
+        {
+          "step": 288,
+          "route": 1,
+          "distance": 91.9806
+        },
+        {
+          "step": 312,
+          "route": 1,
+          "distance": 98.7494
+        },
+        {
+          "step": 336,
+          "route": 3,
+          "distance": 110.5594
+        },
+        {
+          "step": 360,
+          "route": 1,
+          "distance": 107.542
+        },
+        {
+          "step": 384,
+          "route": 0,
+          "distance": 114.9676
+        },
+        {
+          "step": 408,
+          "route": 1,
+          "distance": 110.1534
+        },
+        {
+          "step": 432,
+          "route": 5,
+          "distance": 118.10280000000002
+        },
+        {
+          "step": 456,
+          "route": 5,
+          "distance": 115.2466
+        },
+        {
+          "step": 480,
+          "route": 3,
+          "distance": 114.2674
+        },
+        {
+          "step": 504,
+          "route": 3,
+          "distance": 121.36580000000001
+        },
+        {
+          "step": 528,
+          "route": 3,
+          "distance": 117.19160000000001
+        },
+        {
+          "step": 552,
+          "route": 3,
+          "distance": 124.70179999999999
+        },
+        {
+          "step": 576,
+          "route": 3,
+          "distance": 121.7342
+        },
+        {
+          "step": 600,
+          "route": 3,
+          "distance": 113.9636
+        },
+        {
+          "step": 624,
+          "route": 3,
+          "distance": 112.6832
+        },
+        {
+          "step": 648,
+          "route": 3,
+          "distance": 106.808
+        },
+        {
+          "step": 672,
+          "route": 3,
+          "distance": 102.8188
+        },
+        {
+          "step": 696,
+          "route": 3,
+          "distance": 106.6856
+        }
+      ]
+    },
+    {
+      "opponent": "random",
+      "seed": 42,
+      "seat": 0,
+      "game_done": true,
+      "distances": [
+        {
+          "step": 0,
+          "route": 0,
+          "distance": 0.0
+        },
+        {
+          "step": 24,
+          "route": 0,
+          "distance": 39.257600000000004
+        },
+        {
+          "step": 48,
+          "route": 0,
+          "distance": 40.2066
+        },
+        {
+          "step": 72,
+          "route": 1,
+          "distance": 40.875400000000006
+        },
+        {
+          "step": 96,
+          "route": 3,
+          "distance": 46.299
+        },
+        {
+          "step": 120,
+          "route": 7,
+          "distance": 42.697199999999995
+        },
+        {
+          "step": 144,
+          "route": 3,
+          "distance": 43.333000000000006
+        },
+        {
+          "step": 168,
+          "route": 3,
+          "distance": 44.146800000000006
+        },
+        {
+          "step": 192,
+          "route": 3,
+          "distance": 58.5764
+        },
+        {
+          "step": 216,
+          "route": 3,
+          "distance": 72.7186
+        },
+        {
+          "step": 240,
+          "route": 1,
+          "distance": 72.9456
+        },
+        {
+          "step": 264,
+          "route": 0,
+          "distance": 72.2314
+        },
+        {
+          "step": 288,
+          "route": 1,
+          "distance": 88.1738
+        },
+        {
+          "step": 312,
+          "route": 1,
+          "distance": 100.5732
+        },
+        {
+          "step": 336,
+          "route": 3,
+          "distance": 106.4838
+        },
+        {
+          "step": 360,
+          "route": 1,
+          "distance": 104.099
+        },
+        {
+          "step": 384,
+          "route": 0,
+          "distance": 105.44839999999999
+        },
+        {
+          "step": 408,
+          "route": 0,
+          "distance": 100.4534
+        },
+        {
+          "step": 432,
+          "route": 0,
+          "distance": 106.1014
+        },
+        {
+          "step": 456,
+          "route": 0,
+          "distance": 106.4078
+        },
+        {
+          "step": 480,
+          "route": 0,
+          "distance": 107.97240000000001
+        },
+        {
+          "step": 504,
+          "route": 0,
+          "distance": 114.7628
+        },
+        {
+          "step": 528,
+          "route": 0,
+          "distance": 110.3198
+        },
+        {
+          "step": 552,
+          "route": 0,
+          "distance": 116.8286
+        },
+        {
+          "step": 576,
+          "route": 0,
+          "distance": 117.30420000000001
+        },
+        {
+          "step": 600,
+          "route": 0,
+          "distance": 124.281
+        },
+        {
+          "step": 624,
+          "route": 3,
+          "distance": 119.326
+        },
+        {
+          "step": 648,
+          "route": 0,
+          "distance": 119.2264
+        },
+        {
+          "step": 672,
+          "route": 3,
+          "distance": 98.5642
+        },
+        {
+          "step": 696,
+          "route": 2,
+          "distance": 104.14840000000001
+        }
+      ]
+    },
+    {
+      "opponent": "random",
+      "seed": 42,
+      "seat": 1,
+      "game_done": true,
+      "distances": [
+        {
+          "step": 0,
+          "route": 0,
+          "distance": 0.0
+        },
+        {
+          "step": 24,
+          "route": 1,
+          "distance": 39.275600000000004
+        },
+        {
+          "step": 48,
+          "route": 0,
+          "distance": 39.3066
+        },
+        {
+          "step": 72,
+          "route": 1,
+          "distance": 39.5754
+        },
+        {
+          "step": 96,
+          "route": 4,
+          "distance": 45.919
+        },
+        {
+          "step": 120,
+          "route": 4,
+          "distance": 43.1448
+        },
+        {
+          "step": 144,
+          "route": 4,
+          "distance": 43.373
+        },
+        {
+          "step": 168,
+          "route": 3,
+          "distance": 44.78640000000001
+        },
+        {
+          "step": 192,
+          "route": 1,
+          "distance": 64.7068
+        },
+        {
+          "step": 216,
+          "route": 1,
+          "distance": 75.699
+        },
+        {
+          "step": 240,
+          "route": 1,
+          "distance": 71.616
+        },
+        {
+          "step": 264,
+          "route": 0,
+          "distance": 75.622
+        },
+        {
+          "step": 288,
+          "route": 3,
+          "distance": 94.75859999999999
+        },
+        {
+          "step": 312,
+          "route": 3,
+          "distance": 99.748
+        },
+        {
+          "step": 336,
+          "route": 3,
+          "distance": 107.2268
+        },
+        {
+          "step": 360,
+          "route": 1,
+          "distance": 110.7354
+        },
+        {
+          "step": 384,
+          "route": 3,
+          "distance": 117.82579999999999
+        },
+        {
+          "step": 408,
+          "route": 0,
+          "distance": 111.318
+        },
+        {
+          "step": 432,
+          "route": 0,
+          "distance": 111.3434
+        },
+        {
+          "step": 456,
+          "route": 0,
+          "distance": 116.4634
+        },
+        {
+          "step": 480,
+          "route": 0,
+          "distance": 115.364
+        },
+        {
+          "step": 504,
+          "route": 0,
+          "distance": 125.6806
+        },
+        {
+          "step": 528,
+          "route": 0,
+          "distance": 120.18680000000002
+        },
+        {
+          "step": 552,
+          "route": 0,
+          "distance": 123.42939999999999
+        },
+        {
+          "step": 576,
+          "route": 0,
+          "distance": 121.0086
+        },
+        {
+          "step": 600,
+          "route": 0,
+          "distance": 136.67620000000002
+        },
+        {
+          "step": 624,
+          "route": 3,
+          "distance": 126.6724
+        },
+        {
+          "step": 648,
+          "route": 0,
+          "distance": 124.52799999999999
+        },
+        {
+          "step": 672,
+          "route": 3,
+          "distance": 101.75939999999999
+        },
+        {
+          "step": 696,
+          "route": 2,
+          "distance": 106.35239999999999
+        }
+      ]
+    },
+    {
+      "opponent": "random",
+      "seed": 2026,
+      "seat": 0,
+      "game_done": true,
+      "distances": [
+        {
+          "step": 0,
+          "route": 0,
+          "distance": 0.0
+        },
+        {
+          "step": 24,
+          "route": 1,
+          "distance": 39.275600000000004
+        },
+        {
+          "step": 48,
+          "route": 0,
+          "distance": 39.7066
+        },
+        {
+          "step": 72,
+          "route": 1,
+          "distance": 39.97540000000001
+        },
+        {
+          "step": 96,
+          "route": 4,
+          "distance": 46.039
+        },
+        {
+          "step": 120,
+          "route": 4,
+          "distance": 42.1506
+        },
+        {
+          "step": 144,
+          "route": 4,
+          "distance": 42.5132
+        },
+        {
+          "step": 168,
+          "route": 3,
+          "distance": 45.04800000000001
+        },
+        {
+          "step": 192,
+          "route": 3,
+          "distance": 55.361
+        },
+        {
+          "step": 216,
+          "route": 3,
+          "distance": 69.604
+        },
+        {
+          "step": 240,
+          "route": 1,
+          "distance": 70.7018
+        },
+        {
+          "step": 264,
+          "route": 1,
+          "distance": 91.89120000000003
+        },
+        {
+          "step": 288,
+          "route": 0,
+          "distance": 92.52159999999999
+        },
+        {
+          "step": 312,
+          "route": 0,
+          "distance": 95.35660000000001
+        },
+        {
+          "step": 336,
+          "route": 3,
+          "distance": 104.24799999999999
+        },
+        {
+          "step": 360,
+          "route": 1,
+          "distance": 101.2016
+        },
+        {
+          "step": 384,
+          "route": 0,
+          "distance": 105.77460000000002
+        },
+        {
+          "step": 408,
+          "route": 1,
+          "distance": 105.3674
+        },
+        {
+          "step": 432,
+          "route": 5,
+          "distance": 111.5472
+        },
+        {
+          "step": 456,
+          "route": 0,
+          "distance": 112.1382
+        },
+        {
+          "step": 480,
+          "route": 3,
+          "distance": 112.12219999999999
+        },
+        {
+          "step": 504,
+          "route": 3,
+          "distance": 119.083
+        },
+        {
+          "step": 528,
+          "route": 0,
+          "distance": 114.85380000000002
+        },
+        {
+          "step": 552,
+          "route": 0,
+          "distance": 124.69760000000001
+        },
+        {
+          "step": 576,
+          "route": 0,
+          "distance": 123.87960000000001
+        },
+        {
+          "step": 600,
+          "route": 3,
+          "distance": 124.59419999999999
+        },
+        {
+          "step": 624,
+          "route": 3,
+          "distance": 129.7356
+        },
+        {
+          "step": 648,
+          "route": 7,
+          "distance": 127.4778
+        },
+        {
+          "step": 672,
+          "route": 3,
+          "distance": 110.4018
+        },
+        {
+          "step": 696,
+          "route": 2,
+          "distance": 112.3358
+        }
+      ]
+    },
+    {
+      "opponent": "random",
+      "seed": 2026,
+      "seat": 1,
+      "game_done": true,
+      "distances": [
+        {
+          "step": 0,
+          "route": 0,
+          "distance": 0.0
+        },
+        {
+          "step": 24,
+          "route": 1,
+          "distance": 39.275600000000004
+        },
+        {
+          "step": 48,
+          "route": 0,
+          "distance": 39.3066
+        },
+        {
+          "step": 72,
+          "route": 1,
+          "distance": 39.97540000000001
+        },
+        {
+          "step": 96,
+          "route": 4,
+          "distance": 46.318999999999996
+        },
+        {
+          "step": 120,
+          "route": 4,
+          "distance": 43.1448
+        },
+        {
+          "step": 144,
+          "route": 4,
+          "distance": 43.373
+        },
+        {
+          "step": 168,
+          "route": 3,
+          "distance": 44.646800000000006
+        },
+        {
+          "step": 192,
+          "route": 1,
+          "distance": 64.506
+        },
+        {
+          "step": 216,
+          "route": 1,
+          "distance": 75.396
+        },
+        {
+          "step": 240,
+          "route": 1,
+          "distance": 71.15899999999999
+        },
+        {
+          "step": 264,
+          "route": 0,
+          "distance": 73.4974
+        },
+        {
+          "step": 288,
+          "route": 3,
+          "distance": 94.11359999999999
+        },
+        {
+          "step": 312,
+          "route": 3,
+          "distance": 100.8896
+        },
+        {
+          "step": 336,
+          "route": 3,
+          "distance": 107.986
+        },
+        {
+          "step": 360,
+          "route": 1,
+          "distance": 110.1344
+        },
+        {
+          "step": 384,
+          "route": 0,
+          "distance": 117.5304
+        },
+        {
+          "step": 408,
+          "route": 0,
+          "distance": 110.9068
+        },
+        {
+          "step": 432,
+          "route": 0,
+          "distance": 116.1322
+        },
+        {
+          "step": 456,
+          "route": 0,
+          "distance": 116.3314
+        },
+        {
+          "step": 480,
+          "route": 0,
+          "distance": 116.9102
+        },
+        {
+          "step": 504,
+          "route": 0,
+          "distance": 122.60099999999998
+        },
+        {
+          "step": 528,
+          "route": 0,
+          "distance": 118.7274
+        },
+        {
+          "step": 552,
+          "route": 0,
+          "distance": 123.16739999999999
+        },
+        {
+          "step": 576,
+          "route": 0,
+          "distance": 115.9654
+        },
+        {
+          "step": 600,
+          "route": 0,
+          "distance": 132.849
+        },
+        {
+          "step": 624,
+          "route": 0,
+          "distance": 125.4084
+        },
+        {
+          "step": 648,
+          "route": 3,
+          "distance": 119.38739999999999
+        },
+        {
+          "step": 672,
+          "route": 3,
+          "distance": 105.85099999999998
+        },
+        {
+          "step": 696,
+          "route": 2,
+          "distance": 109.8794
+        }
+      ]
+    },
+    {
+      "opponent": "hamburger",
+      "seed": 17,
+      "seat": 0,
+      "game_done": true,
+      "distances": [
+        {
+          "step": 0,
+          "route": 0,
+          "distance": 0.0
+        },
+        {
+          "step": 24,
+          "route": 5,
+          "distance": 23.657
+        },
+        {
+          "step": 48,
+          "route": 5,
+          "distance": 19.3444
+        },
+        {
+          "step": 72,
+          "route": 5,
+          "distance": 21.2
+        },
+        {
+          "step": 96,
+          "route": 6,
+          "distance": 23.3964
+        },
+        {
+          "step": 120,
+          "route": 5,
+          "distance": 19.7312
+        },
+        {
+          "step": 144,
+          "route": 5,
+          "distance": 17.326
+        },
+        {
+          "step": 168,
+          "route": 5,
+          "distance": 18.0598
+        },
+        {
+          "step": 192,
+          "route": 5,
+          "distance": 25.831599999999995
+        },
+        {
+          "step": 216,
+          "route": 5,
+          "distance": 31.971000000000004
+        },
+        {
+          "step": 240,
+          "route": 5,
+          "distance": 21.4248
+        },
+        {
+          "step": 264,
+          "route": 7,
+          "distance": 39.5056
+        },
+        {
+          "step": 288,
+          "route": 5,
+          "distance": 40.162000000000006
+        },
+        {
+          "step": 312,
+          "route": 5,
+          "distance": 32.724799999999995
+        },
+        {
+          "step": 336,
+          "route": 5,
+          "distance": 34.819
+        },
+        {
+          "step": 360,
+          "route": 4,
+          "distance": 37.477000000000004
+        },
+        {
+          "step": 384,
+          "route": 4,
+          "distance": 36.404999999999994
+        },
+        {
+          "step": 408,
+          "route": 4,
+          "distance": 33.0336
+        },
+        {
+          "step": 432,
+          "route": 0,
+          "distance": 37.19540000000001
+        },
+        {
+          "step": 456,
+          "route": 0,
+          "distance": 32.947599999999994
+        },
+        {
+          "step": 480,
+          "route": 0,
+          "distance": 40.550200000000004
+        },
+        {
+          "step": 504,
+          "route": 4,
+          "distance": 49.16580000000002
+        },
+        {
+          "step": 528,
+          "route": 0,
+          "distance": 51.53760000000001
+        },
+        {
+          "step": 552,
+          "route": 6,
+          "distance": 56.85879999999999
+        },
+        {
+          "step": 576,
+          "route": 6,
+          "distance": 54.89620000000001
+        },
+        {
+          "step": 600,
+          "route": 0,
+          "distance": 63.5254
+        },
+        {
+          "step": 624,
+          "route": 0,
+          "distance": 53.8222
+        },
+        {
+          "step": 648,
+          "route": 0,
+          "distance": 48.9288
+        },
+        {
+          "step": 672,
+          "route": 0,
+          "distance": 29.099800000000005
+        },
+        {
+          "step": 696,
+          "route": 0,
+          "distance": 48.579400000000014
+        }
+      ]
+    },
+    {
+      "opponent": "hamburger",
+      "seed": 17,
+      "seat": 1,
+      "game_done": true,
+      "distances": [
+        {
+          "step": 0,
+          "route": 0,
+          "distance": 0.0
+        },
+        {
+          "step": 24,
+          "route": 5,
+          "distance": 23.657
+        },
+        {
+          "step": 48,
+          "route": 5,
+          "distance": 19.8444
+        },
+        {
+          "step": 72,
+          "route": 5,
+          "distance": 21.7
+        },
+        {
+          "step": 96,
+          "route": 5,
+          "distance": 23.8964
+        },
+        {
+          "step": 120,
+          "route": 5,
+          "distance": 20.1712
+        },
+        {
+          "step": 144,
+          "route": 5,
+          "distance": 19.536
+        },
+        {
+          "step": 168,
+          "route": 5,
+          "distance": 20.4286
+        },
+        {
+          "step": 192,
+          "route": 5,
+          "distance": 23.8238
+        },
+        {
+          "step": 216,
+          "route": 5,
+          "distance": 28.7382
+        },
+        {
+          "step": 240,
+          "route": 5,
+          "distance": 24.793400000000005
+        },
+        {
+          "step": 264,
+          "route": 7,
+          "distance": 41.8962
+        },
+        {
+          "step": 288,
+          "route": 5,
+          "distance": 52.631400000000006
+        },
+        {
+          "step": 312,
+          "route": 5,
+          "distance": 36.4956
+        },
+        {
+          "step": 336,
+          "route": 5,
+          "distance": 29.613
+        },
+        {
+          "step": 360,
+          "route": 4,
+          "distance": 33.592000000000006
+        },
+        {
+          "step": 384,
+          "route": 4,
+          "distance": 29.461399999999998
+        },
+        {
+          "step": 408,
+          "route": 0,
+          "distance": 22.0682
+        },
+        {
+          "step": 432,
+          "route": 0,
+          "distance": 30.5054
+        },
+        {
+          "step": 456,
+          "route": 0,
+          "distance": 26.6364
+        },
+        {
+          "step": 480,
+          "route": 0,
+          "distance": 34.9996
+        },
+        {
+          "step": 504,
+          "route": 0,
+          "distance": 41.4792
+        },
+        {
+          "step": 528,
+          "route": 6,
+          "distance": 44.57940000000001
+        },
+        {
+          "step": 552,
+          "route": 0,
+          "distance": 52.3026
+        },
+        {
+          "step": 576,
+          "route": 6,
+          "distance": 53.63340000000002
+        },
+        {
+          "step": 600,
+          "route": 0,
+          "distance": 47.2582
+        },
+        {
+          "step": 624,
+          "route": 0,
+          "distance": 45.53300000000001
+        },
+        {
+          "step": 648,
+          "route": 0,
+          "distance": 44.5256
+        },
+        {
+          "step": 672,
+          "route": 0,
+          "distance": 31.32679999999999
+        },
+        {
+          "step": 696,
+          "route": 0,
+          "distance": 54.7056
+        }
+      ]
+    },
+    {
+      "opponent": "hamburger",
+      "seed": 42,
+      "seat": 0,
+      "game_done": true,
+      "distances": [
+        {
+          "step": 0,
+          "route": 0,
+          "distance": 0.0
+        },
+        {
+          "step": 24,
+          "route": 5,
+          "distance": 23.657
+        },
+        {
+          "step": 48,
+          "route": 5,
+          "distance": 19.3444
+        },
+        {
+          "step": 72,
+          "route": 5,
+          "distance": 21.2
+        },
+        {
+          "step": 96,
+          "route": 5,
+          "distance": 23.3964
+        },
+        {
+          "step": 120,
+          "route": 5,
+          "distance": 19.651200000000003
+        },
+        {
+          "step": 144,
+          "route": 5,
+          "distance": 17.266
+        },
+        {
+          "step": 168,
+          "route": 5,
+          "distance": 18.279999999999998
+        },
+        {
+          "step": 192,
+          "route": 5,
+          "distance": 21.795599999999997
+        },
+        {
+          "step": 216,
+          "route": 5,
+          "distance": 25.761400000000002
+        },
+        {
+          "step": 240,
+          "route": 5,
+          "distance": 22.730600000000003
+        },
+        {
+          "step": 264,
+          "route": 7,
+          "distance": 44.961999999999996
+        },
+        {
+          "step": 288,
+          "route": 5,
+          "distance": 49.82020000000001
+        },
+        {
+          "step": 312,
+          "route": 5,
+          "distance": 46.62779999999999
+        },
+        {
+          "step": 336,
+          "route": 7,
+          "distance": 44.40160000000001
+        },
+        {
+          "step": 360,
+          "route": 7,
+          "distance": 41.653600000000004
+        },
+        {
+          "step": 384,
+          "route": 0,
+          "distance": 37.385799999999996
+        },
+        {
+          "step": 408,
+          "route": 2,
+          "distance": 42.88399999999999
+        },
+        {
+          "step": 432,
+          "route": 0,
+          "distance": 47.98720000000001
+        },
+        {
+          "step": 456,
+          "route": 1,
+          "distance": 42.26120000000002
+        },
+        {
+          "step": 480,
+          "route": 7,
+          "distance": 40.7256
+        },
+        {
+          "step": 504,
+          "route": 1,
+          "distance": 56.67080000000001
+        },
+        {
+          "step": 528,
+          "route": 7,
+          "distance": 56.859
+        },
+        {
+          "step": 552,
+          "route": 7,
+          "distance": 61.45460000000001
+        },
+        {
+          "step": 576,
+          "route": 7,
+          "distance": 61.02539999999998
+        },
+        {
+          "step": 600,
+          "route": 7,
+          "distance": 60.200799999999994
+        },
+        {
+          "step": 624,
+          "route": 5,
+          "distance": 55.7338
+        },
+        {
+          "step": 648,
+          "route": 5,
+          "distance": 49.91640000000001
+        },
+        {
+          "step": 672,
+          "route": 5,
+          "distance": 56.67300000000001
+        },
+        {
+          "step": 696,
+          "route": 5,
+          "distance": 59.467000000000006
+        }
+      ]
+    },
+    {
+      "opponent": "hamburger",
+      "seed": 42,
+      "seat": 1,
+      "game_done": true,
+      "distances": [
+        {
+          "step": 0,
+          "route": 0,
+          "distance": 0.0
+        },
+        {
+          "step": 24,
+          "route": 5,
+          "distance": 23.657
+        },
+        {
+          "step": 48,
+          "route": 5,
+          "distance": 19.3444
+        },
+        {
+          "step": 72,
+          "route": 5,
+          "distance": 21.2
+        },
+        {
+          "step": 96,
+          "route": 5,
+          "distance": 23.3964
+        },
+        {
+          "step": 120,
+          "route": 5,
+          "distance": 19.651200000000003
+        },
+        {
+          "step": 144,
+          "route": 5,
+          "distance": 17.266
+        },
+        {
+          "step": 168,
+          "route": 5,
+          "distance": 18.279999999999998
+        },
+        {
+          "step": 192,
+          "route": 5,
+          "distance": 21.795599999999997
+        },
+        {
+          "step": 216,
+          "route": 5,
+          "distance": 25.761400000000002
+        },
+        {
+          "step": 240,
+          "route": 5,
+          "distance": 22.730600000000003
+        },
+        {
+          "step": 264,
+          "route": 7,
+          "distance": 44.961999999999996
+        },
+        {
+          "step": 288,
+          "route": 5,
+          "distance": 48.32020000000001
+        },
+        {
+          "step": 312,
+          "route": 5,
+          "distance": 47.12779999999999
+        },
+        {
+          "step": 336,
+          "route": 7,
+          "distance": 45.90160000000001
+        },
+        {
+          "step": 360,
+          "route": 7,
+          "distance": 43.35359999999999
+        },
+        {
+          "step": 384,
+          "route": 0,
+          "distance": 37.28559999999999
+        },
+        {
+          "step": 408,
+          "route": 2,
+          "distance": 42.7746
+        },
+        {
+          "step": 432,
+          "route": 0,
+          "distance": 47.979200000000006
+        },
+        {
+          "step": 456,
+          "route": 1,
+          "distance": 41.2624
+        },
+        {
+          "step": 480,
+          "route": 7,
+          "distance": 43.01420000000001
+        },
+        {
+          "step": 504,
+          "route": 2,
+          "distance": 56.54
+        },
+        {
+          "step": 528,
+          "route": 7,
+          "distance": 58.7742
+        },
+        {
+          "step": 552,
+          "route": 7,
+          "distance": 62.46380000000002
+        },
+        {
+          "step": 576,
+          "route": 7,
+          "distance": 62.463
+        },
+        {
+          "step": 600,
+          "route": 7,
+          "distance": 60.83480000000001
+        },
+        {
+          "step": 624,
+          "route": 5,
+          "distance": 52.05179999999999
+        },
+        {
+          "step": 648,
+          "route": 5,
+          "distance": 49.3278
+        },
+        {
+          "step": 672,
+          "route": 5,
+          "distance": 57.238800000000005
+        },
+        {
+          "step": 696,
+          "route": 5,
+          "distance": 61.395199999999996
+        }
+      ]
+    },
+    {
+      "opponent": "hamburger",
+      "seed": 2026,
+      "seat": 0,
+      "game_done": true,
+      "distances": [
+        {
+          "step": 0,
+          "route": 0,
+          "distance": 0.0
+        },
+        {
+          "step": 24,
+          "route": 5,
+          "distance": 23.657
+        },
+        {
+          "step": 48,
+          "route": 5,
+          "distance": 19.3444
+        },
+        {
+          "step": 72,
+          "route": 5,
+          "distance": 21.2
+        },
+        {
+          "step": 96,
+          "route": 5,
+          "distance": 23.3564
+        },
+        {
+          "step": 120,
+          "route": 5,
+          "distance": 19.590999999999998
+        },
+        {
+          "step": 144,
+          "route": 5,
+          "distance": 17.1072
+        },
+        {
+          "step": 168,
+          "route": 5,
+          "distance": 18.1218
+        },
+        {
+          "step": 192,
+          "route": 5,
+          "distance": 36.412200000000006
+        },
+        {
+          "step": 216,
+          "route": 5,
+          "distance": 31.1524
+        },
+        {
+          "step": 240,
+          "route": 5,
+          "distance": 25.9632
+        },
+        {
+          "step": 264,
+          "route": 5,
+          "distance": 39.974
+        },
+        {
+          "step": 288,
+          "route": 5,
+          "distance": 42.034000000000006
+        },
+        {
+          "step": 312,
+          "route": 5,
+          "distance": 55.7772
+        },
+        {
+          "step": 336,
+          "route": 5,
+          "distance": 51.550200000000004
+        },
+        {
+          "step": 360,
+          "route": 7,
+          "distance": 55.6544
+        },
+        {
+          "step": 384,
+          "route": 0,
+          "distance": 57.958999999999996
+        },
+        {
+          "step": 408,
+          "route": 2,
+          "distance": 54.9418
+        },
+        {
+          "step": 432,
+          "route": 1,
+          "distance": 57.562400000000004
+        },
+        {
+          "step": 456,
+          "route": 1,
+          "distance": 56.714200000000005
+        },
+        {
+          "step": 480,
+          "route": 7,
+          "distance": 52.290000000000006
+        },
+        {
+          "step": 504,
+          "route": 7,
+          "distance": 64.4222
+        },
+        {
+          "step": 528,
+          "route": 7,
+          "distance": 64.8236
+        },
+        {
+          "step": 552,
+          "route": 7,
+          "distance": 72.4452
+        },
+        {
+          "step": 576,
+          "route": 7,
+          "distance": 71.2582
+        },
+        {
+          "step": 600,
+          "route": 7,
+          "distance": 84.7574
+        },
+        {
+          "step": 624,
+          "route": 5,
+          "distance": 77.01919999999997
+        },
+        {
+          "step": 648,
+          "route": 7,
+          "distance": 77.6534
+        },
+        {
+          "step": 672,
+          "route": 5,
+          "distance": 56.489000000000026
+        },
+        {
+          "step": 696,
+          "route": 7,
+          "distance": 74.3258
+        }
+      ]
+    },
+    {
+      "opponent": "hamburger",
+      "seed": 2026,
+      "seat": 1,
+      "game_done": true,
+      "distances": [
+        {
+          "step": 0,
+          "route": 0,
+          "distance": 0.0
+        },
+        {
+          "step": 24,
+          "route": 5,
+          "distance": 23.657
+        },
+        {
+          "step": 48,
+          "route": 5,
+          "distance": 19.3444
+        },
+        {
+          "step": 72,
+          "route": 5,
+          "distance": 21.2
+        },
+        {
+          "step": 96,
+          "route": 5,
+          "distance": 23.3564
+        },
+        {
+          "step": 120,
+          "route": 5,
+          "distance": 19.590999999999998
+        },
+        {
+          "step": 144,
+          "route": 5,
+          "distance": 17.1072
+        },
+        {
+          "step": 168,
+          "route": 5,
+          "distance": 18.1218
+        },
+        {
+          "step": 192,
+          "route": 5,
+          "distance": 36.412200000000006
+        },
+        {
+          "step": 216,
+          "route": 5,
+          "distance": 31.1524
+        },
+        {
+          "step": 240,
+          "route": 5,
+          "distance": 25.9632
+        },
+        {
+          "step": 264,
+          "route": 7,
+          "distance": 40.07919999999999
+        },
+        {
+          "step": 288,
+          "route": 5,
+          "distance": 41.03400000000001
+        },
+        {
+          "step": 312,
+          "route": 5,
+          "distance": 51.797200000000004
+        },
+        {
+          "step": 336,
+          "route": 5,
+          "distance": 49.29100000000001
+        },
+        {
+          "step": 360,
+          "route": 7,
+          "distance": 50.75520000000001
+        },
+        {
+          "step": 384,
+          "route": 0,
+          "distance": 59.714000000000006
+        },
+        {
+          "step": 408,
+          "route": 2,
+          "distance": 53.417199999999994
+        },
+        {
+          "step": 432,
+          "route": 2,
+          "distance": 57.07919999999999
+        },
+        {
+          "step": 456,
+          "route": 2,
+          "distance": 57.74159999999999
+        },
+        {
+          "step": 480,
+          "route": 7,
+          "distance": 57.14179999999999
+        },
+        {
+          "step": 504,
+          "route": 7,
+          "distance": 68.6554
+        },
+        {
+          "step": 528,
+          "route": 7,
+          "distance": 67.8572
+        },
+        {
+          "step": 552,
+          "route": 7,
+          "distance": 73.7966
+        },
+        {
+          "step": 576,
+          "route": 7,
+          "distance": 69.69839999999999
+        },
+        {
+          "step": 600,
+          "route": 7,
+          "distance": 84.30659999999999
+        },
+        {
+          "step": 624,
+          "route": 5,
+          "distance": 70.5242
+        },
+        {
+          "step": 648,
+          "route": 5,
+          "distance": 66.436
+        },
+        {
+          "step": 672,
+          "route": 5,
+          "distance": 54.7372
+        },
+        {
+          "step": 696,
+          "route": 5,
+          "distance": 65.54679999999998
+        }
+      ]
+    }
+  ]
+}

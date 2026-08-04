@@ -1,0 +1,12 @@
+{
+  "games": 6,
+  "wins": 6,
+  "ties": 0,
+  "losses": 0,
+  "done_rate": 1.0,
+  "mean_candidate_reward": 135262.83333333334,
+  "mean_score_diff": 131773.83333333334,
+  "worst_p99_ms": 1.5711100000000005,
+  "runtime_max_ms": 2.1136,
+  "over_1000ms": 0
+}

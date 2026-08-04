@@ -1,0 +1,20 @@
+[
+  {
+    "candidate": "top5_replaced_v18",
+    "opponent": "original_v18",
+    "games": 12,
+    "mean_cash": 125111.25,
+    "mean_opponent_cash": 124707.16666666667,
+    "mean_margin": 404.0833333333333,
+    "min_cash": 103410.0,
+    "wins": 10,
+    "ties": 0,
+    "losses": 2,
+    "win_rate": 0.8333333333333334,
+    "done_rate": 1,
+    "agent_errors": 0,
+    "max_route_switches": 2,
+    "max_p99_ms": 0.077125,
+    "max_runtime_ms": 131.151083
+  }
+]

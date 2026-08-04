@@ -1,0 +1,1 @@
+conda activate D:\kg311

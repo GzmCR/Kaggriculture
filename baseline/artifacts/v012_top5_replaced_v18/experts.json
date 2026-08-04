@@ -1,0 +1,22 @@
+{
+  "board_route": "automatylicza",
+  "market_experts": [
+    "mohit",
+    "automatylicza",
+    "manual_player",
+    "navazsh_fathi",
+    "lucien_de_rubempre"
+  ],
+  "seeds": [
+    17,
+    42,
+    2026,
+    217,
+    317,
+    733
+  ],
+  "seats": [
+    0,
+    1
+  ]
+}

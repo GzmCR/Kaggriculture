@@ -1,0 +1,37 @@
+[
+  {
+    "name": "mohit",
+    "file": "89817349",
+    "source_seat": 0,
+    "terminal_cash_in_source_replay": 152356.0,
+    "action_count": 720
+  },
+  {
+    "name": "automatylicza",
+    "file": "89830916",
+    "source_seat": 0,
+    "terminal_cash_in_source_replay": 145283.0,
+    "action_count": 720
+  },
+  {
+    "name": "manual_player",
+    "file": "89820316",
+    "source_seat": 0,
+    "terminal_cash_in_source_replay": 136594.0,
+    "action_count": 720
+  },
+  {
+    "name": "navazsh_fathi",
+    "file": "89830910",
+    "source_seat": 0,
+    "terminal_cash_in_source_replay": 137767.0,
+    "action_count": 720
+  },
+  {
+    "name": "lucien_de_rubempre",
+    "file": "89822684",
+    "source_seat": 1,
+    "terminal_cash_in_source_replay": 149681.0,
+    "action_count": 720
+  }
+]

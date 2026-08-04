@@ -1,0 +1,14 @@
+{
+  "main": "/Users/guoziming/Desktop/\u6bd4\u8d5b/Kaggriculture/baseline/history/v012_top5_replaced_v18/main.py",
+  "archive": "/Users/guoziming/Desktop/\u6bd4\u8d5b/Kaggriculture/baseline/artifacts/v012_top5_replaced_v18/submission.tar.gz",
+  "board_route": "automatylicza",
+  "market_experts": [
+    "mohit",
+    "automatylicza",
+    "manual_player",
+    "navazsh_fathi",
+    "lucien_de_rubempre"
+  ],
+  "self_contained": true,
+  "depends_on_local_logs_at_runtime": false
+}
