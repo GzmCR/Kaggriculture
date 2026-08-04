@@ -1,0 +1,75 @@
+{
+  "winner": null,
+  "control": {
+    "mean_cash": 149223.11904761905,
+    "min_cash": 103313.0,
+    "games": 42
+  },
+  "candidates": {
+    "automatylicza_overlay_combined": {
+      "mean_cash": 149109.16666666666,
+      "min_cash": 103313.0,
+      "mean_gain_pct": -0.0007636375762661851,
+      "min_cash_ratio": 1.0,
+      "mean_direct_margin_vs_v012": 0.0,
+      "all_done": true,
+      "agent_errors": 0,
+      "hand_shape_mismatches": 630,
+      "max_p99_ms": 0.2403,
+      "win_rate_vs_v012": 0.5,
+      "passes": false
+    },
+    "crossover_day10_05_soil_v25": {
+      "mean_cash": 147363.19047619047,
+      "min_cash": 103161.0,
+      "mean_gain_pct": -0.012464077840612986,
+      "min_cash_ratio": 0.9985287427526062,
+      "mean_direct_margin_vs_v012": -894.5,
+      "all_done": true,
+      "agent_errors": 0,
+      "hand_shape_mismatches": 1554,
+      "max_p99_ms": 0.1613,
+      "win_rate_vs_v012": 0.16666666666666666,
+      "passes": false
+    },
+    "raw_recovered_alias_13_soil_v25": {
+      "mean_cash": 148694.02380952382,
+      "min_cash": 103161.0,
+      "mean_gain_pct": -0.0035456653196371812,
+      "min_cash_ratio": 0.9985287427526062,
+      "mean_direct_margin_vs_v012": -894.5,
+      "all_done": true,
+      "agent_errors": 0,
+      "hand_shape_mismatches": 1428,
+      "max_p99_ms": 0.2999,
+      "win_rate_vs_v012": 0.16666666666666666,
+      "passes": false
+    },
+    "raw_kaito_builder": {
+      "mean_cash": 20223.690476190477,
+      "min_cash": 14778.0,
+      "mean_gain_pct": -0.8644734769969737,
+      "min_cash_ratio": 0.14304105001306708,
+      "mean_direct_margin_vs_v012": -162192.66666666666,
+      "all_done": true,
+      "agent_errors": 0,
+      "hand_shape_mismatches": 8616,
+      "max_p99_ms": 0.4739,
+      "win_rate_vs_v012": 0.0,
+      "passes": false
+    },
+    "automatylicza_overlay_none": {
+      "mean_cash": 148395.2857142857,
+      "min_cash": 103313.0,
+      "mean_gain_pct": -0.005547621163642713,
+      "min_cash_ratio": 1.0,
+      "mean_direct_margin_vs_v012": 0.0,
+      "all_done": true,
+      "agent_errors": 0,
+      "hand_shape_mismatches": 630,
+      "max_p99_ms": 0.2226,
+      "win_rate_vs_v012": 0.5,
+      "passes": false
+    }
+  }
+}

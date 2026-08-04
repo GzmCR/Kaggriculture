@@ -1,0 +1,93 @@
+{
+  "replay_directory": "C:\\Users\\Administrator\\Desktop\\code\\kaggriculture\\log\\2026-08-04",
+  "raw_replay_files": [],
+  "fallback_used": true,
+  "fallback_routes": [
+    "mohit",
+    "automatylicza",
+    "manual_player",
+    "navazsh_fathi",
+    "lucien_de_rubempre",
+    "soil_v25",
+    "kaito_builder"
+  ],
+  "source_route_count": 7,
+  "source_routes": [
+    {
+      "name": "mohit",
+      "kind": "v012_embedded",
+      "file": "",
+      "seat": null,
+      "terminal_cash": null
+    },
+    {
+      "name": "automatylicza",
+      "kind": "v012_embedded",
+      "file": "",
+      "seat": null,
+      "terminal_cash": null
+    },
+    {
+      "name": "manual_player",
+      "kind": "v012_embedded",
+      "file": "",
+      "seat": null,
+      "terminal_cash": null
+    },
+    {
+      "name": "navazsh_fathi",
+      "kind": "v012_embedded",
+      "file": "",
+      "seat": null,
+      "terminal_cash": null
+    },
+    {
+      "name": "lucien_de_rubempre",
+      "kind": "v012_embedded",
+      "file": "",
+      "seat": null,
+      "terminal_cash": null
+    },
+    {
+      "name": "soil_v25",
+      "kind": "embedded_notebook",
+      "file": "kaggriculture-adaptive-replay-agent.ipynb",
+      "seat": null,
+      "terminal_cash": null
+    },
+    {
+      "name": "kaito_builder",
+      "kind": "embedded_notebook",
+      "file": "kaggriculture-agent-builder.ipynb",
+      "seat": null,
+      "terminal_cash": null
+    }
+  ],
+  "candidate_count": 24,
+  "candidate_names": [
+    "raw_mohit",
+    "raw_automatylicza",
+    "raw_manual_player",
+    "raw_navazsh_fathi",
+    "raw_lucien_de_rubempre",
+    "raw_soil_v25",
+    "raw_kaito_builder",
+    "raw_recovered_alias_08_mohit",
+    "raw_recovered_alias_09_automatylicza",
+    "raw_recovered_alias_10_manual_player",
+    "raw_recovered_alias_11_navazsh_fathi",
+    "raw_recovered_alias_12_lucien_de_rubempre",
+    "raw_recovered_alias_13_soil_v25",
+    "raw_recovered_alias_14_kaito_builder",
+    "raw_recovered_alias_15_mohit",
+    "crossover_day10_01_mohit",
+    "crossover_day10_02_manual_player",
+    "crossover_day10_03_navazsh_fathi",
+    "crossover_day10_04_lucien_de_rubempre",
+    "crossover_day10_05_soil_v25",
+    "automatylicza_overlay_none",
+    "automatylicza_overlay_urgent_maintenance",
+    "automatylicza_overlay_terminal_storage",
+    "automatylicza_overlay_combined"
+  ]
+}
