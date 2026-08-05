@@ -1,0 +1,59 @@
+episode,seat,team,cash,opponent_cash,win,score_labels,score_bands,dominant_style,max_hands,land_days,final_crops,final_cows,final_sheep,final_weeds
+90104951,0,lucaskna,109349.0,103256.0,1,3081,L4,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,20
+90104951,1,somewhere after,103256.0,109349.0,0,3081,L4,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,19
+90106933,0,Tianfu Wang (王天夫),111828.0,116801.0,0,2409,L3,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,22
+90106933,1,Devaansh Pathak,116801.0,111828.0,1,2409,L3,standard_converged,0,"{""NE"": 8, ""SW"": 11}",12,8,6,14
+90106946,0,Rayk Kretzschmar,99698.0,100723.0,0,2538,L3,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,20
+90106946,1,test_money,100723.0,99698.0,1,2538,L3,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,19
+90108324,0,Renji Starfall,161136.0,162193.0,0,2590,L3,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,7,5,19
+90108324,1,Narendra Sirvi,162193.0,161136.0,1,2590,L3,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,19
+90113773,0,kreiack,81234.0,87696.0,0,1787,L1,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,4,22
+90113773,1,Aurora wy,87696.0,81234.0,1,1787,L1,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,20
+90117191,0,Juwon Kweon,100368.0,99769.0,1,1909,L1,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,19
+90117191,1,Yaroslav,99769.0,100368.0,0,1909,L1,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,19
+90118542,0,somewhere after,106767.0,105960.0,1,2926,L4,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,19
+90118542,1,Lucien de Rubempre,105960.0,106767.0,0,2926,L4,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,20
+90121273,0,Le Viet,149742.0,149376.0,1,"2882,2924",L4,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,19
+90121273,1,Dennis Gioche,149376.0,149742.0,0,"2882,2924",L4,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,21
+90122627,0,bcTiann,120095.0,116192.0,1,2667,L3,standard_converged,0,"{""NE"": 8, ""SW"": 11}",6,8,5,20
+90122627,1,Kyle,116192.0,120095.0,0,2667,L3,standard_converged,0,"{""NE"": 8, ""SW"": 11}",6,8,5,24
+90123152,0,Zerabyte_X,145338.0,145907.0,0,1815,L1,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,4,5,21
+90123152,1,Ben Hamilton,145907.0,145338.0,1,1815,L1,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,19
+90127343,0,today,46152.0,169578.0,0,2223,L2,standard_converged,0,"{""NE"": 11}",2,6,0,11
+90127343,1,Syed Shayan Ali Shah,169578.0,46152.0,1,2223,L2,reduced_ne_only,0,"{""NE"": 8, ""SW"": 11}",7,8,5,20
+90128745,0,senxichong,118390.0,114463.0,1,1735,L1,standard_converged,0,"{""NE"": 8, ""SW"": 11}",12,8,6,14
+90128745,1,Mobzya,114463.0,118390.0,0,1735,L1,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,21
+90128767,0,sash,127679.0,125695.0,1,2891,L4,standard_converged,0,"{""NE"": 8, ""SW"": 11}",13,8,6,8
+90128767,1,Kun Zhang,125695.0,127679.0,0,2891,L4,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,19
+90128775,0,Rudolf HOUNLETE,158488.0,159473.0,0,2720,L3,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,19
+90128775,1,thwaitsusa2,159473.0,158488.0,1,2720,L3,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,19
+90128778,0,Aastik Rajan15,158037.0,154206.0,1,1639,L1,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,7,5,20
+90128778,1,Will Rice,154206.0,158037.0,0,1639,L1,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,4,5,21
+90129386,0,Bharath Varma,131032.0,141277.0,0,1950,L1,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,7,5,21
+90129386,1,Spandan Mhapsekar,141277.0,131032.0,1,1950,L1,standard_converged,0,"{""NE"": 8, ""SW"": 11}",6,8,5,21
+90130062,0,Chhaya Awasthi,101980.0,108477.0,0,1681,L1,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,21
+90130062,1,ych~sun,108477.0,101980.0,1,1681,L1,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,20
+90130129,0,roma,134449.0,133479.0,1,2756,L3,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,19
+90130129,1,thwaitsusa2,133479.0,134449.0,0,2756,L3,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,20
+90130741,0,Ben Hamilton,178014.0,48125.0,1,2173,L2,reduced_ne_only,0,"{""NE"": 8, ""SW"": 11}",7,8,5,19
+90130741,1,Tomoki Hirose,48125.0,178014.0,0,2173,L2,standard_converged,0,"{""NE"": 11}",2,6,0,12
+90130765,0,Mikhail_Komkin,104684.0,124951.0,0,1881,L1,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,9
+90130765,1,GUAM,124951.0,104684.0,1,1881,L1,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,19
+90130806,0,안녕하세요이세입니다잘부탁드립니다,156264.0,153888.0,1,2676,L3,standard_converged,0,"{""NE"": 8, ""SW"": 11}",6,8,5,20
+90130806,1,Mengfei Li,153888.0,156264.0,0,2676,L3,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,21
+90130811,0,lucaskna,110830.0,106045.0,1,"2907,2972",L4,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,19
+90130811,1,Ibad Ur Rahman,106045.0,110830.0,0,"2907,2972",L4,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,20
+90131482,0,Amitesh Chaudhary,139508.0,145751.0,0,2378,L2,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,20
+90131482,1,Haramball forever!,145751.0,139508.0,1,2378,L2,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,19
+90132097,0,Aleksei Ponomarev,122840.0,124192.0,0,2128,L2,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,19
+90132097,1,tong00,124192.0,122840.0,1,2128,L2,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,19
+90132099,0,Sayandeep Ghosh,184574.0,52754.0,1,2443,L3,reduced_ne_only,0,"{""NE"": 8, ""SW"": 11}",7,8,5,21
+90132099,1,Tai Tien Ta,52754.0,184574.0,0,2443,L3,standard_converged,0,"{""NE"": 11}",2,6,0,11
+90132830,0,Roshan Singh,156812.0,153163.0,1,2019,L2,standard_converged,0,"{""NE"": 8, ""SW"": 11}",5,8,5,20
+90132830,1,cracker_1_war,153163.0,156812.0,0,2019,L2,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,20
+90133493,0,Ben Hamilton,140773.0,138595.0,1,2317,L2,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,20
+90133493,1,Arya Mazloomi,138595.0,140773.0,0,2317,L2,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,22
+90133507,0,MilanJoshi,144102.0,149435.0,0,2113,L2,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,19
+90133507,1,Roshan Singh,149435.0,144102.0,1,2113,L2,standard_converged,0,"{""NE"": 8, ""SW"": 11}",5,8,5,20
+90133550,0,Jesse Ferguson,119303.0,119001.0,1,2286,L2,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,19
+90133550,1,SeshuRaju 🧘‍♂️,119001.0,119303.0,0,2286,L2,standard_converged,0,"{""NE"": 8, ""SW"": 11}",7,8,5,21

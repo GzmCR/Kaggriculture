@@ -1,0 +1,209 @@
+{
+  "control": "control_v012",
+  "control_mean_money": 131879.1724137931,
+  "control_min_money": 79996.0,
+  "control_win_rate": 0.2413793103448276,
+  "bands_are_episode_level": true,
+  "variants": {
+    "control_v018": {
+      "pass": false,
+      "checks": {
+        "all_done": true,
+        "no_errors": true,
+        "no_new_invalid_vs_control": true,
+        "mean_not_lower": true,
+        "min_not_below_95pct": true,
+        "at_least_60pct_targets_not_lower": false,
+        "all_score_bands_within_5pct": true,
+        "field_unchanged": true,
+        "p99_under_1000ms": true
+      },
+      "win_rate_not_lower_diagnostic": false,
+      "games": 58,
+      "mean_money": 131935.91379310345,
+      "mean_margin": 12044.724137931034,
+      "wins": 13,
+      "nonnegative_target_fraction": 0.46551724137931033,
+      "score_bands": {
+        "L1": {
+          "games": 16,
+          "control_mean_money": 121105.75,
+          "candidate_mean_money": 121061.75,
+          "relative_to_control": 0.9996366811650149,
+          "pass": true
+        },
+        "L2": {
+          "games": 16,
+          "control_mean_money": 140260.9375,
+          "candidate_mean_money": 140185.125,
+          "relative_to_control": 0.9994594895674357,
+          "pass": true
+        },
+        "L3": {
+          "games": 16,
+          "control_mean_money": 138424.4375,
+          "candidate_mean_money": 138459.3125,
+          "relative_to_control": 1.000251942508345,
+          "pass": true
+        },
+        "L4": {
+          "games": 10,
+          "control_mean_money": 125233.4,
+          "candidate_mean_money": 125698.4,
+          "relative_to_control": 1.0037130669613696,
+          "pass": true
+        }
+      }
+    },
+    "v019a": {
+      "pass": true,
+      "checks": {
+        "all_done": true,
+        "no_errors": true,
+        "no_new_invalid_vs_control": true,
+        "mean_not_lower": true,
+        "min_not_below_95pct": true,
+        "at_least_60pct_targets_not_lower": true,
+        "all_score_bands_within_5pct": true,
+        "field_unchanged": true,
+        "p99_under_1000ms": true
+      },
+      "win_rate_not_lower_diagnostic": false,
+      "games": 58,
+      "mean_money": 132809.0344827586,
+      "mean_margin": 13229.551724137931,
+      "wins": 12,
+      "nonnegative_target_fraction": 0.896551724137931,
+      "score_bands": {
+        "L1": {
+          "games": 16,
+          "control_mean_money": 121105.75,
+          "candidate_mean_money": 121583.0,
+          "relative_to_control": 1.003940770772651,
+          "pass": true
+        },
+        "L2": {
+          "games": 16,
+          "control_mean_money": 140260.9375,
+          "candidate_mean_money": 141476.0625,
+          "relative_to_control": 1.0086633172546704,
+          "pass": true
+        },
+        "L3": {
+          "games": 16,
+          "control_mean_money": 138424.4375,
+          "candidate_mean_money": 139220.8125,
+          "relative_to_control": 1.0057531387837497,
+          "pass": true
+        },
+        "L4": {
+          "games": 10,
+          "control_mean_money": 125233.4,
+          "candidate_mean_money": 126644.6,
+          "relative_to_control": 1.0112685593459894,
+          "pass": true
+        }
+      }
+    },
+    "v019b": {
+      "pass": true,
+      "checks": {
+        "all_done": true,
+        "no_errors": true,
+        "no_new_invalid_vs_control": true,
+        "mean_not_lower": true,
+        "min_not_below_95pct": true,
+        "at_least_60pct_targets_not_lower": true,
+        "all_score_bands_within_5pct": true,
+        "field_unchanged": true,
+        "p99_under_1000ms": true
+      },
+      "win_rate_not_lower_diagnostic": false,
+      "games": 58,
+      "mean_money": 133247.77586206896,
+      "mean_margin": 13816.344827586207,
+      "wins": 13,
+      "nonnegative_target_fraction": 0.8620689655172413,
+      "score_bands": {
+        "L1": {
+          "games": 16,
+          "control_mean_money": 121105.75,
+          "candidate_mean_money": 121584.8125,
+          "relative_to_control": 1.0039557370314787,
+          "pass": true
+        },
+        "L2": {
+          "games": 16,
+          "control_mean_money": 140260.9375,
+          "candidate_mean_money": 141896.625,
+          "relative_to_control": 1.0116617465215503,
+          "pass": true
+        },
+        "L3": {
+          "games": 16,
+          "control_mean_money": 138424.4375,
+          "candidate_mean_money": 139650.625,
+          "relative_to_control": 1.0088581721706473,
+          "pass": true
+        },
+        "L4": {
+          "games": 10,
+          "control_mean_money": 125233.4,
+          "candidate_mean_money": 127825.8,
+          "relative_to_control": 1.0207005479368922,
+          "pass": true
+        }
+      }
+    },
+    "v019c": {
+      "pass": true,
+      "checks": {
+        "all_done": true,
+        "no_errors": true,
+        "no_new_invalid_vs_control": true,
+        "mean_not_lower": true,
+        "min_not_below_95pct": true,
+        "at_least_60pct_targets_not_lower": true,
+        "all_score_bands_within_5pct": true,
+        "field_unchanged": true,
+        "p99_under_1000ms": true
+      },
+      "win_rate_not_lower_diagnostic": true,
+      "games": 58,
+      "mean_money": 131883.10344827586,
+      "mean_margin": 12856.327586206897,
+      "wins": 14,
+      "nonnegative_target_fraction": 1.0,
+      "score_bands": {
+        "L1": {
+          "games": 16,
+          "control_mean_money": 121105.75,
+          "candidate_mean_money": 121105.75,
+          "relative_to_control": 1.0,
+          "pass": true
+        },
+        "L2": {
+          "games": 16,
+          "control_mean_money": 140260.9375,
+          "candidate_mean_money": 140270.1875,
+          "relative_to_control": 1.0000659485111456,
+          "pass": true
+        },
+        "L3": {
+          "games": 16,
+          "control_mean_money": 138424.4375,
+          "candidate_mean_money": 138429.4375,
+          "relative_to_control": 1.0000361207897268,
+          "pass": true
+        },
+        "L4": {
+          "games": 10,
+          "control_mean_money": 125233.4,
+          "candidate_mean_money": 125233.4,
+          "relative_to_control": 1.0,
+          "pass": true
+        }
+      }
+    }
+  }
+}

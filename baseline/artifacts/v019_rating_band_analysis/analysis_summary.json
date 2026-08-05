@@ -1,0 +1,86 @@
+{
+  "replay_directory": "/Users/guoziming/Desktop/比赛/kaggriculture/log/2026-08-05",
+  "episodes": 29,
+  "files": 31,
+  "exact_duplicate_groups": [
+    {
+      "episode": "90121273",
+      "labels": [
+        2882,
+        2924
+      ]
+    },
+    {
+      "episode": "90130811",
+      "labels": [
+        2907,
+        2972
+      ]
+    }
+  ],
+  "bands": {
+    "L1": {
+      "low": 1600,
+      "high": 2000
+    },
+    "L2": {
+      "low": 2000,
+      "high": 2400
+    },
+    "L3": {
+      "low": 2400,
+      "high": 2800
+    },
+    "L4": {
+      "low": 2800,
+      "high": 10000
+    }
+  },
+  "band_summary": {
+    "L1": {
+      "episodes": 8,
+      "side_cash_mean": 119863.0625,
+      "style_counts": {
+        "standard_converged": 313,
+        "high_worker_maintenance": 7
+      }
+    },
+    "L2": {
+      "episodes": 8,
+      "side_cash_mean": 130959.0,
+      "style_counts": {
+        "standard_converged": 280,
+        "reduced_ne_only": 40
+      }
+    },
+    "L3": {
+      "episodes": 8,
+      "side_cash_mean": 132627.1875,
+      "style_counts": {
+        "standard_converged": 293,
+        "high_worker_maintenance": 7,
+        "reduced_ne_only": 20
+      }
+    },
+    "L4": {
+      "episodes": 5,
+      "side_cash_mean": 119469.9,
+      "style_counts": {
+        "standard_converged": 192,
+        "high_worker_maintenance": 8
+      }
+    }
+  },
+  "validation": {
+    "episodes": 29,
+    "files": 31,
+    "parse_errors": 0,
+    "price_checks": 4740,
+    "price_mismatches": 0
+  },
+  "notes": [
+    "Score labels are episode-level because the score-to-TeamName mapping is absent.",
+    "Requested SELL quantities are not treated as actual sales; transactions_by_turn.csv uses shadow lockstep fills.",
+    "No runtime feature uses TeamNames, filenames, ratings, or opponent private state."
+  ]
+}
