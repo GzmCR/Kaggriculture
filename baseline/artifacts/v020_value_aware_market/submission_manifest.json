@@ -1,0 +1,13 @@
+{
+  "main": "C:\\Users\\Administrator\\Desktop\\code\\kaggriculture\\baseline\\artifacts\\v020_value_aware_market\\main.py",
+  "history_main": "C:\\Users\\Administrator\\Desktop\\code\\kaggriculture\\baseline\\history\\v020_value_aware_market\\main.py",
+  "archive": "C:\\Users\\Administrator\\Desktop\\code\\kaggriculture\\baseline\\artifacts\\v020_value_aware_market\\submission.tar.gz",
+  "base": "baseline/history/v012_top5_replaced_v18/main.py",
+  "variants": {
+    "balanced": "C:\\Users\\Administrator\\Desktop\\code\\kaggriculture\\baseline\\artifacts\\v020_value_aware_market\\v020_balanced.py",
+    "sensitive": "C:\\Users\\Administrator\\Desktop\\code\\kaggriculture\\baseline\\artifacts\\v020_value_aware_market\\v020_sensitive.py",
+    "conservative": "C:\\Users\\Administrator\\Desktop\\code\\kaggriculture\\baseline\\artifacts\\v020_value_aware_market\\v020_conservative.py"
+  },
+  "field_route_unchanged": true,
+  "self_contained": true
+}

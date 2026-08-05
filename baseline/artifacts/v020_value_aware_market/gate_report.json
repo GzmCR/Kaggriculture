@@ -1,0 +1,27 @@
+{
+  "replay_files": 10,
+  "matrix_games": 192,
+  "control_mean_money": 145348.83333333334,
+  "control_min_money": 101598.0,
+  "variants": {
+    "conservative": {
+      "checks": {
+        "all_done": true,
+        "no_new_errors_or_invalid": true,
+        "mean_cash_not_lower": true,
+        "min_cash_not_below_97pct": true,
+        "win_rate_not_lower": false,
+        "p99_under_1000ms": true,
+        "field_unchanged": true,
+        "nonpremium_unchanged": true,
+        "replay_mean_delta_nonnegative": true
+      },
+      "pass": false,
+      "mean_money": 145700.59375,
+      "min_money": 102645.0,
+      "replay_mean_delta": 131.7,
+      "replay_improved_games": 8,
+      "replay_games": 10
+    }
+  }
+}
