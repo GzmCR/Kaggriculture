@@ -1,0 +1,72 @@
+{
+  "variants": {
+    "value_only": {
+      "pass": false,
+      "checks": {
+        "all_done": true,
+        "no_new_errors_or_invalid": true,
+        "mean_cash_plus_1pct": false,
+        "min_cash_at_least_90pct": true,
+        "win_rate_not_lower": true,
+        "hamburger_frontier_at_least_90pct": true,
+        "p99_under_1000ms": true,
+        "field_unchanged": true,
+        "nonpremium_unchanged": true,
+        "replay_mean_delta_nonnegative": true
+      },
+      "mean_money": 133679.88333333333,
+      "min_money": 101376.0,
+      "wins": 55,
+      "games": 60,
+      "replay_mean_delta": 472.0,
+      "replay_improved_games": 9,
+      "replay_games": 9
+    },
+    "collision_hedged": {
+      "pass": false,
+      "checks": {
+        "all_done": true,
+        "no_new_errors_or_invalid": true,
+        "mean_cash_plus_1pct": false,
+        "min_cash_at_least_90pct": true,
+        "win_rate_not_lower": false,
+        "hamburger_frontier_at_least_90pct": true,
+        "p99_under_1000ms": true,
+        "field_unchanged": true,
+        "nonpremium_unchanged": true,
+        "replay_mean_delta_nonnegative": false
+      },
+      "mean_money": 133960.61666666667,
+      "min_money": 102114.0,
+      "wins": 45,
+      "games": 60,
+      "replay_mean_delta": -381.1111111111111,
+      "replay_improved_games": 5,
+      "replay_games": 9
+    },
+    "aggressive_value": {
+      "pass": false,
+      "checks": {
+        "all_done": true,
+        "no_new_errors_or_invalid": true,
+        "mean_cash_plus_1pct": false,
+        "min_cash_at_least_90pct": true,
+        "win_rate_not_lower": true,
+        "hamburger_frontier_at_least_90pct": true,
+        "p99_under_1000ms": true,
+        "field_unchanged": true,
+        "nonpremium_unchanged": true,
+        "replay_mean_delta_nonnegative": true
+      },
+      "mean_money": 133679.88333333333,
+      "min_money": 101376.0,
+      "wins": 55,
+      "games": 60,
+      "replay_mean_delta": 472.0,
+      "replay_improved_games": 9,
+      "replay_games": 9
+    }
+  },
+  "control_mean_money": 133675.28333333333,
+  "control_min_money": 101598.0
+}

@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "default": {
+      "checks": {
+        "all_done": true,
+        "no_new_errors_or_invalid": true,
+        "mean_cash_not_lower": true,
+        "min_cash_not_below_97pct": true,
+        "win_rate_not_lower": true,
+        "p99_under_1000ms": true,
+        "field_unchanged": true,
+        "nonpremium_unchanged": true,
+        "replay_mean_delta_nonnegative": true
+      },
+      "pass": true,
+      "mean_money": 133885.93333333335,
+      "min_money": 101552.0,
+      "replay_mean_delta": 621.7777777777778,
+      "replay_improved_games": 9,
+      "replay_games": 9
+    }
+  },
+  "control_mean_money": 133675.28333333333,
+  "control_min_money": 101598.0
+}

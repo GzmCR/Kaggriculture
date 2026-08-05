@@ -1,0 +1,122 @@
+{
+  "winner": null,
+  "control": {
+    "games": 60,
+    "mean_cash": 133675.28333333333,
+    "min_cash": 101598.0
+  },
+  "candidates": {
+    "macro_044_13_8_6_34_10_9": {
+      "games": 60,
+      "mean_cash": 77215.01666666666,
+      "min_cash": 60103.0,
+      "mean_gain_pct_vs_control": -0.4223687824612803,
+      "min_cash_ratio_vs_control": 0.5915766058386976,
+      "mean_margin_vs_v012": -79723.33333333333,
+      "win_rate_vs_v012": 0.0,
+      "all_done": true,
+      "agent_errors": 0,
+      "invalid_actions": 0,
+      "max_p99_ms": 5.728916,
+      "passes": false
+    },
+    "macro_021_13_8_6_34_12_9": {
+      "games": 60,
+      "mean_cash": 85799.68333333333,
+      "min_cash": 73205.0,
+      "mean_gain_pct_vs_control": -0.3581484834456432,
+      "min_cash_ratio_vs_control": 0.7205358373196322,
+      "mean_margin_vs_v012": -74525.75,
+      "win_rate_vs_v012": 0.0,
+      "all_done": true,
+      "agent_errors": 0,
+      "invalid_actions": 0,
+      "max_p99_ms": 5.619167,
+      "passes": false
+    },
+    "macro_022_13_8_6_34_14_9": {
+      "games": 60,
+      "mean_cash": 85799.68333333333,
+      "min_cash": 73205.0,
+      "mean_gain_pct_vs_control": -0.3581484834456432,
+      "min_cash_ratio_vs_control": 0.7205358373196322,
+      "mean_margin_vs_v012": -74525.75,
+      "win_rate_vs_v012": 0.0,
+      "all_done": true,
+      "agent_errors": 0,
+      "invalid_actions": 0,
+      "max_p99_ms": 5.583666,
+      "passes": false
+    },
+    "macro_075_13_8_6_34_12_9": {
+      "games": 60,
+      "mean_cash": 85799.68333333333,
+      "min_cash": 73205.0,
+      "mean_gain_pct_vs_control": -0.3581484834456432,
+      "min_cash_ratio_vs_control": 0.7205358373196322,
+      "mean_margin_vs_v012": -74525.75,
+      "win_rate_vs_v012": 0.0,
+      "all_done": true,
+      "agent_errors": 0,
+      "invalid_actions": 0,
+      "max_p99_ms": 6.297917,
+      "passes": false
+    },
+    "macro_045_13_8_6_34_10_9": {
+      "games": 60,
+      "mean_cash": 84556.96666666666,
+      "min_cash": 69805.0,
+      "mean_gain_pct_vs_control": -0.3674450163250075,
+      "min_cash_ratio_vs_control": 0.6870706116262131,
+      "mean_margin_vs_v012": -75677.25,
+      "win_rate_vs_v012": 0.0,
+      "all_done": true,
+      "agent_errors": 0,
+      "invalid_actions": 0,
+      "max_p99_ms": 6.974125,
+      "passes": false
+    },
+    "macro_028_13_8_6_34_10_9": {
+      "games": 60,
+      "mean_cash": 80618.33333333333,
+      "min_cash": 64041.0,
+      "mean_gain_pct_vs_control": -0.3969092017384914,
+      "min_cash_ratio_vs_control": 0.6303372113624284,
+      "mean_margin_vs_v012": -74701.08333333333,
+      "win_rate_vs_v012": 0.0,
+      "all_done": true,
+      "agent_errors": 0,
+      "invalid_actions": 0,
+      "max_p99_ms": 6.842875,
+      "passes": false
+    },
+    "macro_090_13_9_6_34_10_9": {
+      "games": 60,
+      "mean_cash": 80618.33333333333,
+      "min_cash": 64041.0,
+      "mean_gain_pct_vs_control": -0.3969092017384914,
+      "min_cash_ratio_vs_control": 0.6303372113624284,
+      "mean_margin_vs_v012": -74701.08333333333,
+      "win_rate_vs_v012": 0.0,
+      "all_done": true,
+      "agent_errors": 0,
+      "invalid_actions": 0,
+      "max_p99_ms": 7.31,
+      "passes": false
+    },
+    "macro_063_13_8_6_34_10_9": {
+      "games": 60,
+      "mean_cash": 86704.15,
+      "min_cash": 69031.0,
+      "mean_gain_pct_vs_control": -0.3513823360763402,
+      "min_cash_ratio_vs_control": 0.6794523514242407,
+      "mean_margin_vs_v012": -75948.5,
+      "win_rate_vs_v012": 0.0,
+      "all_done": true,
+      "agent_errors": 0,
+      "invalid_actions": 0,
+      "max_p99_ms": 5.707875,
+      "passes": false
+    }
+  }
+}

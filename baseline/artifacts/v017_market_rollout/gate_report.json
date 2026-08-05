@@ -1,0 +1,76 @@
+{
+  "control": "control_v015a",
+  "variants": {
+    "curve_only": {
+      "pass": false,
+      "checks": {
+        "all_done": true,
+        "no_new_errors_or_invalid": true,
+        "mean_cash_plus_0_5pct": false,
+        "min_cash_at_least_95pct": true,
+        "win_rate_not_lower": false,
+        "hamburger_frontier_at_least_95pct": true,
+        "replay_mean_delta_nonnegative": false,
+        "replay_at_least_6_not_lower": false,
+        "p99_under_1000ms": true,
+        "field_unchanged": true,
+        "nonpremium_unchanged": true
+      },
+      "mean_money": 133605.68333333332,
+      "min_money": 102999.0,
+      "wins": 43,
+      "games": 60,
+      "replay_mean_delta": -932.3333333333334,
+      "replay_not_lower": 0,
+      "replay_games": 9
+    },
+    "opponent_aware": {
+      "pass": false,
+      "checks": {
+        "all_done": true,
+        "no_new_errors_or_invalid": true,
+        "mean_cash_plus_0_5pct": false,
+        "min_cash_at_least_95pct": true,
+        "win_rate_not_lower": false,
+        "hamburger_frontier_at_least_95pct": true,
+        "replay_mean_delta_nonnegative": false,
+        "replay_at_least_6_not_lower": false,
+        "p99_under_1000ms": true,
+        "field_unchanged": true,
+        "nonpremium_unchanged": true
+      },
+      "mean_money": 133986.78333333333,
+      "min_money": 102945.0,
+      "wins": 54,
+      "games": 60,
+      "replay_mean_delta": -126.55555555555556,
+      "replay_not_lower": 5,
+      "replay_games": 9
+    },
+    "robust_quota": {
+      "pass": false,
+      "checks": {
+        "all_done": true,
+        "no_new_errors_or_invalid": true,
+        "mean_cash_plus_0_5pct": false,
+        "min_cash_at_least_95pct": true,
+        "win_rate_not_lower": false,
+        "hamburger_frontier_at_least_95pct": true,
+        "replay_mean_delta_nonnegative": false,
+        "replay_at_least_6_not_lower": false,
+        "p99_under_1000ms": true,
+        "field_unchanged": true,
+        "nonpremium_unchanged": true
+      },
+      "mean_money": 133706.15,
+      "min_money": 102650.0,
+      "wins": 51,
+      "games": 60,
+      "replay_mean_delta": -144.55555555555554,
+      "replay_not_lower": 2,
+      "replay_games": 9
+    }
+  },
+  "control_mean_money": 133885.93333333332,
+  "control_min_money": 101552.0
+}

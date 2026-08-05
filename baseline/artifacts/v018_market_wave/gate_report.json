@@ -1,0 +1,37 @@
+{
+  "control": "control_v015a",
+  "matrix": "not_run_after_replay_gate_failure",
+  "replay_games": 9,
+  "variants": {
+    "fixed_wave": {
+      "pass": false,
+      "replay_mean_delta": -794.0,
+      "replay_not_lower": 0,
+      "replay_games": 9,
+      "checks": {
+        "replay_mean_delta_nonnegative": false,
+        "replay_at_least_6_not_lower": false
+      }
+    },
+    "daily_mpc": {
+      "pass": false,
+      "replay_mean_delta": -2597.1,
+      "replay_not_lower": 0,
+      "replay_games": 9,
+      "checks": {
+        "replay_mean_delta_nonnegative": false,
+        "replay_at_least_6_not_lower": false
+      }
+    },
+    "robust_mpc": {
+      "pass": false,
+      "replay_mean_delta": -2426.6,
+      "replay_not_lower": 0,
+      "replay_games": 9,
+      "checks": {
+        "replay_mean_delta_nonnegative": false,
+        "replay_at_least_6_not_lower": false
+      }
+    }
+  }
+}
