@@ -1,0 +1,51 @@
+{
+  "control": {
+    "games": 4,
+    "mean_money": 145286.25,
+    "min_money": 103682.0,
+    "wins": 4,
+    "win_rate": 1.0
+  },
+  "candidates": {
+    "v022c_control": {
+      "games": 4,
+      "mean_money": 145286.25,
+      "min_money": 103682.0,
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "win_rate": 1.0,
+      "p99_ms": 0.252875,
+      "checks": {
+        "all_done": true,
+        "no_errors": true,
+        "no_invalid": true,
+        "mean_cash_at_least_99_5pct_control": true,
+        "min_cash_at_least_97pct_control": true,
+        "win_rate_not_lower": true,
+        "p99_under_1000ms": true
+      },
+      "passed": true
+    },
+    "v022e_adaptive_recovery": {
+      "games": 4,
+      "mean_money": 145286.25,
+      "min_money": 103682.0,
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "win_rate": 1.0,
+      "p99_ms": 0.246875,
+      "checks": {
+        "all_done": true,
+        "no_errors": true,
+        "no_invalid": true,
+        "mean_cash_at_least_99_5pct_control": true,
+        "min_cash_at_least_97pct_control": true,
+        "win_rate_not_lower": true,
+        "p99_under_1000ms": true
+      },
+      "passed": true
+    }
+  }
+}

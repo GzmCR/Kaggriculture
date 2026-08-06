@@ -1,0 +1,5 @@
+actions,all_done,candidate,errors,games,invalid,losses,mean_margin,mean_money,min_money,opponent,p99_ms,ties,win_rate,wins
+{},1,v022c_control,0,2,0,0,182902.5,186395.0,185669.0,starter,0.162125,0,1.0,2
+{},1,v022c_control,0,2,0,0,1787.5,104177.5,103682.0,v012,0.232209,0,1.0,2
+{},1,v022f_single_retry,0,2,0,0,182902.5,186395.0,185669.0,starter,0.197458,0,1.0,2
+{},1,v022f_single_retry,0,2,0,0,1787.5,104177.5,103682.0,v012,0.213667,0,1.0,2

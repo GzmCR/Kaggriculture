@@ -1,0 +1,11 @@
+{
+  "candidate": "v022f_single_retry",
+  "source": "baseline/159-160-vs-frontier-v20-weed-slip-recovery.ipynb",
+  "source_sha256": "231cf97fcadb1481e2936395f9a6ac8592b8740903c8f93ec9f88b704e20ac24",
+  "main_sha256": "166b2cb316a4bd66232f5aa3a250774a21db30750a929d77c50460b67ec80154",
+  "main_bytes": 35882,
+  "archive": "baseline/artifacts/v022f_single_retry/submission.tar.gz",
+  "max_catchup": 8,
+  "max_retries": 1,
+  "market_unchanged": true
+}
