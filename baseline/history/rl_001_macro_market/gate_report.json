@@ -1,0 +1,20 @@
+{
+  "status": "not_promoted",
+  "control_artifact": "baseline/artifacts/rl_001_macro_market/main.py",
+  "pilot_training_games": 32,
+  "pilot_holdout_games": 16,
+  "pilot_mean_cash": 122914.3125,
+  "control_mean_cash": 123036.1875,
+  "mean_cash_delta_percent": -0.0990562228,
+  "pilot_min_cash": 4721.0,
+  "control_min_cash": 6400.0,
+  "pilot_win_rate": 0.6875,
+  "control_win_rate": 0.75,
+  "pilot_done": 16,
+  "pilot_errors": 0,
+  "pilot_invalid": 0,
+  "pilot_field_mismatch": 0,
+  "pilot_p99_ms": 0.5212,
+  "reason": "after fixing inference-time updates, pilot mean cash and win rate were below control; minimum cash was also below the 97 percent gate",
+  "next_step": "run the pipeline with the requested 1000 train, 300 validation, and 300 holdout episodes before considering submission"
+}

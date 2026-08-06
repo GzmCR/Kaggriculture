@@ -1,0 +1,23 @@
+{
+  "models": {
+    "1": {
+      "samples": 64,
+      "target_mean": 145.765625,
+      "target_std": 4237.040409229461,
+      "beta_norm": 245.3888593872204
+    },
+    "2": {
+      "samples": 64,
+      "target_mean": -520.734375,
+      "target_std": 3415.255445434259,
+      "beta_norm": 297.71865307259486
+    },
+    "3": {
+      "samples": 64,
+      "target_mean": -838.703125,
+      "target_std": 4241.7013636912525,
+      "beta_norm": 556.9342777017621
+    }
+  },
+  "action_0_is_control": true
+}

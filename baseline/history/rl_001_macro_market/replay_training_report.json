@@ -1,0 +1,30 @@
+{
+  "status": "not_promoted",
+  "replay_root": "log/2026-08-06",
+  "replay_files": 128,
+  "complete_episodes": 128,
+  "score_bands": {
+    "1500~2400": 36,
+    "2400~2900": 46,
+    "2900~3100": 46
+  },
+  "calibration_episodes": 76,
+  "calibration_samples": 2128,
+  "pilot_training_games": 32,
+  "pilot_training_mean_cash": 128654.4375,
+  "pilot_holdout_games": 16,
+  "pilot_holdout_mean_cash": 121485.8125,
+  "control_holdout_mean_cash": 123036.1875,
+  "mean_cash_delta_percent": -1.26009675,
+  "pilot_holdout_min_cash": 4721.0,
+  "control_holdout_min_cash": 6402.0,
+  "pilot_holdout_win_rate": 0.6875,
+  "control_holdout_win_rate": 0.75,
+  "done": 16,
+  "errors": 0,
+  "invalid": 0,
+  "field_mismatch": 0,
+  "p99_ms": 0.4822,
+  "reason": "replay warm-start did not pass the mean cash, minimum cash, or win-rate gate",
+  "artifacts": "baseline/artifacts/rl_001_macro_market/replay_training"
+}

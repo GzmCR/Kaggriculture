@@ -1,0 +1,15 @@
+{
+  "folder": "log\\2026-08-06",
+  "episodes_used": 76,
+  "samples": 2128,
+  "score_band_samples": {
+    "1500~2400": 420,
+    "2400~2900": 756,
+    "2900~3100": 952
+  },
+  "reward_mean": 6729.164473684211,
+  "reward_min": -3000.0,
+  "reward_max": 30003.0,
+  "weight_norm": 27974.040782394615,
+  "method": "weighted ridge warm start; copied to all four actions"
+}

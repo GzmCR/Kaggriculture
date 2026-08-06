@@ -1,0 +1,12 @@
+{
+  "name": "rl_001_macro_market",
+  "status": "control_zero_weights",
+  "control": "baseline/artifacts/v022c_medoid_recovery/main.py",
+  "block_steps": 48,
+  "rl_stop_step": 672,
+  "action_count": 4,
+  "feature_dim": 96,
+  "weights": "weights.json",
+  "zero_weights_are_v022c_control": true,
+  "pilot_weights_are_not_promoted": true
+}

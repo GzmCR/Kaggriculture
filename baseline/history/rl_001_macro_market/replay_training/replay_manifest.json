@@ -1,0 +1,1037 @@
+{
+  "folder": "log\\2026-08-06",
+  "files": 128,
+  "episodes": 128,
+  "valid": 128,
+  "invalid_or_incomplete": 0,
+  "train": [
+    {
+      "episode_id": "90392115",
+      "path": "log\\2026-08-06\\2900~3100\\90392115.json",
+      "score_band": "2900~3100",
+      "seed": 1392255868,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90407871",
+      "path": "log\\2026-08-06\\2400~2900\\90407871.json",
+      "score_band": "2400~2900",
+      "seed": 1862636529,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90408483",
+      "path": "log\\2026-08-06\\2400~2900\\90408483.json",
+      "score_band": "2400~2900",
+      "seed": 673243224,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90416802",
+      "path": "log\\2026-08-06\\2400~2900\\90416802.json",
+      "score_band": "2400~2900",
+      "seed": 1445021591,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90420597",
+      "path": "log\\2026-08-06\\2900~3100\\90420597.json",
+      "score_band": "2900~3100",
+      "seed": 1875937926,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90421394",
+      "path": "log\\2026-08-06\\2400~2900\\90421394.json",
+      "score_band": "2400~2900",
+      "seed": 721829721,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90422895",
+      "path": "log\\2026-08-06\\2900~3100\\90422895.json",
+      "score_band": "2900~3100",
+      "seed": 969616703,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90423620",
+      "path": "log\\2026-08-06\\2900~3100\\90423620.json",
+      "score_band": "2900~3100",
+      "seed": 80645971,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90423649",
+      "path": "log\\2026-08-06\\2900~3100\\90423649.json",
+      "score_band": "2900~3100",
+      "seed": 224672252,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90424388",
+      "path": "log\\2026-08-06\\2900~3100\\90424388.json",
+      "score_band": "2900~3100",
+      "seed": 2035435454,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90424414",
+      "path": "log\\2026-08-06\\2400~2900\\90424414.json",
+      "score_band": "2400~2900",
+      "seed": 582532998,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90425145",
+      "path": "log\\2026-08-06\\2400~2900\\90425145.json",
+      "score_band": "2400~2900",
+      "seed": 262168384,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90425935",
+      "path": "log\\2026-08-06\\2900~3100\\90425935.json",
+      "score_band": "2900~3100",
+      "seed": 835167087,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90426476",
+      "path": "log\\2026-08-06\\2400~2900\\90426476.json",
+      "score_band": "2400~2900",
+      "seed": 1377339877,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90426614",
+      "path": "log\\2026-08-06\\2400~2900\\90426614.json",
+      "score_band": "2400~2900",
+      "seed": 1046120157,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90426632",
+      "path": "log\\2026-08-06\\2900~3100\\90426632.json",
+      "score_band": "2900~3100",
+      "seed": 1515118052,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90426635",
+      "path": "log\\2026-08-06\\2900~3100\\90426635.json",
+      "score_band": "2900~3100",
+      "seed": 1563116785,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90426655",
+      "path": "log\\2026-08-06\\2900~3100\\90426655.json",
+      "score_band": "2900~3100",
+      "seed": 902579368,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90426682",
+      "path": "log\\2026-08-06\\1500~2400\\90426682.json",
+      "score_band": "1500~2400",
+      "seed": 2095535375,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90427249",
+      "path": "log\\2026-08-06\\2400~2900\\90427249.json",
+      "score_band": "2400~2900",
+      "seed": 261241027,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90427387",
+      "path": "log\\2026-08-06\\2400~2900\\90427387.json",
+      "score_band": "2400~2900",
+      "seed": 2009299876,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90427405",
+      "path": "log\\2026-08-06\\2900~3100\\90427405.json",
+      "score_band": "2900~3100",
+      "seed": 406668701,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90427415",
+      "path": "log\\2026-08-06\\2900~3100\\90427415.json",
+      "score_band": "2900~3100",
+      "seed": 480254887,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90428153",
+      "path": "log\\2026-08-06\\1500~2400\\90428153.json",
+      "score_band": "1500~2400",
+      "seed": 1980742169,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90428182",
+      "path": "log\\2026-08-06\\2400~2900\\90428182.json",
+      "score_band": "2400~2900",
+      "seed": 555360082,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90428194",
+      "path": "log\\2026-08-06\\2900~3100\\90428194.json",
+      "score_band": "2900~3100",
+      "seed": 860322178,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90428736",
+      "path": "log\\2026-08-06\\1500~2400\\90428736.json",
+      "score_band": "1500~2400",
+      "seed": 1773238661,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90428876",
+      "path": "log\\2026-08-06\\2400~2900\\90428876.json",
+      "score_band": "2400~2900",
+      "seed": 335014694,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90428911",
+      "path": "log\\2026-08-06\\2900~3100\\90428911.json",
+      "score_band": "2900~3100",
+      "seed": 715590308,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90428962",
+      "path": "log\\2026-08-06\\2900~3100\\90428962.json",
+      "score_band": "2900~3100",
+      "seed": 2145716640,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90428974",
+      "path": "log\\2026-08-06\\2900~3100\\90428974.json",
+      "score_band": "2900~3100",
+      "seed": 468853267,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90429648",
+      "path": "log\\2026-08-06\\2400~2900\\90429648.json",
+      "score_band": "2400~2900",
+      "seed": 673288345,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90429716",
+      "path": "log\\2026-08-06\\2900~3100\\90429716.json",
+      "score_band": "2900~3100",
+      "seed": 1568194262,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90429729",
+      "path": "log\\2026-08-06\\2900~3100\\90429729.json",
+      "score_band": "2900~3100",
+      "seed": 1224522727,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90429735",
+      "path": "log\\2026-08-06\\1500~2400\\90429735.json",
+      "score_band": "1500~2400",
+      "seed": 726664903,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90430236",
+      "path": "log\\2026-08-06\\1500~2400\\90430236.json",
+      "score_band": "1500~2400",
+      "seed": 797736800,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90430274",
+      "path": "log\\2026-08-06\\2400~2900\\90430274.json",
+      "score_band": "2400~2900",
+      "seed": 1726391360,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90430327",
+      "path": "log\\2026-08-06\\2400~2900\\90430327.json",
+      "score_band": "2400~2900",
+      "seed": 190804061,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90430354",
+      "path": "log\\2026-08-06\\2400~2900\\90430354.json",
+      "score_band": "2400~2900",
+      "seed": 812730804,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90430386",
+      "path": "log\\2026-08-06\\1500~2400\\90430386.json",
+      "score_band": "1500~2400",
+      "seed": 1142995602,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90430434",
+      "path": "log\\2026-08-06\\2900~3100\\90430434.json",
+      "score_band": "2900~3100",
+      "seed": 139719320,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90430459",
+      "path": "log\\2026-08-06\\2900~3100\\90430459.json",
+      "score_band": "2900~3100",
+      "seed": 911817685,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90430480",
+      "path": "log\\2026-08-06\\2900~3100\\90430480.json",
+      "score_band": "2900~3100",
+      "seed": 1200398236,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90430484",
+      "path": "log\\2026-08-06\\2900~3100\\90430484.json",
+      "score_band": "2900~3100",
+      "seed": 501416285,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90431052",
+      "path": "log\\2026-08-06\\1500~2400\\90431052.json",
+      "score_band": "1500~2400",
+      "seed": 2008008271,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90431162",
+      "path": "log\\2026-08-06\\2400~2900\\90431162.json",
+      "score_band": "2400~2900",
+      "seed": 1480069104,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90431204",
+      "path": "log\\2026-08-06\\2900~3100\\90431204.json",
+      "score_band": "2900~3100",
+      "seed": 903313333,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90431231",
+      "path": "log\\2026-08-06\\1500~2400\\90431231.json",
+      "score_band": "1500~2400",
+      "seed": 439800536,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90431241",
+      "path": "log\\2026-08-06\\2900~3100\\90431241.json",
+      "score_band": "2900~3100",
+      "seed": 408309229,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90431947",
+      "path": "log\\2026-08-06\\2900~3100\\90431947.json",
+      "score_band": "2900~3100",
+      "seed": 564061953,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90431955",
+      "path": "log\\2026-08-06\\2400~2900\\90431955.json",
+      "score_band": "2400~2900",
+      "seed": 1289843546,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90432564",
+      "path": "log\\2026-08-06\\2400~2900\\90432564.json",
+      "score_band": "2400~2900",
+      "seed": 1954683244,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90432671",
+      "path": "log\\2026-08-06\\2400~2900\\90432671.json",
+      "score_band": "2400~2900",
+      "seed": 1308381197,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90432708",
+      "path": "log\\2026-08-06\\2900~3100\\90432708.json",
+      "score_band": "2900~3100",
+      "seed": 254215120,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90432714",
+      "path": "log\\2026-08-06\\2400~2900\\90432714.json",
+      "score_band": "2400~2900",
+      "seed": 1838442763,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90432733",
+      "path": "log\\2026-08-06\\2900~3100\\90432733.json",
+      "score_band": "2900~3100",
+      "seed": 497873696,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90432755",
+      "path": "log\\2026-08-06\\2400~2900\\90432755.json",
+      "score_band": "2400~2900",
+      "seed": 614119183,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90433277",
+      "path": "log\\2026-08-06\\1500~2400\\90433277.json",
+      "score_band": "1500~2400",
+      "seed": 999682776,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90433329",
+      "path": "log\\2026-08-06\\1500~2400\\90433329.json",
+      "score_band": "1500~2400",
+      "seed": 2055834972,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90433352",
+      "path": "log\\2026-08-06\\1500~2400\\90433352.json",
+      "score_band": "1500~2400",
+      "seed": 529756036,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90433397",
+      "path": "log\\2026-08-06\\2400~2900\\90433397.json",
+      "score_band": "2400~2900",
+      "seed": 2067751778,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90433461",
+      "path": "log\\2026-08-06\\2900~3100\\90433461.json",
+      "score_band": "2900~3100",
+      "seed": 360256191,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90433504",
+      "path": "log\\2026-08-06\\2900~3100\\90433504.json",
+      "score_band": "2900~3100",
+      "seed": 1552631729,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90433510",
+      "path": "log\\2026-08-06\\2900~3100\\90433510.json",
+      "score_band": "2900~3100",
+      "seed": 601926304,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90434081",
+      "path": "log\\2026-08-06\\1500~2400\\90434081.json",
+      "score_band": "1500~2400",
+      "seed": 1885497492,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90434085",
+      "path": "log\\2026-08-06\\1500~2400\\90434085.json",
+      "score_band": "1500~2400",
+      "seed": 585474761,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90434094",
+      "path": "log\\2026-08-06\\2400~2900\\90434094.json",
+      "score_band": "2400~2900",
+      "seed": 1787186829,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90434170",
+      "path": "log\\2026-08-06\\2400~2900\\90434170.json",
+      "score_band": "2400~2900",
+      "seed": 615091124,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90434212",
+      "path": "log\\2026-08-06\\2900~3100\\90434212.json",
+      "score_band": "2900~3100",
+      "seed": 1353072038,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90434224",
+      "path": "log\\2026-08-06\\2400~2900\\90434224.json",
+      "score_band": "2400~2900",
+      "seed": 1566713087,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90434235",
+      "path": "log\\2026-08-06\\2900~3100\\90434235.json",
+      "score_band": "2900~3100",
+      "seed": 1815114796,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90434237",
+      "path": "log\\2026-08-06\\2900~3100\\90434237.json",
+      "score_band": "2900~3100",
+      "seed": 1324786426,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90434246",
+      "path": "log\\2026-08-06\\2900~3100\\90434246.json",
+      "score_band": "2900~3100",
+      "seed": 1812377371,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90434783",
+      "path": "log\\2026-08-06\\1500~2400\\90434783.json",
+      "score_band": "1500~2400",
+      "seed": 224328693,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90434924",
+      "path": "log\\2026-08-06\\1500~2400\\90434924.json",
+      "score_band": "1500~2400",
+      "seed": 359163669,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90434945",
+      "path": "log\\2026-08-06\\2400~2900\\90434945.json",
+      "score_band": "2400~2900",
+      "seed": 1804019371,
+      "steps": 720,
+      "complete": true
+    }
+  ],
+  "validation": [
+    {
+      "episode_id": "90434959",
+      "path": "log\\2026-08-06\\1500~2400\\90434959.json",
+      "score_band": "1500~2400",
+      "seed": 1742676300,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90434995",
+      "path": "log\\2026-08-06\\2900~3100\\90434995.json",
+      "score_band": "2900~3100",
+      "seed": 1333374486,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90434997",
+      "path": "log\\2026-08-06\\2900~3100\\90434997.json",
+      "score_band": "2900~3100",
+      "seed": 1955406624,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90435000",
+      "path": "log\\2026-08-06\\2400~2900\\90435000.json",
+      "score_band": "2400~2900",
+      "seed": 435369028,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90435012",
+      "path": "log\\2026-08-06\\2900~3100\\90435012.json",
+      "score_band": "2900~3100",
+      "seed": 939026350,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90435635",
+      "path": "log\\2026-08-06\\2400~2900\\90435635.json",
+      "score_band": "2400~2900",
+      "seed": 2064389136,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90435647",
+      "path": "log\\2026-08-06\\2400~2900\\90435647.json",
+      "score_band": "2400~2900",
+      "seed": 1227319618,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90435699",
+      "path": "log\\2026-08-06\\2900~3100\\90435699.json",
+      "score_band": "2900~3100",
+      "seed": 821494093,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90435726",
+      "path": "log\\2026-08-06\\2900~3100\\90435726.json",
+      "score_band": "2900~3100",
+      "seed": 422036482,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90435747",
+      "path": "log\\2026-08-06\\2900~3100\\90435747.json",
+      "score_band": "2900~3100",
+      "seed": 1764505716,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90435763",
+      "path": "log\\2026-08-06\\2900~3100\\90435763.json",
+      "score_band": "2900~3100",
+      "seed": 293006515,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90436427",
+      "path": "log\\2026-08-06\\2400~2900\\90436427.json",
+      "score_band": "2400~2900",
+      "seed": 2024037379,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90436455",
+      "path": "log\\2026-08-06\\2900~3100\\90436455.json",
+      "score_band": "2900~3100",
+      "seed": 1415420545,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90436482",
+      "path": "log\\2026-08-06\\1500~2400\\90436482.json",
+      "score_band": "1500~2400",
+      "seed": 818986604,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90436487",
+      "path": "log\\2026-08-06\\2900~3100\\90436487.json",
+      "score_band": "2900~3100",
+      "seed": 1861593600,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90436507",
+      "path": "log\\2026-08-06\\2400~2900\\90436507.json",
+      "score_band": "2400~2900",
+      "seed": 1064655014,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90436516",
+      "path": "log\\2026-08-06\\2900~3100\\90436516.json",
+      "score_band": "2900~3100",
+      "seed": 1306422177,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90436518",
+      "path": "log\\2026-08-06\\1500~2400\\90436518.json",
+      "score_band": "1500~2400",
+      "seed": 1008450383,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90437130",
+      "path": "log\\2026-08-06\\1500~2400\\90437130.json",
+      "score_band": "1500~2400",
+      "seed": 1323729906,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90437144",
+      "path": "log\\2026-08-06\\2400~2900\\90437144.json",
+      "score_band": "2400~2900",
+      "seed": 831137389,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90437176",
+      "path": "log\\2026-08-06\\2900~3100\\90437176.json",
+      "score_band": "2900~3100",
+      "seed": 553295382,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90437179",
+      "path": "log\\2026-08-06\\2400~2900\\90437179.json",
+      "score_band": "2400~2900",
+      "seed": 96530565,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90437205",
+      "path": "log\\2026-08-06\\2400~2900\\90437205.json",
+      "score_band": "2400~2900",
+      "seed": 1415783012,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90437210",
+      "path": "log\\2026-08-06\\1500~2400\\90437210.json",
+      "score_band": "1500~2400",
+      "seed": 631974152,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90437265",
+      "path": "log\\2026-08-06\\2900~3100\\90437265.json",
+      "score_band": "2900~3100",
+      "seed": 2115049246,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90437268",
+      "path": "log\\2026-08-06\\2400~2900\\90437268.json",
+      "score_band": "2400~2900",
+      "seed": 262594170,
+      "steps": 720,
+      "complete": true
+    }
+  ],
+  "holdout": [
+    {
+      "episode_id": "90437790",
+      "path": "log\\2026-08-06\\1500~2400\\90437790.json",
+      "score_band": "1500~2400",
+      "seed": 1223720800,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90437843",
+      "path": "log\\2026-08-06\\2400~2900\\90437843.json",
+      "score_band": "2400~2900",
+      "seed": 1519669453,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90437870",
+      "path": "log\\2026-08-06\\2400~2900\\90437870.json",
+      "score_band": "2400~2900",
+      "seed": 664174622,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90437900",
+      "path": "log\\2026-08-06\\2400~2900\\90437900.json",
+      "score_band": "2400~2900",
+      "seed": 717029368,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90437920",
+      "path": "log\\2026-08-06\\2400~2900\\90437920.json",
+      "score_band": "2400~2900",
+      "seed": 600616502,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90437943",
+      "path": "log\\2026-08-06\\1500~2400\\90437943.json",
+      "score_band": "1500~2400",
+      "seed": 2089075098,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90437945",
+      "path": "log\\2026-08-06\\2400~2900\\90437945.json",
+      "score_band": "2400~2900",
+      "seed": 681723902,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90437962",
+      "path": "log\\2026-08-06\\2400~2900\\90437962.json",
+      "score_band": "2400~2900",
+      "seed": 953622808,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90437995",
+      "path": "log\\2026-08-06\\2400~2900\\90437995.json",
+      "score_band": "2400~2900",
+      "seed": 1302832454,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90437998",
+      "path": "log\\2026-08-06\\2400~2900\\90437998.json",
+      "score_band": "2400~2900",
+      "seed": 1028496282,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90438006",
+      "path": "log\\2026-08-06\\2400~2900\\90438006.json",
+      "score_band": "2400~2900",
+      "seed": 677219943,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90438035",
+      "path": "log\\2026-08-06\\2400~2900\\90438035.json",
+      "score_band": "2400~2900",
+      "seed": 774124334,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90438551",
+      "path": "log\\2026-08-06\\1500~2400\\90438551.json",
+      "score_band": "1500~2400",
+      "seed": 763023754,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90438603",
+      "path": "log\\2026-08-06\\1500~2400\\90438603.json",
+      "score_band": "1500~2400",
+      "seed": 2046326574,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90438622",
+      "path": "log\\2026-08-06\\1500~2400\\90438622.json",
+      "score_band": "1500~2400",
+      "seed": 1921429853,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90438623",
+      "path": "log\\2026-08-06\\1500~2400\\90438623.json",
+      "score_band": "1500~2400",
+      "seed": 1334276014,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90438677",
+      "path": "log\\2026-08-06\\1500~2400\\90438677.json",
+      "score_band": "1500~2400",
+      "seed": 60213453,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90438682",
+      "path": "log\\2026-08-06\\1500~2400\\90438682.json",
+      "score_band": "1500~2400",
+      "seed": 1666507942,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90439320",
+      "path": "log\\2026-08-06\\1500~2400\\90439320.json",
+      "score_band": "1500~2400",
+      "seed": 636136100,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90439362",
+      "path": "log\\2026-08-06\\1500~2400\\90439362.json",
+      "score_band": "1500~2400",
+      "seed": 1685028307,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90439386",
+      "path": "log\\2026-08-06\\1500~2400\\90439386.json",
+      "score_band": "1500~2400",
+      "seed": 1120605486,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90439397",
+      "path": "log\\2026-08-06\\1500~2400\\90439397.json",
+      "score_band": "1500~2400",
+      "seed": 527457589,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90439428",
+      "path": "log\\2026-08-06\\1500~2400\\90439428.json",
+      "score_band": "1500~2400",
+      "seed": 209330975,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90439440",
+      "path": "log\\2026-08-06\\1500~2400\\90439440.json",
+      "score_band": "1500~2400",
+      "seed": 2038102265,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90439475",
+      "path": "log\\2026-08-06\\1500~2400\\90439475.json",
+      "score_band": "1500~2400",
+      "seed": 2061952226,
+      "steps": 720,
+      "complete": true
+    },
+    {
+      "episode_id": "90439551",
+      "path": "log\\2026-08-06\\1500~2400\\90439551.json",
+      "score_band": "1500~2400",
+      "seed": 1976218585,
+      "steps": 720,
+      "complete": true
+    }
+  ]
+}

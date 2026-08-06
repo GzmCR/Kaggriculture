@@ -27,7 +27,7 @@ DEFAULT_MAPPING = {
 WRAPPER = r'''
 
 # V019 wrapper: immutable V012 field route plus public-state market routing.
-_V019_BASE_AGENT = agent
+_V019_BASE_AGENT = _v019_base_agent
 _V019_ROUTER = PublicStyleExpertRouter(
     mapping=_V019_MAPPING,
     hold_days=_V019_HOLD_DAYS,
@@ -106,6 +106,13 @@ def agent(obs, config=None):
 
 def build(mode, mapping, path, hold_days=1):
     base = V012.read_text(encoding="utf-8")
+    marker = "def agent(obs):"
+    if marker not in base:
+        raise RuntimeError("V012 source agent entrypoint was not found")
+    # Kaggle's loader selects the last callable by globals insertion order.
+    # Keep the embedded V012 entrypoint private so the wrapper's final agent
+    # is the only public entry and is selected reliably.
+    base = base.replace(marker, "def _v019_base_agent(obs):", 1)
     router = ROUTER.read_text(encoding="utf-8").replace("from __future__ import annotations\n\n", "", 1)
     payload = (
         base

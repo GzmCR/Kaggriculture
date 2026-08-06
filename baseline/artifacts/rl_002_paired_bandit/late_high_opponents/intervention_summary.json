@@ -1,0 +1,79 @@
+{
+  "games": 112,
+  "intervention_cells": {
+    "mode_1_block_480": {
+      "games": 16,
+      "mean_delta": 0.0,
+      "median_delta": 0.0,
+      "positive_rate": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "mode_1_block_576": {
+      "games": 16,
+      "mean_delta": 0.0,
+      "median_delta": 0.0,
+      "positive_rate": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "mode_2_block_480": {
+      "games": 16,
+      "mean_delta": -98.0,
+      "median_delta": -110.0,
+      "positive_rate": 0.25,
+      "min_delta": -200.0,
+      "max_delta": 27.0
+    },
+    "mode_2_block_576": {
+      "games": 16,
+      "mean_delta": 5.75,
+      "median_delta": 5.0,
+      "positive_rate": 0.5,
+      "min_delta": 0.0,
+      "max_delta": 13.0
+    },
+    "mode_3_block_480": {
+      "games": 16,
+      "mean_delta": -1.75,
+      "median_delta": -5.5,
+      "positive_rate": 0.25,
+      "min_delta": -20.0,
+      "max_delta": 27.0
+    },
+    "mode_3_block_576": {
+      "games": 16,
+      "mean_delta": 4.0,
+      "median_delta": 0.0,
+      "positive_rate": 0.375,
+      "min_delta": 0.0,
+      "max_delta": 14.0
+    }
+  },
+  "by_mode": {
+    "1": {
+      "games": 32,
+      "mean_delta": 0.0,
+      "median_delta": 0.0,
+      "positive_rate": 0.0,
+      "min_delta": 0.0,
+      "max_delta": 0.0
+    },
+    "2": {
+      "games": 32,
+      "mean_delta": -46.125,
+      "median_delta": 0.0,
+      "positive_rate": 0.375,
+      "min_delta": -200.0,
+      "max_delta": 27.0
+    },
+    "3": {
+      "games": 32,
+      "mean_delta": 1.125,
+      "median_delta": 0.0,
+      "positive_rate": 0.3125,
+      "min_delta": -20.0,
+      "max_delta": 27.0
+    }
+  }
+}

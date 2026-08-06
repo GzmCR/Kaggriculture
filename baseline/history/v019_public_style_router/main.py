@@ -4379,7 +4379,7 @@ def _market_orders(obs):
     return orders[:MAX_ORDERS]
 
 
-def agent(obs):
+def _v019_base_agent(obs):
     """Kaggle entry point."""
     try:
         if STRATEGY.get("use_fixed_schedule"):
@@ -5583,7 +5583,7 @@ _V019_HOLD_DAYS = 1
 
 
 # V019 wrapper: immutable V012 field route plus public-state market routing.
-_V019_BASE_AGENT = agent
+_V019_BASE_AGENT = _v019_base_agent
 _V019_ROUTER = PublicStyleExpertRouter(
     mapping=_V019_MAPPING,
     hold_days=_V019_HOLD_DAYS,

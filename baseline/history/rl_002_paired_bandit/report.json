@@ -1,0 +1,57 @@
+{
+  "experiment": "RL-002 paired causal market overlay",
+  "status": "not_promoted",
+  "base_policy": "V022c",
+  "total_rows": 224,
+  "intervention_rows": 192,
+  "control_rows": 32,
+  "pilot_summary": "baseline/artifacts/rl_002_paired_bandit/intervention_summary.json",
+  "late_high_opponent_summary": "baseline/artifacts/rl_002_paired_bandit/late_high_opponents/intervention_summary.json",
+  "merged_fit": "baseline/artifacts/rl_002_paired_bandit/merged/bandit_fit.json",
+  "merged_evaluation": {
+    "episodes": 16,
+    "opponents": [
+      "starter",
+      "v022c",
+      "v18",
+      "frontier",
+      "hamburger",
+      "v13_r3",
+      "conditional"
+    ],
+    "candidate_mean_cash": 123615.0625,
+    "control_mean_cash": 123336.9375,
+    "mean_delta_percent": 0.22550016697147195,
+    "candidate_min_cash": 9614.0,
+    "control_min_cash": 5155.0,
+    "candidate_wins": 11,
+    "control_wins": 9,
+    "candidate_done": 16,
+    "control_done": 16,
+    "candidate_errors": 0,
+    "candidate_invalid": 0,
+    "candidate_field_mismatch": 0,
+    "candidate_p99_ms": 0.4669,
+    "control_p99_ms": 0.5096
+  },
+  "guarded_evaluation": {
+    "description": "modes 2 and 3 disabled; mode 1 requires a predicted gain above 1500 cash",
+    "weights": "baseline/artifacts/rl_002_paired_bandit/merged/guarded_weights.json",
+    "selected_non_control_blocks": 0,
+    "interpretation": "The safety gate correctly fell back to V022c everywhere, so it added no measurable upside."
+  },
+  "findings": [
+    "Mode 1 is highly opponent-dependent: the large positive and negative deltas came from random, while starter, V022c, and V18 were usually exact no-ops in the tested windows.",
+    "Against the newer high-score opponents, mode 1 was an exact no-op in all 32 tested late-window interventions.",
+    "Modes 2 and 3 have only tiny late-window effects and negative or near-zero means; they should not be enabled by default.",
+    "The merged ridge model selected mode 1 at every decision boundary, showing that sparse cash-delta data produced a global action bias rather than a robust contextual policy.",
+    "The apparent gain is below the 0.5 percent promotion threshold and the sample is too small for an online submission."
+  ],
+  "decision": "Keep V022c as the control and retain RL-002 only as an experiment. Do not replace main.py or generate a promoted RL submission.",
+  "next_research": [
+    "Record whether an overlay actually changes the submitted market list before fitting a model.",
+    "Train an effective-action gate first, then fit the cash delta only on effective interventions.",
+    "Use deterministic opponents and several independent seeds for calibration; treat random-opponent results separately.",
+    "Model product-level price and order collision outcomes instead of fitting final cash directly."
+  ]
+}

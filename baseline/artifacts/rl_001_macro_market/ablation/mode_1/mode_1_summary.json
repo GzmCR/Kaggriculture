@@ -1,0 +1,43 @@
+{
+  "games": 4,
+  "mean_cash": 188484.75,
+  "min_cash": 181058.0,
+  "mean_margin": 186731.25,
+  "wins": 4,
+  "losses": 0,
+  "ties": 0,
+  "win_rate": 1.0,
+  "done": 4,
+  "errors": 0,
+  "invalid": 0,
+  "field_mismatch": 0,
+  "p99_ms": 0.4049,
+  "by_opponent": {
+    "random": {
+      "games": 2,
+      "mean_cash": 192535.0,
+      "min_cash": 188106.0,
+      "mean_margin": 192535.0,
+      "wins": 2,
+      "losses": 0,
+      "done": 2,
+      "errors": 0,
+      "invalid": 0,
+      "field_mismatch": 0,
+      "p99_ms": 0.4049
+    },
+    "starter": {
+      "games": 2,
+      "mean_cash": 184434.5,
+      "min_cash": 181058.0,
+      "mean_margin": 180927.5,
+      "wins": 2,
+      "losses": 0,
+      "done": 2,
+      "errors": 0,
+      "invalid": 0,
+      "field_mismatch": 0,
+      "p99_ms": 0.3338
+    }
+  }
+}
