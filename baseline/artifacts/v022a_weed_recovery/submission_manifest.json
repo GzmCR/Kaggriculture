@@ -1,0 +1,8 @@
+{
+  "candidate": "v022a_weed_recovery",
+  "main_sha256": "a36d347740a2be08f9c4a1e01ecd0e2135350fab40b9fc913e3af3be679621c9",
+  "main_bytes": 405379,
+  "archive": "submission.tar.gz",
+  "source": "v012",
+  "source_sha256": "c6607a96d7e1560cb83043aaeafbfc1688af5ee4f00b10b99d7d203593e09a2b"
+}

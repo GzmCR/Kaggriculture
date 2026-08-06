@@ -1,0 +1,101 @@
+{
+  "matrix_games": 420,
+  "control": {
+    "mean_money": 149462.25,
+    "min_money": 101598.0,
+    "wins": 75,
+    "games": 84
+  },
+  "variants": {
+    "control": {
+      "games": 84,
+      "mean_money": 149462.25,
+      "min_money": 101598.0,
+      "wins": 75,
+      "win_rate": 0.8928571428571429,
+      "p99_ms": 0.17375,
+      "checks": {
+        "all_done": true,
+        "no_errors": true,
+        "no_invalid": true,
+        "mean_cash_not_lower": true,
+        "min_cash_not_below_97pct": true,
+        "win_rate_not_lower": true,
+        "p99_under_1000ms": true
+      },
+      "passed": true
+    },
+    "v022a_weed_recovery": {
+      "games": 84,
+      "mean_money": 148719.85714285713,
+      "min_money": 101598.0,
+      "wins": 78,
+      "win_rate": 0.9285714285714286,
+      "p99_ms": 0.253666,
+      "checks": {
+        "all_done": true,
+        "no_errors": true,
+        "no_invalid": true,
+        "mean_cash_not_lower": false,
+        "min_cash_not_below_97pct": true,
+        "win_rate_not_lower": true,
+        "p99_under_1000ms": true
+      },
+      "passed": false
+    },
+    "v022b_fresh_medoid": {
+      "games": 84,
+      "mean_money": 142163.15476190476,
+      "min_money": 82780.0,
+      "wins": 78,
+      "win_rate": 0.9285714285714286,
+      "p99_ms": 0.284125,
+      "checks": {
+        "all_done": true,
+        "no_errors": true,
+        "no_invalid": true,
+        "mean_cash_not_lower": false,
+        "min_cash_not_below_97pct": false,
+        "win_rate_not_lower": true,
+        "p99_under_1000ms": true
+      },
+      "passed": false
+    },
+    "v022c_medoid_recovery": {
+      "games": 84,
+      "mean_money": 142198.59523809524,
+      "min_money": 61994.0,
+      "wins": 80,
+      "win_rate": 0.9523809523809523,
+      "p99_ms": 0.319208,
+      "checks": {
+        "all_done": true,
+        "no_errors": true,
+        "no_invalid": true,
+        "mean_cash_not_lower": false,
+        "min_cash_not_below_97pct": false,
+        "win_rate_not_lower": true,
+        "p99_under_1000ms": true
+      },
+      "passed": false
+    },
+    "v022d_medoid_recovery_tactical": {
+      "games": 84,
+      "mean_money": 146398.83333333334,
+      "min_money": 106473.0,
+      "wins": 84,
+      "win_rate": 1.0,
+      "p99_ms": 0.357958,
+      "checks": {
+        "all_done": true,
+        "no_errors": true,
+        "no_invalid": true,
+        "mean_cash_not_lower": false,
+        "min_cash_not_below_97pct": true,
+        "win_rate_not_lower": true,
+        "p99_under_1000ms": true
+      },
+      "passed": false
+    }
+  }
+}

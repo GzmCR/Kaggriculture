@@ -1,0 +1,8 @@
+{
+  "candidate": "v022c_medoid_recovery",
+  "main_sha256": "213e5dbebe1f45779f0e3a68b4b5754f4ab671890ebe79199f06801bc7065946",
+  "main_bytes": 27297,
+  "archive": "submission.tar.gz",
+  "source": "159-160 notebook embedded medoid",
+  "source_sha256": "231cf97fcadb1481e2936395f9a6ac8592b8740903c8f93ec9f88b704e20ac24"
+}

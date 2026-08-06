@@ -1,0 +1,13 @@
+{
+  "main": "/Users/guoziming/Desktop/比赛/Kaggriculture/baseline/artifacts/v021_product_gate/main.py",
+  "history_main": "/Users/guoziming/Desktop/比赛/Kaggriculture/baseline/history/v021_product_gate/main.py",
+  "archive": "/Users/guoziming/Desktop/比赛/Kaggriculture/baseline/artifacts/v021_product_gate/submission.tar.gz",
+  "variant_archives": {
+    "safety_patch": "/Users/guoziming/Desktop/比赛/Kaggriculture/baseline/artifacts/v021_product_gate/submission_v021_safety_patch.tar.gz",
+    "product_gate": "/Users/guoziming/Desktop/比赛/Kaggriculture/baseline/artifacts/v021_product_gate/submission_v021_product_gate.tar.gz",
+    "win_guard": "/Users/guoziming/Desktop/比赛/Kaggriculture/baseline/artifacts/v021_product_gate/submission_v021_win_guard.tar.gz"
+  },
+  "base": "baseline/history/v012_top5_replaced_v18/main.py",
+  "field_route_unchanged": true,
+  "self_contained": true
+}

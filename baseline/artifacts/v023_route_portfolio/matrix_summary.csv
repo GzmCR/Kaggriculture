@@ -1,0 +1,5 @@
+all_done,candidate,errors,games,invalid,losses,mean_margin,mean_money,min_money,opponent,p99_ms,ties,win_rate,wins
+1,v023a_high_output_14hands,0,2,0,0,183377.0,186891.0,186891.0,starter,0.283167,0,1.0,2
+1,v023b_stable_12hands,0,2,0,0,21954.0,25450.0,25279.0,starter,0.126333,0,1.0,2
+1,v023c_high_hands_15hands,0,2,0,0,60749.0,64248.0,62633.0,starter,0.263083,0,1.0,2
+1,v023d_early_portfolio,0,2,0,0,74472.0,77959.0,77174.0,starter,0.256958,0,1.0,2

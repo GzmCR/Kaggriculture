@@ -1,0 +1,8 @@
+{
+  "candidate": "v022b_fresh_medoid",
+  "main_sha256": "e97023bd73aff5232756eda210aaca01dd74ef9f5a9f454c090d0933c5648b2b",
+  "main_bytes": 27242,
+  "archive": "submission.tar.gz",
+  "source": "159-160 notebook embedded medoid",
+  "source_sha256": "231cf97fcadb1481e2936395f9a6ac8592b8740903c8f93ec9f88b704e20ac24"
+}

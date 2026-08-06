@@ -1,0 +1,8 @@
+{
+  "candidate": "v022d_medoid_recovery_tactical",
+  "main_sha256": "630125b3f592fdb773f1fac6532b08e97e829ae188180ea17540b702b606a054",
+  "main_bytes": 30603,
+  "archive": "submission.tar.gz",
+  "source": "144-150 notebook embedded medoid and hazard",
+  "source_sha256": "630125b3f592fdb773f1fac6532b08e97e829ae188180ea17540b702b606a054"
+}

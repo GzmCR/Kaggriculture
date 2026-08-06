@@ -1,0 +1,6 @@
+actions,all_done,candidate,errors,games,invalid,losses,mean_margin,mean_money,min_money,opponent,p99_ms,ties,win_rate,wins
+{},1,control,0,2,0,0,178654.5,182146.5,175667.0,starter,0.07275,0,1.0,2
+{},1,v022a_weed_recovery,0,2,0,0,182390.0,185882.0,183415.0,starter,0.113291,0,1.0,2
+{},1,v022b_fresh_medoid,0,2,0,0,177438.0,180930.5,174740.0,starter,0.058833,0,1.0,2
+{},1,v022c_medoid_recovery,0,2,0,0,182902.5,186395.0,185669.0,starter,0.258208,0,1.0,2
+{},1,v022d_medoid_recovery_tactical,0,2,0,0,183986.5,187479.0,186762.0,starter,0.330625,0,1.0,2

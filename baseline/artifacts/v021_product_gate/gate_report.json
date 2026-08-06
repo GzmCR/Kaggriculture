@@ -1,0 +1,84 @@
+{
+  "replay_files": 9,
+  "matrix_games": 384,
+  "control_mean_money": 145868.85416666666,
+  "control_min_money": 101598.0,
+  "control_win_rate": 0.8020833333333334,
+  "variants": {
+    "safety_patch": {
+      "checks": {
+        "all_done": true,
+        "no_new_errors_or_invalid": true,
+        "mean_cash_not_lower": false,
+        "min_cash_not_below_97pct": true,
+        "win_rate_not_lower": true,
+        "v012_v18_wins_not_lower": true,
+        "p99_under_1000ms": true,
+        "field_unchanged": true,
+        "nonpremium_unchanged": true,
+        "replay_mean_delta_nonnegative": true,
+        "replay_at_least_6_not_lower": true
+      },
+      "pass": false,
+      "mean_money": 145792.09375,
+      "min_money": 101613.0,
+      "wins": 77,
+      "games": 96,
+      "replay_mean_delta": 5.444444444444445,
+      "replay_not_lower_games": 9,
+      "replay_games": 9,
+      "v012_v18_wins": 16,
+      "control_v012_v18_wins": 16
+    },
+    "product_gate": {
+      "checks": {
+        "all_done": true,
+        "no_new_errors_or_invalid": true,
+        "mean_cash_not_lower": false,
+        "min_cash_not_below_97pct": true,
+        "win_rate_not_lower": true,
+        "v012_v18_wins_not_lower": true,
+        "p99_under_1000ms": true,
+        "field_unchanged": true,
+        "nonpremium_unchanged": true,
+        "replay_mean_delta_nonnegative": true,
+        "replay_at_least_6_not_lower": true
+      },
+      "pass": false,
+      "mean_money": 145612.83333333334,
+      "min_money": 101604.0,
+      "wins": 77,
+      "games": 96,
+      "replay_mean_delta": 5.444444444444445,
+      "replay_not_lower_games": 9,
+      "replay_games": 9,
+      "v012_v18_wins": 16,
+      "control_v012_v18_wins": 16
+    },
+    "win_guard": {
+      "checks": {
+        "all_done": true,
+        "no_new_errors_or_invalid": true,
+        "mean_cash_not_lower": false,
+        "min_cash_not_below_97pct": true,
+        "win_rate_not_lower": true,
+        "v012_v18_wins_not_lower": true,
+        "p99_under_1000ms": true,
+        "field_unchanged": true,
+        "nonpremium_unchanged": true,
+        "replay_mean_delta_nonnegative": true,
+        "replay_at_least_6_not_lower": true
+      },
+      "pass": false,
+      "mean_money": 145654.28125,
+      "min_money": 101604.0,
+      "wins": 77,
+      "games": 96,
+      "replay_mean_delta": 0.0,
+      "replay_not_lower_games": 9,
+      "replay_games": 9,
+      "v012_v18_wins": 16,
+      "control_v012_v18_wins": 16
+    }
+  }
+}
