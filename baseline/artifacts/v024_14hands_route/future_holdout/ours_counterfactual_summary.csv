@@ -1,0 +1,3 @@
+all_done,candidate,errors,games,losses,mean_margin,mean_money,min_money,p99_ms,ties,win_rate,wins
+1,v022c_control,0,14,14,-18370.85714285714,111397.0,82583.0,0.214958,0,0.0,0
+1,v024a_route14_control,0,14,14,-18640.64285714286,120927.14285714286,88306.0,0.230417,0,0.0,0

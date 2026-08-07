@@ -1,0 +1,9 @@
+{
+  "candidate": "v025c_route14_v022c_mirror_market",
+  "variant": "mirror",
+  "main_sha256": "53b2ed0c3fd3837081d6d3adcc8b232c99bbe8d3c1e77285ea7dc1ef965fc1c6",
+  "main_bytes": 24012,
+  "archive": "baseline/artifacts/v025c_route14_v022c_mirror_market/submission.tar.gz",
+  "parent": "v024a_route14_control",
+  "route_actions": 720
+}

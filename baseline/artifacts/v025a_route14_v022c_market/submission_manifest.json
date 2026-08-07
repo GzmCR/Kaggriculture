@@ -1,0 +1,9 @@
+{
+  "candidate": "v025a_route14_v022c_market",
+  "variant": "gate",
+  "main_sha256": "a55d224af622492e2bca0f666197d2861a283fa400798d32c9203cf545e2ea8d",
+  "main_bytes": 24010,
+  "archive": "baseline/artifacts/v025a_route14_v022c_market/submission.tar.gz",
+  "parent": "v024a_route14_control",
+  "route_actions": 720
+}

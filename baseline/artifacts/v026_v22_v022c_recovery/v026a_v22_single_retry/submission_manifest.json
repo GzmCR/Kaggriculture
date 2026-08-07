@@ -1,0 +1,15 @@
+{
+  "candidate": "v026a_v22_single_retry",
+  "source_notebook": "baseline/44-46-strict-future-top-30-v22-price-impact.ipynb",
+  "source_sha256": "62fb5a5f66f0011092a2b51e3192879ba583d5d815d761f176091c615657147a",
+  "main_sha256": "b55dfa9a52fc773cc5f90cdb9479874d85421876395a9955f2f0dc055430a949",
+  "main_bytes": 28542,
+  "archive": "baseline/artifacts/v026_v22_v022c_recovery/v026a_v22_single_retry/submission.tar.gz",
+  "route": "v22_embedded_14hands_high_output",
+  "market_layer": "v22_price_impact_slots",
+  "recovery": "v022f_single_retry",
+  "max_retries": 1,
+  "max_catchup": 8,
+  "market_changed": false,
+  "root_main_modified": false
+}

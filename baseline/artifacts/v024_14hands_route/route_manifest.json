@@ -1,0 +1,292 @@
+{
+  "version": "v024",
+  "data_root": "log/2026-08-07",
+  "audit": {
+    "folder": "log/2026-08-07/top10",
+    "files": 50,
+    "duplicates": [
+      {
+        "episode": "90554392",
+        "file": "90554392.json",
+        "kept": "90554392 (1).json",
+        "same_hash": true
+      },
+      {
+        "episode": "90563876",
+        "file": "90563876.json",
+        "kept": "90563876 (1).json",
+        "same_hash": true
+      },
+      {
+        "episode": "90564660",
+        "file": "90564660.json",
+        "kept": "90564660 (1).json",
+        "same_hash": true
+      },
+      {
+        "episode": "90566235",
+        "file": "90566235.json",
+        "kept": "90566235 (1).json",
+        "same_hash": true
+      },
+      {
+        "episode": "90567028",
+        "file": "90567028.json",
+        "kept": "90567028 (1).json",
+        "same_hash": true
+      },
+      {
+        "episode": "90567829",
+        "file": "90567829.json",
+        "kept": "90567829 (1).json",
+        "same_hash": true
+      }
+    ],
+    "bad_files": [],
+    "episodes": [
+      "90550484",
+      "90550548",
+      "90551213",
+      "90553570",
+      "90554358",
+      "90554392",
+      "90555098",
+      "90555139",
+      "90555193",
+      "90555869",
+      "90556633",
+      "90556642",
+      "90557422",
+      "90557461",
+      "90558244",
+      "90558256",
+      "90559728",
+      "90559770",
+      "90559814",
+      "90559891",
+      "90560560",
+      "90561400",
+      "90562224",
+      "90563044",
+      "90563060",
+      "90563115",
+      "90563851",
+      "90563876",
+      "90564647",
+      "90564660",
+      "90565427",
+      "90565430",
+      "90565436",
+      "90565447",
+      "90566229",
+      "90566235",
+      "90566239",
+      "90567022",
+      "90567027",
+      "90567028",
+      "90567829",
+      "90568625",
+      "90569357",
+      "90569411"
+    ],
+    "unique_episodes": 44,
+    "unique_seats": 88
+  },
+  "fit_records": 60,
+  "validation_records": 14,
+  "future_holdout_records": 14,
+  "fit_episodes": 30,
+  "validation_episodes": 7,
+  "future_holdout_episodes": 7,
+  "selected_medoid": {
+    "episode": "90555139",
+    "seat": 0,
+    "source_file": "90555139.json",
+    "seed": 1432817596,
+    "features": {
+      "max_hands": 14,
+      "plants": 158,
+      "wheat": 92,
+      "strawberry": 42,
+      "melon": 24,
+      "carrot": 0,
+      "ne_day": 7,
+      "sw_day": 11,
+      "se_day": 99,
+      "cows": 8,
+      "sheep": 6,
+      "water": 922,
+      "harvest": 374,
+      "feed": 314,
+      "care": 322,
+      "fertilize": 80,
+      "pass": 819,
+      "sell_quantities": {
+        "FERTILIZER": 233,
+        "WHEAT": 836,
+        "WOOL": 164,
+        "MILK": 237,
+        "MELON": 144,
+        "STRAWBERRY": 313
+      },
+      "weighted_sell_prices": {
+        "FERTILIZER": 54.927038626609445,
+        "WHEAT": 42.35765550239235,
+        "WOOL": 224.6280487804878,
+        "MILK": 135.45569620253164,
+        "MELON": 177.54166666666666,
+        "STRAWBERRY": 199.16613418530352
+      },
+      "final_money": 134015.0,
+      "final_crops": {},
+      "final_animals": {
+        "COW": 8,
+        "SHEEP": 6
+      },
+      "counts": {
+        "PASS": 819,
+        "MKT_HIRE": 277,
+        "MKT_BUY_ANIMAL": 8,
+        "MKT_BUY_SEED": 18,
+        "PICKUP": 167,
+        "WEST": 978,
+        "NORTH": 904,
+        "MKT_BUY_PRODUCT": 248,
+        "BUILD_PASTURE": 14,
+        "PLACE": 14,
+        "PLANT": 158,
+        "WATER": 922,
+        "FEED": 314,
+        "CARE": 322,
+        "EAST": 740,
+        "COLLECT_FERTILIZER": 314,
+        "SOUTH": 638,
+        "DROP": 106,
+        "MKT_SELL": 345,
+        "HARVEST": 374,
+        "MKT_BUY_LAND": 2,
+        "FERTILIZE": 80,
+        "DIG": 43
+      }
+    },
+    "checkpoint48": {
+      "money": 14.0,
+      "hands": 0,
+      "unlocked": [
+        "NW"
+      ],
+      "crops": {
+        "WHEAT": 7,
+        "MELON": 12
+      },
+      "animals": {
+        "SHEEP": 2,
+        "COW": 2
+      }
+    }
+  },
+  "fit_summary": {
+    "max_hands_14_records": 55,
+    "mean_plants": 153.23333333333332,
+    "mean_harvest": 371.75
+  },
+  "runtime_payload_sha256": "12f45bf13901bda8b37301c9d4f93656f5620b7fad1483499eff93718ff52f87",
+  "candidates": [
+    {
+      "candidate": "v024a_route14_control",
+      "variant": "base",
+      "main_sha256": "8cfd5379cbb0b4c4705813e1053bfda640017e180a179e283eaf4be5732f6933",
+      "main_bytes": 42820,
+      "archive": "baseline/artifacts/v024a_route14_control/submission.tar.gz",
+      "route_features": {
+        "max_hands": 14,
+        "plants": 158,
+        "wheat": 92,
+        "strawberry": 42,
+        "melon": 24,
+        "ne_day": 7,
+        "sw_day": 11,
+        "cows": 8,
+        "sheep": 6,
+        "water": 922,
+        "harvest": 374,
+        "feed": 314,
+        "fertilize": 80
+      },
+      "fit_episodes": 30,
+      "future_holdout_episodes": 7
+    },
+    {
+      "candidate": "v024b_route14_weed",
+      "variant": "weed",
+      "main_sha256": "65de7e18ad289cefbb1891170c3c63d7f415c2f9e1bbc10b46d97dc724c77169",
+      "main_bytes": 42820,
+      "archive": "baseline/artifacts/v024b_route14_weed/submission.tar.gz",
+      "route_features": {
+        "max_hands": 14,
+        "plants": 158,
+        "wheat": 92,
+        "strawberry": 42,
+        "melon": 24,
+        "ne_day": 7,
+        "sw_day": 11,
+        "cows": 8,
+        "sheep": 6,
+        "water": 922,
+        "harvest": 374,
+        "feed": 314,
+        "fertilize": 80
+      },
+      "fit_episodes": 30,
+      "future_holdout_episodes": 7
+    },
+    {
+      "candidate": "v024c_route14_order_memory",
+      "variant": "memory",
+      "main_sha256": "921c08abf5b0f6794ef440aa04a71a2724cd4ed77b10f7beefe8ed6b1c0d9fd0",
+      "main_bytes": 42822,
+      "archive": "baseline/artifacts/v024c_route14_order_memory/submission.tar.gz",
+      "route_features": {
+        "max_hands": 14,
+        "plants": 158,
+        "wheat": 92,
+        "strawberry": 42,
+        "melon": 24,
+        "ne_day": 7,
+        "sw_day": 11,
+        "cows": 8,
+        "sheep": 6,
+        "water": 922,
+        "harvest": 374,
+        "feed": 314,
+        "fertilize": 80
+      },
+      "fit_episodes": 30,
+      "future_holdout_episodes": 7
+    },
+    {
+      "candidate": "v024d_route14_strict_r3",
+      "variant": "strict",
+      "main_sha256": "5eeb7d95bba95207cfc7e7ece12e547bd44c24bb2c67b47877b22c646dc73430",
+      "main_bytes": 42822,
+      "archive": "baseline/artifacts/v024d_route14_strict_r3/submission.tar.gz",
+      "route_features": {
+        "max_hands": 14,
+        "plants": 158,
+        "wheat": 92,
+        "strawberry": 42,
+        "melon": 24,
+        "ne_day": 7,
+        "sw_day": 11,
+        "cows": 8,
+        "sheep": 6,
+        "water": 922,
+        "harvest": 374,
+        "feed": 314,
+        "fertilize": 80
+      },
+      "fit_episodes": 30,
+      "future_holdout_episodes": 7
+    }
+  ]
+}

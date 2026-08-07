@@ -1,0 +1,6 @@
+all_done,candidate,errors,games,losses,mean_margin,mean_money,min_money,opponent,p99_ms,ties,win_rate,wins
+1,v022c_control,0,2,0,182902.5,186395.0,185669.0,starter,0.18025,0,1.0,2
+1,v024a_route14_control,0,2,0,187831.0,191345.0,191345.0,starter,0.240291,0,1.0,2
+1,v024b_route14_weed,0,2,0,187831.0,191345.0,191345.0,starter,0.251916,0,1.0,2
+1,v024c_route14_order_memory,0,2,0,187831.0,191345.0,191345.0,starter,0.303083,0,1.0,2
+1,v024d_route14_strict_r3,0,2,0,187831.0,191345.0,191345.0,starter,0.33425,0,1.0,2

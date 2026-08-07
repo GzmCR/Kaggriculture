@@ -1,0 +1,33 @@
+{
+  "version": "v025",
+  "parent": "v024a_route14_control",
+  "candidates": [
+    {
+      "candidate": "v025a_route14_v022c_market",
+      "variant": "gate",
+      "main_sha256": "a55d224af622492e2bca0f666197d2861a283fa400798d32c9203cf545e2ea8d",
+      "main_bytes": 24010,
+      "archive": "baseline/artifacts/v025a_route14_v022c_market/submission.tar.gz",
+      "parent": "v024a_route14_control",
+      "route_actions": 720
+    },
+    {
+      "candidate": "v025b_route14_v022c_open_market",
+      "variant": "open",
+      "main_sha256": "4d268c5f483fb40e609899b049d51f4a97fbf85dd51b1f16e567bba9a8c41abc",
+      "main_bytes": 24010,
+      "archive": "baseline/artifacts/v025b_route14_v022c_open_market/submission.tar.gz",
+      "parent": "v024a_route14_control",
+      "route_actions": 720
+    },
+    {
+      "candidate": "v025c_route14_v022c_mirror_market",
+      "variant": "mirror",
+      "main_sha256": "53b2ed0c3fd3837081d6d3adcc8b232c99bbe8d3c1e77285ea7dc1ef965fc1c6",
+      "main_bytes": 24012,
+      "archive": "baseline/artifacts/v025c_route14_v022c_mirror_market/submission.tar.gz",
+      "parent": "v024a_route14_control",
+      "route_actions": 720
+    }
+  ]
+}

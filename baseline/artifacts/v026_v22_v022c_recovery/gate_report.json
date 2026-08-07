@@ -1,0 +1,36 @@
+{
+  "environment": "kaggle-environments 1.32.2",
+  "games": 432,
+  "control": "v22",
+  "candidates": {
+    "v026a": {
+      "mean_cash": 137666.56944444444,
+      "min_cash": 77933.0,
+      "wins": 134,
+      "ties": 8,
+      "losses": 2,
+      "all_done": true,
+      "errors": 0,
+      "invalid": 0,
+      "p99_ms": 0.402375,
+      "mean_cash_ratio_to_control": 0.9983238722431877,
+      "recommended": false,
+      "reason": "No measurable cash or win-rate improvement over v22"
+    },
+    "v026b": {
+      "mean_cash": 137398.95138888888,
+      "min_cash": 77933.0,
+      "wins": 134,
+      "ties": 8,
+      "losses": 2,
+      "all_done": true,
+      "errors": 0,
+      "invalid": 0,
+      "p99_ms": 0.581625,
+      "mean_cash_ratio_to_control": 0.9963815256558124,
+      "recommended": false,
+      "reason": "Inventory guard loses cash against random despite unchanged W/T/L"
+    }
+  },
+  "root_main_modified": false
+}

@@ -1,0 +1,24 @@
+{
+  "candidate": "v024c_route14_order_memory",
+  "variant": "memory",
+  "main_sha256": "921c08abf5b0f6794ef440aa04a71a2724cd4ed77b10f7beefe8ed6b1c0d9fd0",
+  "main_bytes": 42822,
+  "archive": "baseline/artifacts/v024c_route14_order_memory/submission.tar.gz",
+  "route_features": {
+    "max_hands": 14,
+    "plants": 158,
+    "wheat": 92,
+    "strawberry": 42,
+    "melon": 24,
+    "ne_day": 7,
+    "sw_day": 11,
+    "cows": 8,
+    "sheep": 6,
+    "water": 922,
+    "harvest": 374,
+    "feed": 314,
+    "fertilize": 80
+  },
+  "fit_episodes": 30,
+  "future_holdout_episodes": 7
+}

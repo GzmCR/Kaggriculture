@@ -1,0 +1,9 @@
+{
+  "candidate": "v025b_route14_v022c_open_market",
+  "variant": "open",
+  "main_sha256": "4d268c5f483fb40e609899b049d51f4a97fbf85dd51b1f16e567bba9a8c41abc",
+  "main_bytes": 24010,
+  "archive": "baseline/artifacts/v025b_route14_v022c_open_market/submission.tar.gz",
+  "parent": "v024a_route14_control",
+  "route_actions": 720
+}

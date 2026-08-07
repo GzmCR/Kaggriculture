@@ -1,0 +1,24 @@
+{
+  "candidate": "v024a_route14_control",
+  "variant": "base",
+  "main_sha256": "8cfd5379cbb0b4c4705813e1053bfda640017e180a179e283eaf4be5732f6933",
+  "main_bytes": 42820,
+  "archive": "baseline/artifacts/v024a_route14_control/submission.tar.gz",
+  "route_features": {
+    "max_hands": 14,
+    "plants": 158,
+    "wheat": 92,
+    "strawberry": 42,
+    "melon": 24,
+    "ne_day": 7,
+    "sw_day": 11,
+    "cows": 8,
+    "sheep": 6,
+    "water": 922,
+    "harvest": 374,
+    "feed": 314,
+    "fertilize": 80
+  },
+  "fit_episodes": 30,
+  "future_holdout_episodes": 7
+}

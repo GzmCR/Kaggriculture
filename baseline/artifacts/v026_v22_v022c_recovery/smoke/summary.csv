@@ -1,0 +1,4 @@
+all_done,candidate,errors,games,invalid,losses,max_action_diff_calls,mean_margin,mean_money,min_money,opponent,p99_ms_max,score_rate,ties,win_rate,wins
+1,v026a,0,12,0,0,4,189163.08333333334,192666.41666666666,180129.0,starter,0.353083,1.0,0,1.0,12
+1,v026b,0,12,0,0,7,189163.08333333334,192666.41666666666,180129.0,starter,0.35975,1.0,0,1.0,12
+1,v22,0,12,0,0,0,189258.75,192762.08333333334,180129.0,starter,0.313917,1.0,0,1.0,12
