@@ -1,0 +1,272 @@
+"""Benchmark V027 product-shift candidates against the current local pool."""
+
+from __future__ import annotations
+
+import argparse
+import csv
+import importlib.util
+import json
+import statistics
+import time
+from collections import Counter, defaultdict
+from pathlib import Path
+
+from kaggle_environments import make
+
+from run_v026_v22_v022c_recovery import (
+    EPISODE_STEPS,
+    OPPONENTS as DEFAULT_OPPONENTS,
+    ROOT,
+    _opponent,
+    _v22_fresh,
+)
+
+
+SEEDS = (17, 42, 2026, 217, 317, 733)
+CANDIDATES = {
+    "v22": None,
+    "v027a": ROOT / "baseline/artifacts/v027_v22_product_shift/v027a_melon_ratio/main.py",
+    "v027b": ROOT / "baseline/artifacts/v027_v22_product_shift/v027b_mirror_gated/main.py",
+    "v027c": ROOT / "baseline/artifacts/v027_v22_product_shift/v027c_product_specific/main.py",
+}
+
+
+def _load_module(path, tag):
+    spec = importlib.util.spec_from_file_location(f"v027_{tag}_{time.time_ns()}", path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def _normalize(value):
+    if not isinstance(value, dict):
+        return {"farmer": ["PASS"], "hands": [], "market": []}
+    return {
+        "farmer": list(value.get("farmer") or ["PASS"]),
+        "hands": [list(item or ["PASS"]) for item in (value.get("hands") or [])],
+        "market": [list(item) for item in (value.get("market") or []) if isinstance(item, list)],
+    }
+
+
+class Probe:
+    def __init__(self, function, shadow=None):
+        self.function = function
+        self.shadow = shadow
+        self.times_ms = []
+        self.errors = 0
+        self.invalid = 0
+        self.action_diff_calls = 0
+        self.action_diff_farmer = 0
+        self.action_diff_hands = 0
+        self.action_diff_market = 0
+        self.market_counts = Counter()
+
+    def __call__(self, obs, config=None):
+        started = time.perf_counter_ns()
+        try:
+            try:
+                raw = self.function(obs, config)
+            except TypeError:
+                raw = self.function(obs)
+        except Exception:
+            self.errors += 1
+            raw = {"farmer": ["PASS"], "hands": [], "market": []}
+        action = _normalize(raw)
+        if len(action["market"]) > 10:
+            self.invalid += 1
+        if self.shadow is not None:
+            try:
+                try:
+                    shadow_raw = self.shadow(obs, config)
+                except TypeError:
+                    shadow_raw = self.shadow(obs)
+                shadow = _normalize(shadow_raw)
+                if action != shadow:
+                    self.action_diff_calls += 1
+                    self.action_diff_farmer += int(action["farmer"] != shadow["farmer"])
+                    self.action_diff_hands += int(action["hands"] != shadow["hands"])
+                    self.action_diff_market += int(action["market"] != shadow["market"])
+            except Exception:
+                pass
+        self.times_ms.append((time.perf_counter_ns() - started) / 1_000_000.0)
+        for order in action["market"]:
+            if len(order) >= 3 and str(order[0]).upper() == "SELL":
+                self.market_counts[f"SELL_{str(order[1]).upper()}"] += max(0, int(order[2]))
+        return action
+
+    def metrics(self):
+        ordered = sorted(self.times_ms)
+
+        def pct(q):
+            if not ordered:
+                return 0.0
+            return ordered[min(len(ordered) - 1, int(round((len(ordered) - 1) * q)))]
+
+        return {
+            "calls": len(ordered),
+            "p50_ms": pct(0.50),
+            "p95_ms": pct(0.95),
+            "p99_ms": pct(0.99),
+            "max_ms": max(ordered or [0.0]),
+            "action_diff_calls": self.action_diff_calls,
+            "action_diff_farmer": self.action_diff_farmer,
+            "action_diff_hands": self.action_diff_hands,
+            "action_diff_market": self.action_diff_market,
+            "market_counts": dict(self.market_counts),
+        }
+
+
+def _copy_json(value):
+    return json.loads(json.dumps(value, ensure_ascii=True))
+
+
+def _mirror_both(diagnostics):
+    checks = diagnostics.get("mirror_checks", []) or []
+    by_day = {int(row.get("day", -1)): bool(row.get("match")) for row in checks}
+    return bool(by_day.get(8) and by_day.get(12))
+
+
+def _run_one(candidate_name, opponent_name, seed, seat):
+    if candidate_name == "v22":
+        module = None
+        candidate = _v22_fresh("v22")
+        shadow = None
+    else:
+        module = _load_module(CANDIDATES[candidate_name], candidate_name)
+        candidate = module.agent
+        shadow = _v22_fresh("v22")
+    probe = Probe(candidate, shadow=shadow)
+    other = _opponent(opponent_name)
+    players = [probe, other] if seat == 0 else [other, probe]
+    env = make("kaggriculture", configuration={"episodeSteps": EPISODE_STEPS, "seed": int(seed)}, debug=False)
+    env.run(players)
+    final = env.steps[-1]
+    mine, theirs = final[seat], final[1 - seat]
+    mine_money = float(mine.observation["farms"][seat]["money"])
+    other_money = float(theirs.observation["farms"][1 - seat]["money"])
+    diagnostics = _copy_json(getattr(module, "_V027_STATS", {})) if module else {}
+    row = {
+        "candidate": candidate_name,
+        "opponent": opponent_name,
+        "seed": int(seed),
+        "seat": int(seat),
+        "candidate_money": mine_money,
+        "opponent_money": other_money,
+        "margin": mine_money - other_money,
+        "result": "win" if mine_money > other_money else "loss" if mine_money < other_money else "tie",
+        "done": int(mine.status == "DONE" and theirs.status == "DONE"),
+        "candidate_status": str(mine.status),
+        "opponent_status": str(theirs.status),
+        "errors": int(probe.errors + diagnostics.get("errors", 0)),
+        "invalid": int(probe.invalid),
+        "mirror_signature_hit_both": int(_mirror_both(diagnostics)),
+        "mirror_latched": int(diagnostics.get("mirror_latches", 0) > 0),
+        "mirror_latches": int(diagnostics.get("mirror_latches", 0)),
+        "mirror_releases": int(diagnostics.get("mirror_releases", 0)),
+        "mirror_active_calls": int(diagnostics.get("mirror_active_calls", 0)),
+        "shifted_melon": int((diagnostics.get("shifted_sell_units", {}) or {}).get("MELON", 0)),
+        "shifted_strawberry": int((diagnostics.get("shifted_sell_units", {}) or {}).get("STRAWBERRY", 0)),
+        "future_reduced_melon": int((diagnostics.get("future_reduced_units", {}) or {}).get("MELON", 0)),
+        "future_reduced_strawberry": int((diagnostics.get("future_reduced_units", {}) or {}).get("STRAWBERRY", 0)),
+        "pending_missed": int(diagnostics.get("pending_missed", 0)),
+        "pending_at_stop": int(diagnostics.get("pending_at_stop", 0)),
+        "diagnostics": diagnostics,
+        **probe.metrics(),
+    }
+    return row
+
+
+def _write_jsonl(path, rows):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as handle:
+        for row in rows:
+            handle.write(json.dumps(row, ensure_ascii=True) + "\n")
+
+
+def _summary(rows, keys):
+    grouped = defaultdict(list)
+    for row in rows:
+        grouped[tuple(row.get(key) for key in keys)].append(row)
+    result = []
+    for values_key, group in sorted(grouped.items(), key=lambda item: tuple(str(v) for v in item[0])):
+        outcomes = Counter(row["result"] for row in group)
+        result.append({
+            **dict(zip(keys, values_key)),
+            "games": len(group),
+            "mean_money": statistics.mean(row["candidate_money"] for row in group),
+            "min_money": min(row["candidate_money"] for row in group),
+            "mean_margin": statistics.mean(row["margin"] for row in group),
+            "wins": outcomes["win"],
+            "ties": outcomes["tie"],
+            "losses": outcomes["loss"],
+            "win_rate": outcomes["win"] / len(group),
+            "all_done": int(all(row["done"] for row in group)),
+            "errors": sum(row["errors"] for row in group),
+            "invalid": sum(row["invalid"] for row in group),
+            "mean_shifted_melon": statistics.mean(row["shifted_melon"] for row in group),
+            "mean_shifted_strawberry": statistics.mean(row["shifted_strawberry"] for row in group),
+            "mirror_latched_games": sum(row["mirror_latched"] for row in group),
+            "mirror_releases": sum(row["mirror_releases"] for row in group),
+            "max_action_diff_calls": max(row["action_diff_calls"] for row in group),
+            "max_action_diff_farmer": max(row["action_diff_farmer"] for row in group),
+            "max_action_diff_hands": max(row["action_diff_hands"] for row in group),
+            "max_action_diff_market": max(row["action_diff_market"] for row in group),
+            "p99_ms_max": max(row["p99_ms"] for row in group),
+        })
+    return result
+
+
+def _write_csv(path, rows):
+    if not rows:
+        return
+    path.parent.mkdir(parents=True, exist_ok=True)
+    serial = []
+    for row in rows:
+        item = dict(row)
+        for key, value in list(item.items()):
+            if isinstance(value, (dict, list)):
+                item[key] = repr(value)
+        serial.append(item)
+    fields = sorted({key for row in serial for key in row})
+    with path.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fields, extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(serial)
+
+
+def run(candidates, opponents, seeds, output):
+    output.mkdir(parents=True, exist_ok=True)
+    rows = []
+    total = len(candidates) * len(opponents) * len(seeds) * 2
+    index = 0
+    for candidate in candidates:
+        for opponent in opponents:
+            for seed in seeds:
+                for seat in (0, 1):
+                    index += 1
+                    print(f"[{index}/{total}] {candidate} vs {opponent} seed={seed} seat={seat}", flush=True)
+                    rows.append(_run_one(candidate, opponent, seed, seat))
+    _write_jsonl(output / "matrix_raw.jsonl", rows)
+    _write_csv(output / "matrix_raw.csv", rows)
+    summaries = {
+        "by_candidate_opponent": _summary(rows, ("candidate", "opponent")),
+        "by_candidate_mirror_state": _summary(rows, ("candidate", "mirror_signature_hit_both")),
+        "overall": _summary(rows, ("candidate",)),
+    }
+    (output / "matrix_summary.json").write_text(json.dumps(summaries, indent=2) + "\n", encoding="utf-8")
+    _write_csv(output / "matrix_summary.csv", summaries["by_candidate_opponent"])
+    return rows, summaries
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--candidates", nargs="+", default=list(CANDIDATES))
+    parser.add_argument("--opponents", nargs="+", default=list(DEFAULT_OPPONENTS))
+    parser.add_argument("--seeds", nargs="+", type=int, default=list(SEEDS))
+    parser.add_argument("--output", type=Path, default=ROOT / "baseline/artifacts/v027_v22_product_shift/matrix")
+    args = parser.parse_args()
+    run(tuple(args.candidates), tuple(args.opponents), tuple(args.seeds), args.output)
+
+
+if __name__ == "__main__":
+    main()

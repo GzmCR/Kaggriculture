@@ -1,0 +1,44 @@
+{
+  "v027a_melon_ratio": {
+    "candidate": "v027a_melon_ratio",
+    "variant": "melon",
+    "source_notebook": "baseline\\44-46-strict-future-top-30-v22-price-impact.ipynb",
+    "source_sha256": "62fb5a5f66f0011092a2b51e3192879ba583d5d815d761f176091c615657147a",
+    "main_sha256": "70ad943ea3c54d47d7399132763dbebd64a0a16306554a478b3776cc5eee9382",
+    "main_bytes": 32740,
+    "archive": "baseline\\artifacts\\v027_v22_product_shift\\v027a_melon_ratio\\submission.tar.gz",
+    "route": "v22_embedded_14hands_high_output",
+    "market_layer": "v22_price_impact_plus_quantity_preserving_product_shift",
+    "dynamic_cutoff_step": 648,
+    "full_fallback_step": 672,
+    "root_main_modified": false
+  },
+  "v027b_mirror_gated": {
+    "candidate": "v027b_mirror_gated",
+    "variant": "mirror",
+    "source_notebook": "baseline\\44-46-strict-future-top-30-v22-price-impact.ipynb",
+    "source_sha256": "62fb5a5f66f0011092a2b51e3192879ba583d5d815d761f176091c615657147a",
+    "main_sha256": "b97ea84a3e7afe1776967a0dad0ff34f4ab10b4638864f869afb3078d9153aa9",
+    "main_bytes": 32741,
+    "archive": "baseline\\artifacts\\v027_v22_product_shift\\v027b_mirror_gated\\submission.tar.gz",
+    "route": "v22_embedded_14hands_high_output",
+    "market_layer": "v22_price_impact_plus_quantity_preserving_product_shift",
+    "dynamic_cutoff_step": 648,
+    "full_fallback_step": 672,
+    "root_main_modified": false
+  },
+  "v027c_product_specific": {
+    "candidate": "v027c_product_specific",
+    "variant": "product",
+    "source_notebook": "baseline\\44-46-strict-future-top-30-v22-price-impact.ipynb",
+    "source_sha256": "62fb5a5f66f0011092a2b51e3192879ba583d5d815d761f176091c615657147a",
+    "main_sha256": "6001be42b87a82318f5a862f5161c9a28a3d5df8239b4ebd25f2255aee0491ba",
+    "main_bytes": 32742,
+    "archive": "baseline\\artifacts\\v027_v22_product_shift\\v027c_product_specific\\submission.tar.gz",
+    "route": "v22_embedded_14hands_high_output",
+    "market_layer": "v22_price_impact_plus_quantity_preserving_product_shift",
+    "dynamic_cutoff_step": 648,
+    "full_fallback_step": 672,
+    "root_main_modified": false
+  }
+}

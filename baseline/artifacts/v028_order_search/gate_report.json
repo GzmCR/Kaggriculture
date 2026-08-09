@@ -1,0 +1,39 @@
+{
+  "experiment": "v028_order_search",
+  "control": "v22",
+  "promoted_candidate": "v22",
+  "submission_ready": false,
+  "root_main_modified": false,
+  "candidate_invariants": {
+    "farmer_changed": 0,
+    "hands_changed": 0,
+    "sell_quantity_changed": 0,
+    "sell_product_multiset_changed": 0,
+    "non_premium_order_position_changed": 0,
+    "terminal_changed": 0
+  },
+  "verification": {
+    "structural_tests": "passed",
+    "smoke_games": 8,
+    "smoke_all_done": true,
+    "smoke_errors": 0,
+    "smoke_invalid": 0,
+    "v22_3seed_games": 24,
+    "v22_3seed_all_done": true,
+    "v22_3seed_errors": 0,
+    "v22_3seed_invalid": 0
+  },
+  "v22_3seed_summary": {
+    "v028a_mean_money": 119913.0,
+    "v028b_mean_money": 119913.0,
+    "v028c_mean_money": 119913.0,
+    "v22_mean_money": 119913.0,
+    "v028a_min_money": 103843.0,
+    "v028b_min_money": 103843.0,
+    "v028c_min_money": 103843.0,
+    "v22_min_money": 103843.0,
+    "max_p99_ms": 1.3353,
+    "max_changed_calls": 0
+  },
+  "reason": "No permutation exceeded its safety margin; all candidates fell back to v22."
+}

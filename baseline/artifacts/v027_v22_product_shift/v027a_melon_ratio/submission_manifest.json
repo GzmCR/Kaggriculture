@@ -1,0 +1,14 @@
+{
+  "candidate": "v027a_melon_ratio",
+  "variant": "melon",
+  "source_notebook": "baseline\\44-46-strict-future-top-30-v22-price-impact.ipynb",
+  "source_sha256": "62fb5a5f66f0011092a2b51e3192879ba583d5d815d761f176091c615657147a",
+  "main_sha256": "70ad943ea3c54d47d7399132763dbebd64a0a16306554a478b3776cc5eee9382",
+  "main_bytes": 32740,
+  "archive": "baseline\\artifacts\\v027_v22_product_shift\\v027a_melon_ratio\\submission.tar.gz",
+  "route": "v22_embedded_14hands_high_output",
+  "market_layer": "v22_price_impact_plus_quantity_preserving_product_shift",
+  "dynamic_cutoff_step": 648,
+  "full_fallback_step": 672,
+  "root_main_modified": false
+}

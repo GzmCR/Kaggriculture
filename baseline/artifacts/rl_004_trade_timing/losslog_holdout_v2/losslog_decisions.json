@@ -1,0 +1,192 @@
+[
+  {
+    "replay": "90743678.json",
+    "episode_id": 90743678,
+    "seed": 1169679696,
+    "decision_points": 39,
+    "selected_events": 7,
+    "selected_keys": "MILK:215->260;MILK:288->308;MILK:336->375;MILK:388->404;MILK:480->504;MILK:504->522;STRAWBERRY:528->552",
+    "unsupported_events": 15,
+    "errors": 0
+  },
+  {
+    "replay": "90751660.json",
+    "episode_id": 90751660,
+    "seed": 1971682226,
+    "decision_points": 39,
+    "selected_events": 5,
+    "selected_keys": "MILK:215->260;MILK:288->308;MILK:336->375;MILK:480->504;MILK:504->522",
+    "unsupported_events": 15,
+    "errors": 0
+  },
+  {
+    "replay": "90760646.json",
+    "episode_id": 90760646,
+    "seed": 810517436,
+    "decision_points": 39,
+    "selected_events": 5,
+    "selected_keys": "MILK:215->260;MILK:288->308;MILK:336->375;MILK:388->404;MILK:504->522",
+    "unsupported_events": 15,
+    "errors": 0
+  },
+  {
+    "replay": "90762322.json",
+    "episode_id": 90762322,
+    "seed": 1758190821,
+    "decision_points": 39,
+    "selected_events": 4,
+    "selected_keys": "MILK:215->260;MILK:288->308;MILK:336->375;MILK:504->522",
+    "unsupported_events": 15,
+    "errors": 0
+  },
+  {
+    "replay": "90763113.json",
+    "episode_id": 90763113,
+    "seed": 1054217564,
+    "decision_points": 39,
+    "selected_events": 4,
+    "selected_keys": "MILK:336->375;MILK:480->504;MILK:504->522;STRAWBERRY:528->552",
+    "unsupported_events": 15,
+    "errors": 0
+  },
+  {
+    "replay": "90767193.json",
+    "episode_id": 90767193,
+    "seed": 1288324714,
+    "decision_points": 39,
+    "selected_events": 2,
+    "selected_keys": "MILK:480->504;MILK:504->522",
+    "unsupported_events": 15,
+    "errors": 0
+  },
+  {
+    "replay": "90768840.json",
+    "episode_id": 90768840,
+    "seed": 1340348151,
+    "decision_points": 39,
+    "selected_events": 7,
+    "selected_keys": "MILK:215->260;MILK:288->308;MILK:336->375;MILK:388->404;MILK:504->522;STRAWBERRY:528->552;STRAWBERRY:552->573",
+    "unsupported_events": 15,
+    "errors": 0
+  },
+  {
+    "replay": "90773797.json",
+    "episode_id": 90773797,
+    "seed": 1903924488,
+    "decision_points": 39,
+    "selected_events": 7,
+    "selected_keys": "MILK:215->260;MILK:288->308;MILK:336->375;MILK:388->404;MILK:504->522;STRAWBERRY:528->552;STRAWBERRY:552->573",
+    "unsupported_events": 15,
+    "errors": 0
+  },
+  {
+    "replay": "90778604.json",
+    "episode_id": 90778604,
+    "seed": 1508738566,
+    "decision_points": 39,
+    "selected_events": 6,
+    "selected_keys": "MILK:215->260;MILK:288->308;MILK:336->375;MILK:388->404;MILK:504->522;STRAWBERRY:528->552",
+    "unsupported_events": 15,
+    "errors": 0
+  },
+  {
+    "replay": "90825519.json",
+    "episode_id": 90825519,
+    "seed": 1189435007,
+    "decision_points": 39,
+    "selected_events": 5,
+    "selected_keys": "MILK:215->260;MILK:288->308;MILK:336->375;MILK:388->404;MILK:504->522",
+    "unsupported_events": 15,
+    "errors": 0
+  },
+  {
+    "replay": "90895509.json",
+    "episode_id": 90895509,
+    "seed": 977101597,
+    "decision_points": 39,
+    "selected_events": 6,
+    "selected_keys": "MILK:215->260;MILK:288->308;MILK:336->375;MILK:388->404;STRAWBERRY:480->503;MILK:504->522",
+    "unsupported_events": 15,
+    "errors": 0
+  },
+  {
+    "replay": "90897212.json",
+    "episode_id": 90897212,
+    "seed": 986176770,
+    "decision_points": 39,
+    "selected_events": 6,
+    "selected_keys": "MILK:215->260;MILK:288->308;MILK:336->375;MILK:388->404;MILK:504->522;STRAWBERRY:528->552",
+    "unsupported_events": 15,
+    "errors": 0
+  },
+  {
+    "replay": "90898064.json",
+    "episode_id": 90898064,
+    "seed": 1660162105,
+    "decision_points": 39,
+    "selected_events": 7,
+    "selected_keys": "MILK:215->260;MILK:288->308;MILK:336->375;MILK:388->404;MILK:480->504;MILK:504->522;STRAWBERRY:528->552",
+    "unsupported_events": 15,
+    "errors": 0
+  },
+  {
+    "replay": "90901389.json",
+    "episode_id": 90901389,
+    "seed": 1623769566,
+    "decision_points": 39,
+    "selected_events": 6,
+    "selected_keys": "MILK:215->260;MILK:288->308;MILK:336->375;MILK:388->404;STRAWBERRY:480->503;MILK:504->522",
+    "unsupported_events": 15,
+    "errors": 0
+  },
+  {
+    "replay": "90929339.json",
+    "episode_id": 90929339,
+    "seed": 1128596422,
+    "decision_points": 39,
+    "selected_events": 6,
+    "selected_keys": "MILK:215->260;MILK:288->308;MILK:336->375;MILK:504->522;STRAWBERRY:528->552;STRAWBERRY:552->573",
+    "unsupported_events": 15,
+    "errors": 0
+  },
+  {
+    "replay": "90948312.json",
+    "episode_id": 90948312,
+    "seed": 1078283359,
+    "decision_points": 39,
+    "selected_events": 7,
+    "selected_keys": "MILK:215->260;MILK:288->308;MILK:336->375;MILK:388->404;MILK:504->522;STRAWBERRY:528->552;STRAWBERRY:552->573",
+    "unsupported_events": 15,
+    "errors": 0
+  },
+  {
+    "replay": "90954942.json",
+    "episode_id": 90954942,
+    "seed": 2020395261,
+    "decision_points": 31,
+    "selected_events": 8,
+    "selected_keys": "MILK:215->260;MILK:288->308;MILK:336->375;MILK:388->404;STRAWBERRY:480->503;MILK:504->522;STRAWBERRY:528->552;STRAWBERRY:552->573",
+    "unsupported_events": 10,
+    "errors": 0
+  },
+  {
+    "replay": "90957682.json",
+    "episode_id": 90957682,
+    "seed": 934910747,
+    "decision_points": 39,
+    "selected_events": 5,
+    "selected_keys": "MILK:388->404;STRAWBERRY:432->454;STRAWBERRY:480->503;MILK:504->522;STRAWBERRY:528->552",
+    "unsupported_events": 15,
+    "errors": 0
+  },
+  {
+    "replay": "90958293.json",
+    "episode_id": 90958293,
+    "seed": 280588044,
+    "decision_points": 39,
+    "selected_events": 6,
+    "selected_keys": "MILK:215->260;MILK:288->308;MILK:336->375;MILK:388->404;MILK:480->504;MILK:504->522",
+    "unsupported_events": 15,
+    "errors": 0
+  }
+]

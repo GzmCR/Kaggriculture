@@ -1,0 +1,33 @@
+{
+  "actions": {},
+  "skipped_actions": {
+    "1": {
+      "rows": 2,
+      "support": 2
+    },
+    "2": {
+      "rows": 2,
+      "support": 2
+    },
+    "3": {
+      "rows": 2,
+      "support": 2
+    },
+    "4": {
+      "rows": 2,
+      "support": 2
+    },
+    "5": {
+      "rows": 2,
+      "support": 2
+    },
+    "6": {
+      "rows": 2,
+      "support": 2
+    }
+  },
+  "samples": 12,
+  "models": 0,
+  "feature_dim": 78,
+  "mean_cash_delta": -131.5
+}

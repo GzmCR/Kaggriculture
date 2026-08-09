@@ -1,0 +1,40 @@
+{
+  "candidate": "v030b_cross_product_guard",
+  "mode": "cross_product_guard",
+  "base": "baseline/artifacts/v029_milk_schedule/v029a_milk_safe_schedule/main.py",
+  "market_changes": [
+    "gate V029 MILK delays only for low-price, fast 12-turn drops or persistent 12/24-turn drops",
+    "cross_product_guard: advance at most four existing MELON/STRAWBERRY SELL units during a crash"
+  ],
+  "milk_schedule": [
+    [
+      215,
+      260
+    ],
+    [
+      288,
+      308
+    ],
+    [
+      336,
+      375
+    ],
+    [
+      388,
+      404
+    ],
+    [
+      504,
+      522
+    ],
+    [
+      552,
+      571
+    ]
+  ],
+  "cutoff": 672,
+  "main_sha256": "39b001b113b7a489719041bcec2e8d851c105379ff90b2a894679bd555e9acf0",
+  "main_bytes": 29670,
+  "archive": "baseline\\artifacts\\v030_adaptive_market\\v030b_cross_product_guard\\submission.tar.gz",
+  "root_main_modified": false
+}

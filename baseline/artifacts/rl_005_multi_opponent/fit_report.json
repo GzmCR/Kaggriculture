@@ -1,0 +1,75 @@
+{
+  "groups": {
+    "MILK|215|260": {
+      "rows": 54,
+      "support": 54,
+      "mean_delta": 11.148148148148149,
+      "median_delta": 5.0,
+      "min_delta": 3.0,
+      "max_delta": 44.0,
+      "positive_rate": 1.0,
+      "residual_std": 1.2372991895474434,
+      "mean_prediction": 11.14814814814815
+    },
+    "MILK|260|283": {
+      "rows": 54,
+      "support": 54,
+      "mean_delta": 8.296296296296296,
+      "median_delta": 8.0,
+      "min_delta": 6.0,
+      "max_delta": 16.0,
+      "positive_rate": 1.0,
+      "residual_std": 0.4040144833823709,
+      "mean_prediction": 8.296296296296294
+    },
+    "MILK|288|308": {
+      "rows": 54,
+      "support": 54,
+      "mean_delta": 8.074074074074074,
+      "median_delta": 8.0,
+      "min_delta": 1.0,
+      "max_delta": 25.0,
+      "positive_rate": 1.0,
+      "residual_std": 1.0428264293507867,
+      "mean_prediction": 8.074074074074073
+    },
+    "MILK|336|375": {
+      "rows": 54,
+      "support": 54,
+      "mean_delta": 14.88888888888889,
+      "median_delta": 14.0,
+      "min_delta": 7.0,
+      "max_delta": 50.0,
+      "positive_rate": 1.0,
+      "residual_std": 1.6049077221795272,
+      "mean_prediction": 14.888888888888888
+    },
+    "MILK|452|473": {
+      "rows": 54,
+      "support": 54,
+      "mean_delta": 12.037037037037036,
+      "median_delta": 11.0,
+      "min_delta": 4.0,
+      "max_delta": 31.0,
+      "positive_rate": 1.0,
+      "residual_std": 2.9238957264531775,
+      "mean_prediction": 12.037037037037033
+    },
+    "STRAWBERRY|480|503": {
+      "rows": 54,
+      "support": 54,
+      "mean_delta": 7.111111111111111,
+      "median_delta": 8.0,
+      "min_delta": -3.0,
+      "max_delta": 11.0,
+      "positive_rate": 0.8333333333333334,
+      "residual_std": 1.534084977257265,
+      "mean_prediction": 7.111111111111111
+    }
+  },
+  "skipped_groups": {},
+  "samples": 324,
+  "models": 6,
+  "mean_cash_delta": 10.25925925925926,
+  "min_support": 12
+}

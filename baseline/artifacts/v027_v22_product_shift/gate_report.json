@@ -1,0 +1,77 @@
+{
+  "experiment": "V027 product-level sell-wave shift",
+  "control": "v22",
+  "matrix": {
+    "games": 192,
+    "opponents": ["v22", "v022c", "v13_r3", "v21_1", "v012", "v024a", "v025b", "random"],
+    "seeds": [17, 42, 2026],
+    "seats": [0, 1]
+  },
+  "control_metrics": {
+    "mean_cash": 128993.6875,
+    "min_cash": 77933.0,
+    "wins": 43,
+    "ties": 4,
+    "losses": 1,
+    "done": 48,
+    "errors": 0,
+    "invalid": 0,
+    "p99_ms": 0.3135
+  },
+  "candidates": {
+    "v027a": {
+      "mean_cash": 129247.64583333333,
+      "min_cash": 77867.0,
+      "mean_cash_ratio": 1.001968765590435,
+      "wins": 42,
+      "ties": 0,
+      "losses": 6,
+      "done": 48,
+      "errors": 0,
+      "invalid": 0,
+      "p99_ms": 0.4384,
+      "action_diff_farmer": 0,
+      "action_diff_hands": 0,
+      "action_diff_market_only": true,
+      "shifted_melon_units": 84,
+      "future_reduced_melon_units": 84,
+      "recommended": false,
+      "reason": "Win rate fell and every fixed-opponent paired delta was negative"
+    },
+    "v027b": {
+      "mean_cash": 128614.95833333333,
+      "min_cash": 77933.0,
+      "mean_cash_ratio": 0.9970639713151338,
+      "wins": 43,
+      "ties": 4,
+      "losses": 1,
+      "done": 48,
+      "errors": 0,
+      "invalid": 0,
+      "p99_ms": 1.2991,
+      "mirror_latched_games": 0,
+      "action_diff_calls": 0,
+      "recommended": false,
+      "reason": "Mirror gate never activated and mean cash was below control"
+    },
+    "v027c": {
+      "mean_cash": 129637.10416666667,
+      "min_cash": 77933.0,
+      "mean_cash_ratio": 1.0049879701800655,
+      "wins": 43,
+      "ties": 4,
+      "losses": 1,
+      "done": 48,
+      "errors": 0,
+      "invalid": 0,
+      "p99_ms": 0.7344,
+      "mirror_latched_games": 0,
+      "action_diff_calls": 0,
+      "recommended": false,
+      "reason": "No action activation; apparent cash gain is independent random-opponent variation"
+    }
+  },
+  "root_main_modified": false,
+  "submission_ready": false,
+  "promoted_candidate": "v22"
+}

@@ -1,0 +1,39 @@
+{
+  "candidate": "v030a_milk_momentum_gate",
+  "mode": "milk_momentum_gate",
+  "base": "baseline/artifacts/v029_milk_schedule/v029a_milk_safe_schedule/main.py",
+  "market_changes": [
+    "gate V029 MILK delays only for low-price, fast 12-turn drops or persistent 12/24-turn drops"
+  ],
+  "milk_schedule": [
+    [
+      215,
+      260
+    ],
+    [
+      288,
+      308
+    ],
+    [
+      336,
+      375
+    ],
+    [
+      388,
+      404
+    ],
+    [
+      504,
+      522
+    ],
+    [
+      552,
+      571
+    ]
+  ],
+  "cutoff": 672,
+  "main_sha256": "680f6fb873ff5ace8415dd4c1652d4463db303b3b90d836812c0c4bb557e1ed6",
+  "main_bytes": 29669,
+  "archive": "baseline\\artifacts\\v030_adaptive_market\\v030a_milk_momentum_gate\\submission.tar.gz",
+  "root_main_modified": false
+}

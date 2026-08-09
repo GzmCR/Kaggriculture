@@ -1,0 +1,13 @@
+candidate_money,candidate_status,done,margin,opponent,opponent_money,opponent_status,seat,seed
+162126.0,DONE,1,102828.0,02_adaptive_replay,59298.0,DONE,0,17
+162126.0,DONE,1,102828.0,02_adaptive_replay,59298.0,DONE,1,17
+175839.0,DONE,1,112231.0,02_adaptive_replay,63608.0,DONE,0,42
+177443.0,DONE,1,111184.0,02_adaptive_replay,66259.0,DONE,1,42
+174356.0,DONE,1,111426.0,02_adaptive_replay,62930.0,DONE,0,2026
+174413.0,DONE,1,111489.0,02_adaptive_replay,62924.0,DONE,1,2026
+130777.0,DONE,1,9443.0,top_meta,121334.0,DONE,0,17
+130777.0,DONE,1,9443.0,top_meta,121334.0,DONE,1,17
+132279.0,DONE,1,6319.0,top_meta,125960.0,DONE,0,42
+132279.0,DONE,1,6319.0,top_meta,125960.0,DONE,1,42
+107115.0,DONE,1,7549.0,top_meta,99566.0,DONE,0,2026
+107175.0,DONE,1,7669.0,top_meta,99506.0,DONE,1,2026

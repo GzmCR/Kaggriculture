@@ -1,0 +1,5 @@
+all_done,candidate,errors,games,invalid,losses,max_action_diff_calls,max_action_diff_farmer,max_action_diff_hands,max_action_diff_market,mean_changed_calls,mean_decision_points,mean_evaluations,mean_margin,mean_money,mean_predicted_delta,min_money,opponent,p99_ms_max,ties,win_rate,wins
+1,v028a,0,2,0,0,0,0,0,0,0,29,89,0.0,126289.0,0.0,126289.0,v22,0.7977,2,0.0,0
+1,v028b,0,2,0,0,0,0,0,0,0,29,89,0.0,126289.0,0.0,126289.0,v22,0.8489,2,0.0,0
+1,v028c,0,2,0,0,0,0,0,0,0,29,89,0.0,126289.0,0.0,126289.0,v22,1.1792,2,0.0,0
+1,v22,0,2,0,0,0,0,0,0,0,0,0,0.0,126289.0,0.0,126289.0,v22,0.3638,2,0.0,0

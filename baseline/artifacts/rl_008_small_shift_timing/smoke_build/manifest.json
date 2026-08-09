@@ -1,0 +1,155 @@
+{
+  "variants": {
+    "gated_preempt": {
+      "name": "rl_008_gated_preempt",
+      "status": "small_quantity_bidirectional_timing_contextual_bandit",
+      "variant": "gated_preempt",
+      "allowed_actions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "gate_mode": "gated",
+      "control": "v22_price_impact_route",
+      "feature_dim": 78,
+      "min_support": 12,
+      "min_expected_delta": 5.0,
+      "lcb_z": 1.5,
+      "models": 0,
+      "training_samples": 18,
+      "training_data": "baseline\\artifacts\\rl_008_small_shift_timing\\data_parallel_smoke\\samples.jsonl",
+      "source_notebook": "baseline\\44-46-strict-future-top-30-v22-price-impact.ipynb",
+      "source_sha256": "62fb5a5f66f0011092a2b51e3192879ba583d5d815d761f176091c615657147a",
+      "main_sha256": "76683d0887b1a29806ffe24566f2750a78dae2d953d13a62bcca790544efa917",
+      "main_bytes": 75006,
+      "archive": "baseline\\artifacts\\rl_008_small_shift_timing\\smoke_build\\gated_preempt\\submission.tar.gz",
+      "root_main_modified": false
+    },
+    "ungated_preempt": {
+      "name": "rl_008_ungated_preempt",
+      "status": "small_quantity_bidirectional_timing_contextual_bandit",
+      "variant": "ungated_preempt",
+      "allowed_actions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "gate_mode": "ungated",
+      "control": "v22_price_impact_route",
+      "feature_dim": 78,
+      "min_support": 12,
+      "min_expected_delta": 5.0,
+      "lcb_z": 1.5,
+      "models": 0,
+      "training_samples": 18,
+      "training_data": "baseline\\artifacts\\rl_008_small_shift_timing\\data_parallel_smoke\\samples.jsonl",
+      "source_notebook": "baseline\\44-46-strict-future-top-30-v22-price-impact.ipynb",
+      "source_sha256": "62fb5a5f66f0011092a2b51e3192879ba583d5d815d761f176091c615657147a",
+      "main_sha256": "a2903eb2652a54a6fe7cf4d0dffe39107f2f47adbc96715026f564b3d5116da3",
+      "main_bytes": 75008,
+      "archive": "baseline\\artifacts\\rl_008_small_shift_timing\\smoke_build\\ungated_preempt\\submission.tar.gz",
+      "root_main_modified": false
+    },
+    "gated_bidirectional": {
+      "name": "rl_008_gated_bidirectional",
+      "status": "small_quantity_bidirectional_timing_contextual_bandit",
+      "variant": "gated_bidirectional",
+      "allowed_actions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "gate_mode": "gated",
+      "control": "v22_price_impact_route",
+      "feature_dim": 78,
+      "min_support": 12,
+      "min_expected_delta": 5.0,
+      "lcb_z": 1.5,
+      "models": 0,
+      "training_samples": 18,
+      "training_data": "baseline\\artifacts\\rl_008_small_shift_timing\\data_parallel_smoke\\samples.jsonl",
+      "source_notebook": "baseline\\44-46-strict-future-top-30-v22-price-impact.ipynb",
+      "source_sha256": "62fb5a5f66f0011092a2b51e3192879ba583d5d815d761f176091c615657147a",
+      "main_sha256": "8c69ecde45bdda0e03e2e00840eb259b336cce747fe9853b1dd5477076a832ac",
+      "main_bytes": 75012,
+      "archive": "baseline\\artifacts\\rl_008_small_shift_timing\\smoke_build\\gated_bidirectional\\submission.tar.gz",
+      "root_main_modified": false
+    },
+    "ungated_bidirectional": {
+      "name": "rl_008_ungated_bidirectional",
+      "status": "small_quantity_bidirectional_timing_contextual_bandit",
+      "variant": "ungated_bidirectional",
+      "allowed_actions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "gate_mode": "ungated",
+      "control": "v22_price_impact_route",
+      "feature_dim": 78,
+      "min_support": 12,
+      "min_expected_delta": 5.0,
+      "lcb_z": 1.5,
+      "models": 0,
+      "training_samples": 18,
+      "training_data": "baseline\\artifacts\\rl_008_small_shift_timing\\data_parallel_smoke\\samples.jsonl",
+      "source_notebook": "baseline\\44-46-strict-future-top-30-v22-price-impact.ipynb",
+      "source_sha256": "62fb5a5f66f0011092a2b51e3192879ba583d5d815d761f176091c615657147a",
+      "main_sha256": "fcc305a7f158d4a08c0b61550e159a6db9f48b99eccddce0431522457b5e07aa",
+      "main_bytes": 75014,
+      "archive": "baseline\\artifacts\\rl_008_small_shift_timing\\smoke_build\\ungated_bidirectional\\submission.tar.gz",
+      "root_main_modified": false
+    }
+  },
+  "fit": {
+    "actions": {},
+    "skipped_actions": {
+      "1": {
+        "rows": 2,
+        "support": 2
+      },
+      "2": {
+        "rows": 2,
+        "support": 2
+      },
+      "3": {
+        "rows": 2,
+        "support": 2
+      },
+      "4": {
+        "rows": 2,
+        "support": 2
+      },
+      "5": {
+        "rows": 2,
+        "support": 2
+      },
+      "6": {
+        "rows": 2,
+        "support": 2
+      }
+    },
+    "samples": 12,
+    "models": 0,
+    "feature_dim": 78,
+    "mean_cash_delta": -131.5
+  }
+}

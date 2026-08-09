@@ -1,0 +1,47 @@
+{
+  "v028a_marginal_order": {
+    "candidate": "v028a_marginal_order",
+    "variant": "marginal",
+    "margin": 50.0,
+    "source_notebook": "baseline\\44-46-strict-future-top-30-v22-price-impact.ipynb",
+    "source_sha256": "62fb5a5f66f0011092a2b51e3192879ba583d5d815d761f176091c615657147a",
+    "main_sha256": "196a94cb5947e2f24e9f7f03b44b61ca8bf11bdc37037333894b51f3f20dd218",
+    "main_bytes": 29907,
+    "archive": "baseline\\artifacts\\v028_order_search\\v028a_marginal_order\\submission.tar.gz",
+    "route": "v22_embedded_14hands_high_output",
+    "market_layer": "quantity_preserving_premium_order_permutation",
+    "shadow": "public_v22_route_market_queue",
+    "full_fallback_step": 672,
+    "root_main_modified": false
+  },
+  "v028b_safe_order": {
+    "candidate": "v028b_safe_order",
+    "variant": "marginal",
+    "margin": 100.0,
+    "source_notebook": "baseline\\44-46-strict-future-top-30-v22-price-impact.ipynb",
+    "source_sha256": "62fb5a5f66f0011092a2b51e3192879ba583d5d815d761f176091c615657147a",
+    "main_sha256": "ba422a97068426c8ad8c253ba12211e4ff41d1fd43856590f11bd00354eb8914",
+    "main_bytes": 29908,
+    "archive": "baseline\\artifacts\\v028_order_search\\v028b_safe_order\\submission.tar.gz",
+    "route": "v22_embedded_14hands_high_output",
+    "market_layer": "quantity_preserving_premium_order_permutation",
+    "shadow": "public_v22_route_market_queue",
+    "full_fallback_step": 672,
+    "root_main_modified": false
+  },
+  "v028c_robust_order": {
+    "candidate": "v028c_robust_order",
+    "variant": "robust",
+    "margin": 50.0,
+    "source_notebook": "baseline\\44-46-strict-future-top-30-v22-price-impact.ipynb",
+    "source_sha256": "62fb5a5f66f0011092a2b51e3192879ba583d5d815d761f176091c615657147a",
+    "main_sha256": "9a36f41a5074ac6b2ba93f0a3be054667eb8ad782d580f5991e9026a542d04f1",
+    "main_bytes": 29905,
+    "archive": "baseline\\artifacts\\v028_order_search\\v028c_robust_order\\submission.tar.gz",
+    "route": "v22_embedded_14hands_high_output",
+    "market_layer": "quantity_preserving_premium_order_permutation",
+    "shadow": "public_v22_route_market_queue",
+    "full_fallback_step": 672,
+    "root_main_modified": false
+  }
+}

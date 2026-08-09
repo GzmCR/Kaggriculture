@@ -1,0 +1,152 @@
+{
+  "seeds": [
+    17,
+    42,
+    2026,
+    217,
+    317,
+    733
+  ],
+  "events": [
+    {
+      "item": "MILK",
+      "current_step": 215,
+      "future_step": 260,
+      "current_quantity": 6,
+      "future_quantity": 3,
+      "gap": 45
+    },
+    {
+      "item": "MILK",
+      "current_step": 288,
+      "future_step": 308,
+      "current_quantity": 6,
+      "future_quantity": 3,
+      "gap": 20
+    },
+    {
+      "item": "MILK",
+      "current_step": 336,
+      "future_step": 375,
+      "current_quantity": 9,
+      "future_quantity": 3,
+      "gap": 39
+    },
+    {
+      "item": "MILK",
+      "current_step": 388,
+      "future_step": 404,
+      "current_quantity": 6,
+      "future_quantity": 3,
+      "gap": 16
+    },
+    {
+      "item": "MILK",
+      "current_step": 480,
+      "future_step": 504,
+      "current_quantity": 3,
+      "future_quantity": 6,
+      "gap": 24
+    },
+    {
+      "item": "MILK",
+      "current_step": 504,
+      "future_step": 522,
+      "current_quantity": 6,
+      "future_quantity": 6,
+      "gap": 18
+    },
+    {
+      "item": "MILK",
+      "current_step": 260,
+      "future_step": 283,
+      "current_quantity": 3,
+      "future_quantity": 3,
+      "gap": 23
+    },
+    {
+      "item": "MILK",
+      "current_step": 432,
+      "future_step": 450,
+      "current_quantity": 6,
+      "future_quantity": 3,
+      "gap": 18
+    },
+    {
+      "item": "MILK",
+      "current_step": 452,
+      "future_step": 473,
+      "current_quantity": 3,
+      "future_quantity": 3,
+      "gap": 21
+    },
+    {
+      "item": "STRAWBERRY",
+      "current_step": 432,
+      "future_step": 454,
+      "current_quantity": 6,
+      "future_quantity": 4,
+      "gap": 22
+    },
+    {
+      "item": "STRAWBERRY",
+      "current_step": 456,
+      "future_step": 473,
+      "current_quantity": 4,
+      "future_quantity": 6,
+      "gap": 17
+    },
+    {
+      "item": "STRAWBERRY",
+      "current_step": 480,
+      "future_step": 503,
+      "current_quantity": 16,
+      "future_quantity": 6,
+      "gap": 23
+    },
+    {
+      "item": "STRAWBERRY",
+      "current_step": 504,
+      "future_step": 523,
+      "current_quantity": 2,
+      "future_quantity": 8,
+      "gap": 19
+    },
+    {
+      "item": "STRAWBERRY",
+      "current_step": 528,
+      "future_step": 552,
+      "current_quantity": 4,
+      "future_quantity": 20,
+      "gap": 24
+    },
+    {
+      "item": "STRAWBERRY",
+      "current_step": 552,
+      "future_step": 573,
+      "current_quantity": 20,
+      "future_quantity": 19,
+      "gap": 21
+    }
+  ],
+  "samples": 180,
+  "feature_dim": 29,
+  "all_done": 1,
+  "unique_support": {
+    "MILK|215|260": 12,
+    "MILK|288|308": 12,
+    "MILK|336|375": 12,
+    "MILK|388|404": 12,
+    "MILK|480|504": 12,
+    "MILK|504|522": 12,
+    "MILK|260|283": 12,
+    "MILK|432|450": 12,
+    "MILK|452|473": 12,
+    "STRAWBERRY|432|454": 12,
+    "STRAWBERRY|456|473": 12,
+    "STRAWBERRY|480|503": 12,
+    "STRAWBERRY|504|523": 12,
+    "STRAWBERRY|528|552": 12,
+    "STRAWBERRY|552|573": 12
+  }
+}

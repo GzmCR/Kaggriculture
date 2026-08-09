@@ -1,0 +1,28 @@
+{
+  "name": "rl_008_ungated_preempt",
+  "status": "small_quantity_bidirectional_timing_contextual_bandit",
+  "variant": "ungated_preempt",
+  "allowed_actions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "gate_mode": "ungated",
+  "control": "v22_price_impact_route",
+  "feature_dim": 78,
+  "min_support": 12,
+  "min_expected_delta": 5.0,
+  "lcb_z": 1.5,
+  "models": 9,
+  "training_samples": 4536,
+  "training_data": "baseline\\artifacts\\rl_008_small_shift_timing\\data_train\\samples.jsonl",
+  "source_notebook": "baseline\\44-46-strict-future-top-30-v22-price-impact.ipynb",
+  "source_sha256": "62fb5a5f66f0011092a2b51e3192879ba583d5d815d761f176091c615657147a",
+  "main_sha256": "fc511067d0b0e22ff30abb17586a528c836241e5f8ee36a87b92fa607b1edb56",
+  "main_bytes": 91682,
+  "archive": "baseline\\artifacts\\rl_008_small_shift_timing\\ungated_preempt\\submission.tar.gz",
+  "root_main_modified": false
+}

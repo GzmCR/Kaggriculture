@@ -1,0 +1,22 @@
+{
+  "name": "rl_007_h3_only",
+  "status": "turn_level_premium_preemption_contextual_bandit",
+  "variant": "h3_only",
+  "allowed_actions": [
+    3
+  ],
+  "control": "v22_price_impact_route",
+  "feature_dim": 78,
+  "min_support": 12,
+  "min_expected_delta": 5.0,
+  "lcb_z": 1.5,
+  "models": 3,
+  "training_samples": 324,
+  "training_data": "baseline\\artifacts\\rl_007_next_turn_preemption\\data_train\\samples.jsonl",
+  "source_notebook": "baseline\\44-46-strict-future-top-30-v22-price-impact.ipynb",
+  "source_sha256": "62fb5a5f66f0011092a2b51e3192879ba583d5d815d761f176091c615657147a",
+  "main_sha256": "be3bc4133b0c5f9dd6c014ddcd841938a13be6b2bcf1fcff32b82a7559769141",
+  "main_bytes": 75213,
+  "archive": "baseline\\artifacts\\rl_007_next_turn_preemption\\h3_only\\submission.tar.gz",
+  "root_main_modified": false
+}

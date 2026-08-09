@@ -1,0 +1,18 @@
+{
+  "name": "rl_004_trade_timing",
+  "status": "observation_aware_supported_event_delay",
+  "control": "v22_price_impact_route",
+  "feature_dim": 29,
+  "min_support": 12,
+  "min_expected_delta": 5.0,
+  "lcb_z": 1.5,
+  "models": 15,
+  "training_samples": 180,
+  "training_data": "baseline\\artifacts\\rl_004_trade_timing\\data_train_augmented\\samples.jsonl",
+  "source_notebook": "baseline/44-46-strict-future-top-30-v22-price-impact.ipynb",
+  "source_sha256": "62fb5a5f66f0011092a2b51e3192879ba583d5d815d761f176091c615657147a",
+  "main_sha256": "b361ecfa07d8f68b04abd41d1f9744ce0c386a7a91301c597506bb18a0cbd3c3",
+  "main_bytes": 54896,
+  "archive": "baseline\\artifacts\\rl_004_trade_timing\\submission.tar.gz",
+  "root_main_modified": false
+}

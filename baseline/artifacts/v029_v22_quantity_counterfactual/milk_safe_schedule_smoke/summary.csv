@@ -1,0 +1,2 @@
+all_done,current_step,direction,errors,future_step,games,item,losses,mean_changed_calls,mean_margin,mean_money,min_money,quantity,ties,wins
+1,"215,288,336,388,504,552",delay,0,"260,308,375,404,522,571",2,MILK_SCHEDULE,0,12,50.0,126349.0,126349.0,1,0,2

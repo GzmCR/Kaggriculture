@@ -1,0 +1,18 @@
+{
+  "name": "rl_005_multi_opponent",
+  "status": "multi_opponent_observation_aware_event_delay",
+  "control": "v22_price_impact_route",
+  "feature_dim": 29,
+  "min_support": 12,
+  "min_expected_delta": 5.0,
+  "lcb_z": 1.5,
+  "models": 6,
+  "training_samples": 324,
+  "training_data": "baseline\\artifacts\\rl_005_multi_opponent\\data_train\\samples.jsonl",
+  "source_notebook": "baseline/44-46-strict-future-top-30-v22-price-impact.ipynb",
+  "source_sha256": "62fb5a5f66f0011092a2b51e3192879ba583d5d815d761f176091c615657147a",
+  "main_sha256": "fc0437e6273d0314ef8e3c205653d068736fb05d747b8d2a3e0e7819d5db9bff",
+  "main_bytes": 46441,
+  "archive": "baseline\\artifacts\\rl_005_multi_opponent\\submission.tar.gz",
+  "root_main_modified": false
+}

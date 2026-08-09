@@ -1,0 +1,174 @@
+{
+  "groups": {
+    "MILK|215|260": {
+      "rows": 12,
+      "support": 12,
+      "mean_delta": 24.5,
+      "median_delta": 26.5,
+      "min_delta": 12.0,
+      "max_delta": 33.0,
+      "positive_rate": 1.0,
+      "residual_std": 1.3299353231783293,
+      "mean_prediction": 24.50000000000001
+    },
+    "MILK|260|283": {
+      "rows": 12,
+      "support": 12,
+      "mean_delta": 7.0,
+      "median_delta": 8.0,
+      "min_delta": 4.0,
+      "max_delta": 9.0,
+      "positive_rate": 1.0,
+      "residual_std": 1.0850996656157001,
+      "mean_prediction": 7.0
+    },
+    "MILK|288|308": {
+      "rows": 12,
+      "support": 12,
+      "mean_delta": 11.5,
+      "median_delta": 12.5,
+      "min_delta": 3.0,
+      "max_delta": 18.0,
+      "positive_rate": 1.0,
+      "residual_std": 0.8388667261999703,
+      "mean_prediction": 11.5
+    },
+    "MILK|336|375": {
+      "rows": 12,
+      "support": 12,
+      "mean_delta": 27.666666666666668,
+      "median_delta": 26.0,
+      "min_delta": 11.0,
+      "max_delta": 45.0,
+      "positive_rate": 1.0,
+      "residual_std": 3.1049494852954775,
+      "mean_prediction": 27.666666666666668
+    },
+    "MILK|388|404": {
+      "rows": 12,
+      "support": 12,
+      "mean_delta": 7.5,
+      "median_delta": 6.0,
+      "min_delta": 3.0,
+      "max_delta": 13.0,
+      "positive_rate": 1.0,
+      "residual_std": 2.640356841937524,
+      "mean_prediction": 7.500000000000001
+    },
+    "MILK|432|450": {
+      "rows": 12,
+      "support": 12,
+      "mean_delta": -25.666666666666668,
+      "median_delta": 15.5,
+      "min_delta": -244.0,
+      "max_delta": 29.0,
+      "positive_rate": 0.8333333333333334,
+      "residual_std": 70.52367630366197,
+      "mean_prediction": -25.666666666666675
+    },
+    "MILK|452|473": {
+      "rows": 12,
+      "support": 12,
+      "mean_delta": 22.166666666666668,
+      "median_delta": 25.5,
+      "min_delta": 12.0,
+      "max_delta": 32.0,
+      "positive_rate": 1.0,
+      "residual_std": 2.6044942202425863,
+      "mean_prediction": 22.166666666666668
+    },
+    "MILK|480|504": {
+      "rows": 12,
+      "support": 12,
+      "mean_delta": -15.166666666666666,
+      "median_delta": 20.5,
+      "min_delta": -204.0,
+      "max_delta": 36.0,
+      "positive_rate": 0.8333333333333334,
+      "residual_std": 32.51079470920493,
+      "mean_prediction": -15.166666666666671
+    },
+    "MILK|504|522": {
+      "rows": 12,
+      "support": 12,
+      "mean_delta": 24.666666666666668,
+      "median_delta": 28.0,
+      "min_delta": 9.0,
+      "max_delta": 39.0,
+      "positive_rate": 1.0,
+      "residual_std": 2.953424744709164,
+      "mean_prediction": 24.66666666666667
+    },
+    "STRAWBERRY|432|454": {
+      "rows": 12,
+      "support": 12,
+      "mean_delta": 4.833333333333333,
+      "median_delta": 5.0,
+      "min_delta": 3.0,
+      "max_delta": 6.0,
+      "positive_rate": 1.0,
+      "residual_std": 0.5512738475602538,
+      "mean_prediction": 4.833333333333335
+    },
+    "STRAWBERRY|456|473": {
+      "rows": 12,
+      "support": 12,
+      "mean_delta": 3.8333333333333335,
+      "median_delta": 4.0,
+      "min_delta": 2.0,
+      "max_delta": 5.0,
+      "positive_rate": 1.0,
+      "residual_std": 0.38802275927041535,
+      "mean_prediction": 3.8333333333333344
+    },
+    "STRAWBERRY|480|503": {
+      "rows": 12,
+      "support": 12,
+      "mean_delta": 6.833333333333333,
+      "median_delta": 7.0,
+      "min_delta": 5.0,
+      "max_delta": 9.0,
+      "positive_rate": 1.0,
+      "residual_std": 0.7978874560123208,
+      "mean_prediction": 6.833333333333333
+    },
+    "STRAWBERRY|504|523": {
+      "rows": 12,
+      "support": 12,
+      "mean_delta": 5.833333333333333,
+      "median_delta": 5.5,
+      "min_delta": 4.0,
+      "max_delta": 9.0,
+      "positive_rate": 1.0,
+      "residual_std": 0.8216863984720676,
+      "mean_prediction": 5.833333333333333
+    },
+    "STRAWBERRY|528|552": {
+      "rows": 12,
+      "support": 12,
+      "mean_delta": 4.166666666666667,
+      "median_delta": 4.5,
+      "min_delta": 0.0,
+      "max_delta": 7.0,
+      "positive_rate": 0.8333333333333334,
+      "residual_std": 1.1964947703773652,
+      "mean_prediction": 4.166666666666665
+    },
+    "STRAWBERRY|552|573": {
+      "rows": 12,
+      "support": 12,
+      "mean_delta": 3.9166666666666665,
+      "median_delta": 3.0,
+      "min_delta": 0.0,
+      "max_delta": 7.0,
+      "positive_rate": 0.9166666666666666,
+      "residual_std": 1.6208562723946331,
+      "mean_prediction": 3.9166666666666656
+    }
+  },
+  "skipped_groups": {},
+  "samples": 180,
+  "models": 15,
+  "mean_cash_delta": 7.572222222222222,
+  "min_support": 12
+}

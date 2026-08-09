@@ -1,0 +1,5 @@
+all_done,current_step,direction,errors,future_step,games,item,losses,mean_changed_calls,mean_margin,mean_money,min_money,quantity,ties,wins
+1,428,advance,0,431,2,STRAWBERRY,2,2,-232.0,126195.0,126195.0,1,0,0
+1,428,delay,0,431,2,STRAWBERRY,2,2,-1.0,126288.0,126288.0,1,0,0
+1,431,advance,0,432,2,STRAWBERRY,2,2,-228.0,126197.0,126197.0,1,0,0
+1,431,delay,0,432,2,STRAWBERRY,2,2,-4.0,126287.0,126287.0,1,0,0

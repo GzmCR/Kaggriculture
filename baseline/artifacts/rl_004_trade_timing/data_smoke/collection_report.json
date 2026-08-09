@@ -1,0 +1,21 @@
+{
+  "seeds": [
+    17
+  ],
+  "events": [
+    {
+      "item": "MILK",
+      "current_step": 215,
+      "future_step": 260,
+      "current_quantity": 6,
+      "future_quantity": 3,
+      "gap": 45
+    }
+  ],
+  "samples": 2,
+  "feature_dim": 29,
+  "all_done": 1,
+  "unique_support": {
+    "MILK|215|260": 2
+  }
+}

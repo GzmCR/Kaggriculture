@@ -1,0 +1,7 @@
+action_diff_calls,candidate_money,candidate_status,changed_calls,current_quantity,current_step,direction,done,future_quantity,future_step,item,margin,opponent,opponent_money,opponent_status,quantity,result,seat,seed
+2,126302.0,DONE,2,9,336,delay,1,3,375,MILK,13.0,v22,126289.0,DONE,1,win,0,17
+2,126302.0,DONE,2,9,336,delay,1,3,375,MILK,13.0,v22,126289.0,DONE,1,win,1,17
+2,129604.0,DONE,2,9,336,delay,1,3,375,MILK,13.0,v22,129591.0,DONE,1,win,0,42
+2,129604.0,DONE,2,9,336,delay,1,3,375,MILK,13.0,v22,129591.0,DONE,1,win,1,42
+2,103888.0,DONE,2,9,336,delay,1,3,375,MILK,4.0,v22,103884.0,DONE,1,win,0,2026
+2,103924.0,DONE,2,9,336,delay,1,3,375,MILK,76.0,v22,103848.0,DONE,1,win,1,2026
