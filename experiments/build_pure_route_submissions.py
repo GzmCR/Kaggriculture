@@ -27,6 +27,18 @@ FOLDER_NAMES = {
     "Stable12": "stable12",
     "V022c": "v022c",
     "V13_R3": "v13_r3",
+    "HighScore": "high_score",
+    "FrontierSoil": "frontier_soil",
+    "FrontierMoon": "frontier_moon",
+    "AgentBuilder": "agent_builder",
+    "FrontierLab_0": "frontier_lab_0",
+    "FrontierLab_1": "frontier_lab_1",
+    "FrontierLab_2": "frontier_lab_2",
+    "FrontierLab_3": "frontier_lab_3",
+    "FrontierLab_4": "frontier_lab_4",
+    "FrontierLab_5": "frontier_lab_5",
+    "FrontierLab_6": "frontier_lab_6",
+    "FrontierLab_7": "frontier_lab_7",
 }
 
 
