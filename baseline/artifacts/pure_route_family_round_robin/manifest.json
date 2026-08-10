@@ -1,0 +1,44 @@
+{
+  "mode": "pure_fixed_route",
+  "description": "Return frozen route action verbatim; no runtime strategy layer.",
+  "seeds": [
+    17,
+    42,
+    2026
+  ],
+  "episode_steps": 720,
+  "candidates": [
+    "V22",
+    "Adaptive_V14",
+    "V27",
+    "Stable12",
+    "V022c",
+    "V13_R3"
+  ],
+  "source_files": {
+    "V22": "/Users/guoziming/Desktop/\u6bd4\u8d5b/Kaggriculture/baseline/artifacts/v031_route_market_combo/v22_raw/main.py",
+    "Adaptive_V14": "/Users/guoziming/Desktop/\u6bd4\u8d5b/Kaggriculture/baseline/artifacts/v031_route_market_combo/adaptive_raw/main.py",
+    "V27": "/Users/guoziming/Desktop/\u6bd4\u8d5b/Kaggriculture/baseline/artifacts/v031_route_market_combo/v27_raw/main.py",
+    "Stable12": "/Users/guoziming/Desktop/\u6bd4\u8d5b/Kaggriculture/baseline/artifacts/v023b_stable_12hands/main.py",
+    "V022c": "/Users/guoziming/Desktop/\u6bd4\u8d5b/Kaggriculture/baseline/artifacts/v022c_medoid_recovery/main.py",
+    "V13_R3": "notebook-extracted"
+  },
+  "route_lengths": {
+    "V22": 719,
+    "Adaptive_V14": 719,
+    "V27": 719,
+    "Stable12": 720,
+    "V022c": 719,
+    "V13_R3": 719
+  },
+  "route_sha256": {
+    "V22": "cd4380d55c4a13c2ed4fd0c9463268c5764599f7e3f58b91e960b49d7dfd5d77",
+    "Adaptive_V14": "04354aa03513bfc1dcfbbeaf25a4a2074317681bd3c839a9550db21fa3e0d406",
+    "V27": "9080682756f5b9fc0f2cae25efdffa69474d40883f693b49f58be2c1893ae5d2",
+    "Stable12": "f23f023fdfe06fe45724a103569f886c7e2642d1bce8cbc5e3818b04eb009ced",
+    "V022c": "c234e990fd63a168535b55de1f11289fa2bbc563b390390b49d0d65169cedb18",
+    "V13_R3": "9d46e73be2ab901ca6fd0384221b8f42e2407cefe40cde01ab3130371b217462"
+  },
+  "market_orders_are_embedded_route_data": true,
+  "runtime_overlays": []
+}
