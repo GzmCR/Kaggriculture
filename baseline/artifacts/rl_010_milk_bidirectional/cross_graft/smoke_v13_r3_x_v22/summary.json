@@ -1,0 +1,19 @@
+[
+  {
+    "candidate": "v13_r3_x_v22",
+    "opponent": "v27_original",
+    "games": 2,
+    "wins": 2,
+    "ties": 0,
+    "losses": 0,
+    "win_rate": 1.0,
+    "mean_money": 175718.0,
+    "mean_margin": 134439.0,
+    "min_margin": 134439.0,
+    "all_done": 1,
+    "errors": 0,
+    "invalid": 0,
+    "p99_ms_max": 0.369,
+    "repayment_failures": 0
+  }
+]

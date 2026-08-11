@@ -1,0 +1,17 @@
+{
+  "candidate": "v13_r3_x_v022c",
+  "mechanism": "v13_r3",
+  "route": "v022c",
+  "mechanism_sha256": "6f52902081fed08bb5da08d575b796437e645c5320662b448b81eb079f185cfb",
+  "route_sha256": "c234e990fd63a168535b55de1f11289fa2bbc563b390390b49d0d65169cedb18",
+  "route_length": 719,
+  "route_aliases": [
+    "_ACTIONS",
+    "_trace_actor_action",
+    "unit_actions"
+  ],
+  "main_sha256": "471de07039d474a2446d8ece4a954ff4368574bb1fc2170815a937e2450ec93c",
+  "main_bytes": 40541,
+  "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/v13_r3_x_v022c/submission.tar.gz",
+  "root_main_modified": false
+}

@@ -1,0 +1,2 @@
+all_done,candidate,errors,games,invalid,losses,mean_margin,mean_money,min_margin,opponent,p99_ms_max,repayment_failures,ties,win_rate,wins
+1,rl010c_bidirectional_opp,0,2,0,2,-134467.0,41265.0,-134467.0,yummers,0.329542,0,0,0.0,0

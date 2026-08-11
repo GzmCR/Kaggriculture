@@ -1,0 +1,23 @@
+{
+  "candidates": [
+    "v27_control",
+    "rl010a_delay_only",
+    "rl010b_bidirectional_no_opp",
+    "rl010c_bidirectional_opp"
+  ],
+  "opponents": [
+    "v27_current",
+    "yummers"
+  ],
+  "seeds": [
+    17
+  ],
+  "episode_steps": 720,
+  "variants": [
+    "rl010a_delay_only",
+    "rl010b_bidirectional_no_opp",
+    "rl010c_bidirectional_opp"
+  ],
+  "control": "v27_control",
+  "root_main_modified": false
+}

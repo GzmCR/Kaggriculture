@@ -1,0 +1,39 @@
+{
+  "groups": {},
+  "skipped_groups": {
+    "MILK|216|264|ADVANCE_25": {
+      "rows": 2,
+      "support": 2
+    },
+    "MILK|216|264|ADVANCE_50": {
+      "rows": 2,
+      "support": 2
+    },
+    "MILK|216|264|DELAY_25": {
+      "rows": 2,
+      "support": 2
+    },
+    "MILK|216|264|DELAY_50": {
+      "rows": 2,
+      "support": 2
+    }
+  },
+  "samples": 8,
+  "models": 0,
+  "mean_margin_delta": -8654.0,
+  "min_support": 24,
+  "actions": [
+    "ADVANCE_25",
+    "ADVANCE_50",
+    "CONTROL",
+    "DELAY_25",
+    "DELAY_50"
+  ],
+  "allowed_actions": [
+    "ADVANCE_25",
+    "ADVANCE_50",
+    "DELAY_25",
+    "DELAY_50"
+  ],
+  "include_opponent_features": true
+}

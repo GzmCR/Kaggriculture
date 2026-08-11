@@ -1,0 +1,19 @@
+[
+  {
+    "candidate": "rl010a_delay_only",
+    "opponent": "v27_current",
+    "games": 2,
+    "wins": 1,
+    "ties": 0,
+    "losses": 1,
+    "win_rate": 0.5,
+    "mean_money": 38355.5,
+    "mean_margin": 0.0,
+    "min_margin": -899.0,
+    "all_done": 1,
+    "errors": 0,
+    "invalid": 0,
+    "p99_ms_max": 0.291542,
+    "repayment_failures": 0
+  }
+]

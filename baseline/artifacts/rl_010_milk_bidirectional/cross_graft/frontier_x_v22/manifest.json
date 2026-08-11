@@ -1,0 +1,17 @@
+{
+  "candidate": "frontier_x_v22",
+  "mechanism": "frontier",
+  "route": "v22",
+  "mechanism_sha256": "c3be7447f79a1c4e0a9fa537b9fbd2eb7ae1a199a09690e7dfdc15da1cb0b5a4",
+  "route_sha256": "cd4380d55c4a13c2ed4fd0c9463268c5764599f7e3f58b91e960b49d7dfd5d77",
+  "route_length": 719,
+  "route_aliases": [
+    "TRACE_ACTIONS",
+    "_ACTIONS",
+    "hand_actions"
+  ],
+  "main_sha256": "1433624c8ee46114ca147a9dffaf14b7d98902e6e0ed601aa4900cda7a5157e0",
+  "main_bytes": 153851,
+  "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/frontier_x_v22/submission.tar.gz",
+  "root_main_modified": false
+}

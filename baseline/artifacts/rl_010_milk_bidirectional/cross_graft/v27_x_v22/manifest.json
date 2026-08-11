@@ -1,0 +1,19 @@
+{
+  "candidate": "v27_x_v22",
+  "mechanism": "v27",
+  "route": "v22",
+  "mechanism_sha256": "f48c21166eac68d1b05a401f04f94a2eb6154e65415af64893672365ff33c7b8",
+  "route_sha256": "cd4380d55c4a13c2ed4fd0c9463268c5764599f7e3f58b91e960b49d7dfd5d77",
+  "route_length": 719,
+  "route_aliases": [
+    "_ACTIONS",
+    "_LEGACY_ACTIONS",
+    "_REBALANCE_ACTIONS",
+    "_trace_actor_action",
+    "unit_actions"
+  ],
+  "main_sha256": "f23a4057c10b7bb62fd431d04e9016dcde18766e02b2b96a2fdc0b96baa011dc",
+  "main_bytes": 32102,
+  "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/v27_x_v22/submission.tar.gz",
+  "root_main_modified": false
+}

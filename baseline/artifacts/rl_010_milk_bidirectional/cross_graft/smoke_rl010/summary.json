@@ -1,0 +1,19 @@
+[
+  {
+    "candidate": "rl010",
+    "opponent": "starter",
+    "games": 2,
+    "wins": 2,
+    "ties": 0,
+    "losses": 0,
+    "win_rate": 1.0,
+    "mean_money": 43226.0,
+    "mean_margin": 39735.0,
+    "min_margin": 38278.0,
+    "all_done": 1,
+    "errors": 0,
+    "invalid": 0,
+    "p99_ms_max": 0.274792,
+    "repayment_failures": 0
+  }
+]

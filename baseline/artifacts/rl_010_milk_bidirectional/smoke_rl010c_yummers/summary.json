@@ -1,0 +1,19 @@
+[
+  {
+    "candidate": "rl010c_bidirectional_opp",
+    "opponent": "yummers",
+    "games": 2,
+    "wins": 0,
+    "ties": 0,
+    "losses": 2,
+    "win_rate": 0.0,
+    "mean_money": 41265.0,
+    "mean_margin": -134467.0,
+    "min_margin": -134467.0,
+    "all_done": 1,
+    "errors": 0,
+    "invalid": 0,
+    "p99_ms_max": 0.329542,
+    "repayment_failures": 0
+  }
+]

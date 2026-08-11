@@ -1,0 +1,2 @@
+all_done,candidate,errors,games,invalid,losses,mean_margin,mean_money,min_margin,opponent,p99_ms_max,repayment_failures,ties,win_rate,wins
+1,rl010a_delay_only,0,2,0,1,0.0,38355.5,-899.0,v27_current,0.291542,0,0,0.5,1

@@ -1,0 +1,30 @@
+{
+  "engine": "kaggle-environments",
+  "episode_steps": 720,
+  "seeds": [
+    17
+  ],
+  "events": [
+    {
+      "item": "MILK",
+      "current_step": 216,
+      "future_step": 264,
+      "current_quantity": 6,
+      "future_quantity": 3,
+      "gap": 48
+    }
+  ],
+  "opponents": [
+    "v27_current"
+  ],
+  "samples": 8,
+  "controls": 2,
+  "all_done": 1,
+  "repayment_failures": 0,
+  "actions": [
+    "ADVANCE_25",
+    "ADVANCE_50",
+    "DELAY_25",
+    "DELAY_50"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "version": "rl010",
+  "feature_dim": 41,
+  "min_support": 24,
+  "min_expected_delta": 5.0,
+  "lcb_z": 1.5,
+  "bad_ucb": 0.1,
+  "allowed_actions": [
+    "ADVANCE_25",
+    "ADVANCE_50",
+    "DELAY_25",
+    "DELAY_50"
+  ],
+  "include_opponent_features": true,
+  "models": {},
+  "variant": "rl010c_bidirectional_opp"
+}

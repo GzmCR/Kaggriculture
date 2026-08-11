@@ -1,0 +1,860 @@
+{
+  "mode": "full_mechanism_external_route_cross_graft",
+  "mechanisms": {
+    "v27": {
+      "source": "baseline/2026-08-09/25-27-strict-future-v27-midgame-meta-reset.ipynb",
+      "source_sha256": "f48c21166eac68d1b05a401f04f94a2eb6154e65415af64893672365ff33c7b8"
+    },
+    "adaptive": {
+      "source": "baseline/2026-08-09/kaggriculture-adaptive-replay-agent.ipynb",
+      "source_sha256": "997e6bfc5234534e246e945bc61c87858ebf997ab85b0a5c9427dd4ed710f1b6"
+    },
+    "v13_r3": {
+      "source": "baseline/v13-r3-top-meta-order-safe-premium-control.ipynb",
+      "source_sha256": "6f52902081fed08bb5da08d575b796437e645c5320662b448b81eb079f185cfb"
+    },
+    "v21_1": {
+      "source": "baseline/177-180-fresh-top-30-v21-1-conditional-memory.ipynb",
+      "source_sha256": "d9dc24ce5429ec628ead0621a160bee90725350683d7dfcc4686fcaf511f3aab"
+    },
+    "hamburger": {
+      "source": "baseline/kaggriculture-hamburger.ipynb",
+      "source_sha256": "00e8ab594a39779e808dd351d0973260f4c90ddc1370e684fa46eaa184ae4546"
+    },
+    "frontier": {
+      "source": "baseline/2026-08-09/kaggriculture-frontier-the-soil-remembers-rain.ipynb",
+      "source_sha256": "c3be7447f79a1c4e0a9fa537b9fbd2eb7ae1a199a09690e7dfdc15da1cb0b5a4"
+    }
+  },
+  "routes": {
+    "v22": {
+      "name": "v22",
+      "source": "baseline/history/pure_routes/v22/main.py",
+      "source_kind": "archive",
+      "route_sha256": "cd4380d55c4a13c2ed4fd0c9463268c5764599f7e3f58b91e960b49d7dfd5d77",
+      "length": 719,
+      "max_hands": 14,
+      "action_counts": {
+        "PASS": 812,
+        "PICKUP": 167,
+        "WEST": 978,
+        "NORTH": 904,
+        "BUILD_PASTURE": 14,
+        "PLACE": 14,
+        "PLANT": 158,
+        "WATER": 922,
+        "FEED": 314,
+        "CARE": 322,
+        "EAST": 740,
+        "COLLECT_FERTILIZER": 314,
+        "SOUTH": 638,
+        "DROP": 106,
+        "SELL_FERTILIZER": 233,
+        "SELL_WHEAT": 828,
+        "HARVEST": 374,
+        "SELL_WOOL": 164,
+        "SELL_MILK": 237,
+        "SELL_MELON": 144,
+        "FERTILIZE": 80,
+        "SELL_STRAWBERRY": 313,
+        "DIG": 43
+      }
+    },
+    "v27": {
+      "name": "v27",
+      "source": "baseline/history/pure_routes/v27/main.py",
+      "source_kind": "archive",
+      "route_sha256": "9080682756f5b9fc0f2cae25efdffa69474d40883f693b49f58be2c1893ae5d2",
+      "length": 719,
+      "max_hands": 14,
+      "action_counts": {
+        "PASS": 994,
+        "PICKUP": 135,
+        "WEST": 811,
+        "NORTH": 838,
+        "BUILD_PASTURE": 13,
+        "PLACE": 13,
+        "PLANT": 199,
+        "FEED": 290,
+        "WATER": 1010,
+        "CARE": 285,
+        "SOUTH": 553,
+        "EAST": 634,
+        "COLLECT_FERTILIZER": 296,
+        "SELL_FERTILIZER": 235,
+        "HARVEST": 390,
+        "SELL_WHEAT": 455,
+        "DROP": 57,
+        "SELL_WOOL": 132,
+        "DIG": 40,
+        "SELL_MILK": 241,
+        "SELL_MELON": 114,
+        "FERTILIZE": 72,
+        "SELL_STRAWBERRY": 286
+      }
+    },
+    "adaptive_v14": {
+      "name": "adaptive_v14",
+      "source": "baseline/history/pure_routes/adaptive_v14/main.py",
+      "source_kind": "archive",
+      "route_sha256": "04354aa03513bfc1dcfbbeaf25a4a2074317681bd3c839a9550db21fa3e0d406",
+      "length": 719,
+      "max_hands": 14,
+      "action_counts": {
+        "PASS": 1010,
+        "PICKUP": 145,
+        "WEST": 923,
+        "NORTH": 849,
+        "SELL_WHEAT": 305,
+        "BUILD_PASTURE": 14,
+        "PLACE": 14,
+        "FEED": 300,
+        "PLANT": 174,
+        "CARE": 308,
+        "WATER": 925,
+        "EAST": 655,
+        "SOUTH": 513,
+        "COLLECT_FERTILIZER": 296,
+        "SELL_FERTILIZER": 212,
+        "HARVEST": 360,
+        "DIG": 27,
+        "SELL_WOOL": 148,
+        "SELL_MILK": 214,
+        "DROP": 56,
+        "SELL_MELON": 144,
+        "FERTILIZE": 84,
+        "SELL_STRAWBERRY": 295
+      }
+    },
+    "v13_r3": {
+      "name": "v13_r3",
+      "source": "baseline/history/pure_routes/v13_r3/main.py",
+      "source_kind": "archive",
+      "route_sha256": "9d46e73be2ab901ca6fd0384221b8f42e2407cefe40cde01ab3130371b217462",
+      "length": 719,
+      "max_hands": 14,
+      "action_counts": {
+        "PASS": 1046,
+        "PICKUP": 167,
+        "WEST": 925,
+        "NORTH": 889,
+        "BUILD_PASTURE": 14,
+        "PLACE": 14,
+        "PLANT": 158,
+        "WATER": 922,
+        "FEED": 314,
+        "CARE": 322,
+        "EAST": 686,
+        "COLLECT_FERTILIZER": 254,
+        "SOUTH": 590,
+        "DROP": 103,
+        "SELL_FERTILIZER": 174,
+        "SELL_WHEAT": 745,
+        "HARVEST": 374,
+        "SELL_WOOL": 164,
+        "SELL_MILK": 237,
+        "SELL_MELON": 141,
+        "FERTILIZE": 80,
+        "SELL_STRAWBERRY": 313,
+        "DIG": 42
+      }
+    },
+    "stable12": {
+      "name": "stable12",
+      "source": "baseline/history/pure_routes/stable12/main.py",
+      "source_kind": "archive",
+      "route_sha256": "5ee61bbcd473c7bb59ec284b0992dc881eac24a1008463b6d0d4edf772d131ff",
+      "length": 719,
+      "max_hands": 12,
+      "action_counts": {
+        "BUILD_PASTURE": 14,
+        "NORTH": 1222,
+        "WEST": 1085,
+        "PICKUP": 333,
+        "PLACE": 27,
+        "PLANT": 131,
+        "WATER": 842,
+        "EAST": 841,
+        "SOUTH": 914,
+        "FEED": 319,
+        "CARE": 304,
+        "PASS": 343,
+        "COLLECT_FERTILIZER": 316,
+        "SELL_FERTILIZER": 399,
+        "SELL_WHEAT": 1132,
+        "SELL_MELON": 194,
+        "DROP": 77,
+        "HARVEST": 338,
+        "SELL_WOOL": 273,
+        "SELL_MILK": 418,
+        "DIG": 26,
+        "FERTILIZE": 107,
+        "SELL_STRAWBERRY": 390,
+        "SELL_TOMATO": 4,
+        "SELL_CARROT": 12,
+        "SELL_EGG": 8
+      }
+    },
+    "v022c": {
+      "name": "v022c",
+      "source": "baseline/history/pure_routes/v022c/main.py",
+      "source_kind": "archive",
+      "route_sha256": "c234e990fd63a168535b55de1f11289fa2bbc563b390390b49d0d65169cedb18",
+      "length": 719,
+      "max_hands": 15,
+      "action_counts": {
+        "BUILD_PASTURE": 14,
+        "NORTH": 1030,
+        "WEST": 896,
+        "PICKUP": 262,
+        "PLACE": 14,
+        "PLANT": 135,
+        "WATER": 938,
+        "EAST": 671,
+        "SOUTH": 793,
+        "FEED": 323,
+        "CARE": 322,
+        "PASS": 461,
+        "COLLECT_FERTILIZER": 324,
+        "SELL_FERTILIZER": 236,
+        "DROP": 100,
+        "HARVEST": 341,
+        "SELL_WHEAT": 191,
+        "SELL_WOOL": 164,
+        "SELL_MILK": 230,
+        "DIG": 31,
+        "FERTILIZE": 103,
+        "SELL_MELON": 132,
+        "SELL_STRAWBERRY": 270
+      }
+    }
+  },
+  "replay_routes": [],
+  "candidates": {
+    "v27_x_v22": {
+      "candidate": "v27_x_v22",
+      "mechanism": "v27",
+      "route": "v22",
+      "mechanism_sha256": "f48c21166eac68d1b05a401f04f94a2eb6154e65415af64893672365ff33c7b8",
+      "route_sha256": "cd4380d55c4a13c2ed4fd0c9463268c5764599f7e3f58b91e960b49d7dfd5d77",
+      "route_length": 719,
+      "route_aliases": [
+        "_ACTIONS",
+        "_LEGACY_ACTIONS",
+        "_REBALANCE_ACTIONS",
+        "_trace_actor_action",
+        "unit_actions"
+      ],
+      "main_sha256": "f23a4057c10b7bb62fd431d04e9016dcde18766e02b2b96a2fdc0b96baa011dc",
+      "main_bytes": 32102,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/v27_x_v22/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "v27_x_v27": {
+      "candidate": "v27_x_v27",
+      "mechanism": "v27",
+      "route": "v27",
+      "mechanism_sha256": "f48c21166eac68d1b05a401f04f94a2eb6154e65415af64893672365ff33c7b8",
+      "route_sha256": "9080682756f5b9fc0f2cae25efdffa69474d40883f693b49f58be2c1893ae5d2",
+      "route_length": 719,
+      "route_aliases": [
+        "_ACTIONS",
+        "_LEGACY_ACTIONS",
+        "_REBALANCE_ACTIONS",
+        "_trace_actor_action",
+        "unit_actions"
+      ],
+      "main_sha256": "f48ebadc181f40c3296566a075d7eae01879fa2a2d368bda681f09fbd6e183a7",
+      "main_bytes": 31595,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/v27_x_v27/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "v27_x_adaptive_v14": {
+      "candidate": "v27_x_adaptive_v14",
+      "mechanism": "v27",
+      "route": "adaptive_v14",
+      "mechanism_sha256": "f48c21166eac68d1b05a401f04f94a2eb6154e65415af64893672365ff33c7b8",
+      "route_sha256": "04354aa03513bfc1dcfbbeaf25a4a2074317681bd3c839a9550db21fa3e0d406",
+      "route_length": 719,
+      "route_aliases": [
+        "_ACTIONS",
+        "_LEGACY_ACTIONS",
+        "_REBALANCE_ACTIONS",
+        "_trace_actor_action",
+        "unit_actions"
+      ],
+      "main_sha256": "a903f96018447bcd128a547d69c3d843469375c90c09cddfe115bcd3a25dc25f",
+      "main_bytes": 30947,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/v27_x_adaptive_v14/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "v27_x_v13_r3": {
+      "candidate": "v27_x_v13_r3",
+      "mechanism": "v27",
+      "route": "v13_r3",
+      "mechanism_sha256": "f48c21166eac68d1b05a401f04f94a2eb6154e65415af64893672365ff33c7b8",
+      "route_sha256": "9d46e73be2ab901ca6fd0384221b8f42e2407cefe40cde01ab3130371b217462",
+      "route_length": 719,
+      "route_aliases": [
+        "_ACTIONS",
+        "_LEGACY_ACTIONS",
+        "_REBALANCE_ACTIONS",
+        "_trace_actor_action",
+        "unit_actions"
+      ],
+      "main_sha256": "4b789719f08360d55930cafcf84723749b1361349bcfcf14fc2ddfb5d74c8621",
+      "main_bytes": 31923,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/v27_x_v13_r3/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "v27_x_stable12": {
+      "candidate": "v27_x_stable12",
+      "mechanism": "v27",
+      "route": "stable12",
+      "mechanism_sha256": "f48c21166eac68d1b05a401f04f94a2eb6154e65415af64893672365ff33c7b8",
+      "route_sha256": "5ee61bbcd473c7bb59ec284b0992dc881eac24a1008463b6d0d4edf772d131ff",
+      "route_length": 719,
+      "route_aliases": [
+        "_ACTIONS",
+        "_LEGACY_ACTIONS",
+        "_REBALANCE_ACTIONS",
+        "_trace_actor_action",
+        "unit_actions"
+      ],
+      "main_sha256": "e14cac1ff50dd7a29877cffe2a4c072da702fadfa5682932b8861dd2577e8efe",
+      "main_bytes": 33411,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/v27_x_stable12/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "v27_x_v022c": {
+      "candidate": "v27_x_v022c",
+      "mechanism": "v27",
+      "route": "v022c",
+      "mechanism_sha256": "f48c21166eac68d1b05a401f04f94a2eb6154e65415af64893672365ff33c7b8",
+      "route_sha256": "c234e990fd63a168535b55de1f11289fa2bbc563b390390b49d0d65169cedb18",
+      "route_length": 719,
+      "route_aliases": [
+        "_ACTIONS",
+        "_LEGACY_ACTIONS",
+        "_REBALANCE_ACTIONS",
+        "_trace_actor_action",
+        "unit_actions"
+      ],
+      "main_sha256": "3794e5229e08e9fe5f6f2fda367e9e4201299da9df53ca27321c83d7a0589b0b",
+      "main_bytes": 32765,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/v27_x_v022c/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "adaptive_x_v22": {
+      "candidate": "adaptive_x_v22",
+      "mechanism": "adaptive",
+      "route": "v22",
+      "mechanism_sha256": "997e6bfc5234534e246e945bc61c87858ebf997ab85b0a5c9427dd4ed710f1b6",
+      "route_sha256": "cd4380d55c4a13c2ed4fd0c9463268c5764599f7e3f58b91e960b49d7dfd5d77",
+      "route_length": 719,
+      "route_aliases": [
+        "_ACTIONS",
+        "_trace_actor_action",
+        "unit_actions"
+      ],
+      "main_sha256": "8b23a428ed3584be74c1669212bbc8faf96d17879da76b6d8a70705e0156e2f2",
+      "main_bytes": 38411,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/adaptive_x_v22/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "adaptive_x_v27": {
+      "candidate": "adaptive_x_v27",
+      "mechanism": "adaptive",
+      "route": "v27",
+      "mechanism_sha256": "997e6bfc5234534e246e945bc61c87858ebf997ab85b0a5c9427dd4ed710f1b6",
+      "route_sha256": "9080682756f5b9fc0f2cae25efdffa69474d40883f693b49f58be2c1893ae5d2",
+      "route_length": 719,
+      "route_aliases": [
+        "_ACTIONS",
+        "_trace_actor_action",
+        "unit_actions"
+      ],
+      "main_sha256": "2662a1b1daaebbc1c79d6fa205ebcdd6e6b7576f4e43733831c73ee69d8816c9",
+      "main_bytes": 37904,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/adaptive_x_v27/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "adaptive_x_adaptive_v14": {
+      "candidate": "adaptive_x_adaptive_v14",
+      "mechanism": "adaptive",
+      "route": "adaptive_v14",
+      "mechanism_sha256": "997e6bfc5234534e246e945bc61c87858ebf997ab85b0a5c9427dd4ed710f1b6",
+      "route_sha256": "04354aa03513bfc1dcfbbeaf25a4a2074317681bd3c839a9550db21fa3e0d406",
+      "route_length": 719,
+      "route_aliases": [
+        "_ACTIONS",
+        "_trace_actor_action",
+        "unit_actions"
+      ],
+      "main_sha256": "e3b7c5f09d9f2ea379e5d0fcd51aedb0a6298b51de9a3561859390e8d84e4a7d",
+      "main_bytes": 37256,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/adaptive_x_adaptive_v14/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "adaptive_x_v13_r3": {
+      "candidate": "adaptive_x_v13_r3",
+      "mechanism": "adaptive",
+      "route": "v13_r3",
+      "mechanism_sha256": "997e6bfc5234534e246e945bc61c87858ebf997ab85b0a5c9427dd4ed710f1b6",
+      "route_sha256": "9d46e73be2ab901ca6fd0384221b8f42e2407cefe40cde01ab3130371b217462",
+      "route_length": 719,
+      "route_aliases": [
+        "_ACTIONS",
+        "_trace_actor_action",
+        "unit_actions"
+      ],
+      "main_sha256": "cc6a96191ebe3a1cfed7158e046a2592654b8bd5ec0333e555deae0f8acbced8",
+      "main_bytes": 38232,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/adaptive_x_v13_r3/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "adaptive_x_stable12": {
+      "candidate": "adaptive_x_stable12",
+      "mechanism": "adaptive",
+      "route": "stable12",
+      "mechanism_sha256": "997e6bfc5234534e246e945bc61c87858ebf997ab85b0a5c9427dd4ed710f1b6",
+      "route_sha256": "5ee61bbcd473c7bb59ec284b0992dc881eac24a1008463b6d0d4edf772d131ff",
+      "route_length": 719,
+      "route_aliases": [
+        "_ACTIONS",
+        "_trace_actor_action",
+        "unit_actions"
+      ],
+      "main_sha256": "6253c930beb939aea5bf9b9a485bd4e9de323d2272e418632ce5cc996a2a2a13",
+      "main_bytes": 39720,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/adaptive_x_stable12/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "adaptive_x_v022c": {
+      "candidate": "adaptive_x_v022c",
+      "mechanism": "adaptive",
+      "route": "v022c",
+      "mechanism_sha256": "997e6bfc5234534e246e945bc61c87858ebf997ab85b0a5c9427dd4ed710f1b6",
+      "route_sha256": "c234e990fd63a168535b55de1f11289fa2bbc563b390390b49d0d65169cedb18",
+      "route_length": 719,
+      "route_aliases": [
+        "_ACTIONS",
+        "_trace_actor_action",
+        "unit_actions"
+      ],
+      "main_sha256": "cf7d87c8a62507ad81d80f259dad3aeda8f6136c8e51e73d6c3346dd62d514e4",
+      "main_bytes": 39074,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/adaptive_x_v022c/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "v13_r3_x_v22": {
+      "candidate": "v13_r3_x_v22",
+      "mechanism": "v13_r3",
+      "route": "v22",
+      "mechanism_sha256": "6f52902081fed08bb5da08d575b796437e645c5320662b448b81eb079f185cfb",
+      "route_sha256": "cd4380d55c4a13c2ed4fd0c9463268c5764599f7e3f58b91e960b49d7dfd5d77",
+      "route_length": 719,
+      "route_aliases": [
+        "_ACTIONS",
+        "_trace_actor_action",
+        "unit_actions"
+      ],
+      "main_sha256": "78a5b62843402f05071a7fc01a97677a333924b7a5d1cbe6455fb4be654ca08e",
+      "main_bytes": 39878,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/v13_r3_x_v22/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "v13_r3_x_v27": {
+      "candidate": "v13_r3_x_v27",
+      "mechanism": "v13_r3",
+      "route": "v27",
+      "mechanism_sha256": "6f52902081fed08bb5da08d575b796437e645c5320662b448b81eb079f185cfb",
+      "route_sha256": "9080682756f5b9fc0f2cae25efdffa69474d40883f693b49f58be2c1893ae5d2",
+      "route_length": 719,
+      "route_aliases": [
+        "_ACTIONS",
+        "_trace_actor_action",
+        "unit_actions"
+      ],
+      "main_sha256": "6b5f859a371eb5c83dd10270ae291d37015b822421dc45ca25beb2e069420a37",
+      "main_bytes": 39371,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/v13_r3_x_v27/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "v13_r3_x_adaptive_v14": {
+      "candidate": "v13_r3_x_adaptive_v14",
+      "mechanism": "v13_r3",
+      "route": "adaptive_v14",
+      "mechanism_sha256": "6f52902081fed08bb5da08d575b796437e645c5320662b448b81eb079f185cfb",
+      "route_sha256": "04354aa03513bfc1dcfbbeaf25a4a2074317681bd3c839a9550db21fa3e0d406",
+      "route_length": 719,
+      "route_aliases": [
+        "_ACTIONS",
+        "_trace_actor_action",
+        "unit_actions"
+      ],
+      "main_sha256": "57de1a654a12d191044c1f55ba46e9813fb3bfb50a100ca17cd201a63f5e3909",
+      "main_bytes": 38723,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/v13_r3_x_adaptive_v14/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "v13_r3_x_v13_r3": {
+      "candidate": "v13_r3_x_v13_r3",
+      "mechanism": "v13_r3",
+      "route": "v13_r3",
+      "mechanism_sha256": "6f52902081fed08bb5da08d575b796437e645c5320662b448b81eb079f185cfb",
+      "route_sha256": "9d46e73be2ab901ca6fd0384221b8f42e2407cefe40cde01ab3130371b217462",
+      "route_length": 719,
+      "route_aliases": [
+        "_ACTIONS",
+        "_trace_actor_action",
+        "unit_actions"
+      ],
+      "main_sha256": "713913dd756789205098236103701da7738464445eb693c2a317ec22f26aaadf",
+      "main_bytes": 39699,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/v13_r3_x_v13_r3/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "v13_r3_x_stable12": {
+      "candidate": "v13_r3_x_stable12",
+      "mechanism": "v13_r3",
+      "route": "stable12",
+      "mechanism_sha256": "6f52902081fed08bb5da08d575b796437e645c5320662b448b81eb079f185cfb",
+      "route_sha256": "5ee61bbcd473c7bb59ec284b0992dc881eac24a1008463b6d0d4edf772d131ff",
+      "route_length": 719,
+      "route_aliases": [
+        "_ACTIONS",
+        "_trace_actor_action",
+        "unit_actions"
+      ],
+      "main_sha256": "4b3cba6a5e71ca092d77fec206c93bd52d5f5ce61e7dbf2ae1169498b99b4c73",
+      "main_bytes": 41187,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/v13_r3_x_stable12/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "v13_r3_x_v022c": {
+      "candidate": "v13_r3_x_v022c",
+      "mechanism": "v13_r3",
+      "route": "v022c",
+      "mechanism_sha256": "6f52902081fed08bb5da08d575b796437e645c5320662b448b81eb079f185cfb",
+      "route_sha256": "c234e990fd63a168535b55de1f11289fa2bbc563b390390b49d0d65169cedb18",
+      "route_length": 719,
+      "route_aliases": [
+        "_ACTIONS",
+        "_trace_actor_action",
+        "unit_actions"
+      ],
+      "main_sha256": "471de07039d474a2446d8ece4a954ff4368574bb1fc2170815a937e2450ec93c",
+      "main_bytes": 40541,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/v13_r3_x_v022c/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "v21_1_x_v22": {
+      "candidate": "v21_1_x_v22",
+      "mechanism": "v21_1",
+      "route": "v22",
+      "mechanism_sha256": "d9dc24ce5429ec628ead0621a160bee90725350683d7dfcc4686fcaf511f3aab",
+      "route_sha256": "cd4380d55c4a13c2ed4fd0c9463268c5764599f7e3f58b91e960b49d7dfd5d77",
+      "route_length": 719,
+      "route_aliases": [
+        "_ACTIONS",
+        "_trace_actor_action",
+        "unit_actions"
+      ],
+      "main_sha256": "581778cf1d45f2082c3a39542d4fe6bb06c191988f99518765ec6d901d66f8a4",
+      "main_bytes": 439759,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/v21_1_x_v22/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "v21_1_x_v27": {
+      "candidate": "v21_1_x_v27",
+      "mechanism": "v21_1",
+      "route": "v27",
+      "mechanism_sha256": "d9dc24ce5429ec628ead0621a160bee90725350683d7dfcc4686fcaf511f3aab",
+      "route_sha256": "9080682756f5b9fc0f2cae25efdffa69474d40883f693b49f58be2c1893ae5d2",
+      "route_length": 719,
+      "route_aliases": [
+        "_ACTIONS",
+        "_trace_actor_action",
+        "unit_actions"
+      ],
+      "main_sha256": "d8616121fb4fd0695697473c8f3d7c3cbaaa261741314a7ccf30cc2eca2c0333",
+      "main_bytes": 439252,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/v21_1_x_v27/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "v21_1_x_adaptive_v14": {
+      "candidate": "v21_1_x_adaptive_v14",
+      "mechanism": "v21_1",
+      "route": "adaptive_v14",
+      "mechanism_sha256": "d9dc24ce5429ec628ead0621a160bee90725350683d7dfcc4686fcaf511f3aab",
+      "route_sha256": "04354aa03513bfc1dcfbbeaf25a4a2074317681bd3c839a9550db21fa3e0d406",
+      "route_length": 719,
+      "route_aliases": [
+        "_ACTIONS",
+        "_trace_actor_action",
+        "unit_actions"
+      ],
+      "main_sha256": "619c0293cc01dcc13ff24c6973000f274185be16a03d43d026d2c227b70eef2d",
+      "main_bytes": 438604,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/v21_1_x_adaptive_v14/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "v21_1_x_v13_r3": {
+      "candidate": "v21_1_x_v13_r3",
+      "mechanism": "v21_1",
+      "route": "v13_r3",
+      "mechanism_sha256": "d9dc24ce5429ec628ead0621a160bee90725350683d7dfcc4686fcaf511f3aab",
+      "route_sha256": "9d46e73be2ab901ca6fd0384221b8f42e2407cefe40cde01ab3130371b217462",
+      "route_length": 719,
+      "route_aliases": [
+        "_ACTIONS",
+        "_trace_actor_action",
+        "unit_actions"
+      ],
+      "main_sha256": "618f26786c690ec9f8420023ea755ca555763a82f8af1e8cd7d312bba8ba7770",
+      "main_bytes": 439580,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/v21_1_x_v13_r3/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "v21_1_x_stable12": {
+      "candidate": "v21_1_x_stable12",
+      "mechanism": "v21_1",
+      "route": "stable12",
+      "mechanism_sha256": "d9dc24ce5429ec628ead0621a160bee90725350683d7dfcc4686fcaf511f3aab",
+      "route_sha256": "5ee61bbcd473c7bb59ec284b0992dc881eac24a1008463b6d0d4edf772d131ff",
+      "route_length": 719,
+      "route_aliases": [
+        "_ACTIONS",
+        "_trace_actor_action",
+        "unit_actions"
+      ],
+      "main_sha256": "09a83aba7cbf745f12c4c70e026a32e85618453f080de0ab1c4fb5f5eaaed6a0",
+      "main_bytes": 441068,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/v21_1_x_stable12/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "v21_1_x_v022c": {
+      "candidate": "v21_1_x_v022c",
+      "mechanism": "v21_1",
+      "route": "v022c",
+      "mechanism_sha256": "d9dc24ce5429ec628ead0621a160bee90725350683d7dfcc4686fcaf511f3aab",
+      "route_sha256": "c234e990fd63a168535b55de1f11289fa2bbc563b390390b49d0d65169cedb18",
+      "route_length": 719,
+      "route_aliases": [
+        "_ACTIONS",
+        "_trace_actor_action",
+        "unit_actions"
+      ],
+      "main_sha256": "822d605407727b60a9922e082313fc40e53b2022509f8c063c87e6ce45c49489",
+      "main_bytes": 440422,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/v21_1_x_v022c/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "hamburger_x_v22": {
+      "candidate": "hamburger_x_v22",
+      "mechanism": "hamburger",
+      "route": "v22",
+      "mechanism_sha256": "00e8ab594a39779e808dd351d0973260f4c90ddc1370e684fa46eaa184ae4546",
+      "route_sha256": "cd4380d55c4a13c2ed4fd0c9463268c5764599f7e3f58b91e960b49d7dfd5d77",
+      "route_length": 719,
+      "route_aliases": [
+        "TRACE_ACTIONS",
+        "_ACTIONS",
+        "hand_actions"
+      ],
+      "main_sha256": "0d6dcdce8311e58b2e0b018ebb038c5d1a4cba9a3eb3b8cbfbe8ff57362cac31",
+      "main_bytes": 161541,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/hamburger_x_v22/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "hamburger_x_v27": {
+      "candidate": "hamburger_x_v27",
+      "mechanism": "hamburger",
+      "route": "v27",
+      "mechanism_sha256": "00e8ab594a39779e808dd351d0973260f4c90ddc1370e684fa46eaa184ae4546",
+      "route_sha256": "9080682756f5b9fc0f2cae25efdffa69474d40883f693b49f58be2c1893ae5d2",
+      "route_length": 719,
+      "route_aliases": [
+        "TRACE_ACTIONS",
+        "_ACTIONS",
+        "hand_actions"
+      ],
+      "main_sha256": "634f2019051d99f880af55b14483483ddc32e100d370a32c96978065c0a2221a",
+      "main_bytes": 161034,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/hamburger_x_v27/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "hamburger_x_adaptive_v14": {
+      "candidate": "hamburger_x_adaptive_v14",
+      "mechanism": "hamburger",
+      "route": "adaptive_v14",
+      "mechanism_sha256": "00e8ab594a39779e808dd351d0973260f4c90ddc1370e684fa46eaa184ae4546",
+      "route_sha256": "04354aa03513bfc1dcfbbeaf25a4a2074317681bd3c839a9550db21fa3e0d406",
+      "route_length": 719,
+      "route_aliases": [
+        "TRACE_ACTIONS",
+        "_ACTIONS",
+        "hand_actions"
+      ],
+      "main_sha256": "2663ec814609ce637f3b5217e1ee2715d639d714e1d8f3058485f99799a2b365",
+      "main_bytes": 160386,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/hamburger_x_adaptive_v14/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "hamburger_x_v13_r3": {
+      "candidate": "hamburger_x_v13_r3",
+      "mechanism": "hamburger",
+      "route": "v13_r3",
+      "mechanism_sha256": "00e8ab594a39779e808dd351d0973260f4c90ddc1370e684fa46eaa184ae4546",
+      "route_sha256": "9d46e73be2ab901ca6fd0384221b8f42e2407cefe40cde01ab3130371b217462",
+      "route_length": 719,
+      "route_aliases": [
+        "TRACE_ACTIONS",
+        "_ACTIONS",
+        "hand_actions"
+      ],
+      "main_sha256": "15f80efc4cdf6a1340b75b1ddc43aff5307afc5acf93e8097283241aa57abf9f",
+      "main_bytes": 161362,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/hamburger_x_v13_r3/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "hamburger_x_stable12": {
+      "candidate": "hamburger_x_stable12",
+      "mechanism": "hamburger",
+      "route": "stable12",
+      "mechanism_sha256": "00e8ab594a39779e808dd351d0973260f4c90ddc1370e684fa46eaa184ae4546",
+      "route_sha256": "5ee61bbcd473c7bb59ec284b0992dc881eac24a1008463b6d0d4edf772d131ff",
+      "route_length": 719,
+      "route_aliases": [
+        "TRACE_ACTIONS",
+        "_ACTIONS",
+        "hand_actions"
+      ],
+      "main_sha256": "664bbf4ff74ca46bb869dbd480a3e256e804df663a64789051dfaeb7e3f88f3b",
+      "main_bytes": 162850,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/hamburger_x_stable12/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "hamburger_x_v022c": {
+      "candidate": "hamburger_x_v022c",
+      "mechanism": "hamburger",
+      "route": "v022c",
+      "mechanism_sha256": "00e8ab594a39779e808dd351d0973260f4c90ddc1370e684fa46eaa184ae4546",
+      "route_sha256": "c234e990fd63a168535b55de1f11289fa2bbc563b390390b49d0d65169cedb18",
+      "route_length": 719,
+      "route_aliases": [
+        "TRACE_ACTIONS",
+        "_ACTIONS",
+        "hand_actions"
+      ],
+      "main_sha256": "fadd63cadb33e607161093c07c3272504650afa6646cb22f772ca055947fa261",
+      "main_bytes": 162204,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/hamburger_x_v022c/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "frontier_x_v22": {
+      "candidate": "frontier_x_v22",
+      "mechanism": "frontier",
+      "route": "v22",
+      "mechanism_sha256": "c3be7447f79a1c4e0a9fa537b9fbd2eb7ae1a199a09690e7dfdc15da1cb0b5a4",
+      "route_sha256": "cd4380d55c4a13c2ed4fd0c9463268c5764599f7e3f58b91e960b49d7dfd5d77",
+      "route_length": 719,
+      "route_aliases": [
+        "TRACE_ACTIONS",
+        "_ACTIONS",
+        "hand_actions"
+      ],
+      "main_sha256": "1433624c8ee46114ca147a9dffaf14b7d98902e6e0ed601aa4900cda7a5157e0",
+      "main_bytes": 153851,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/frontier_x_v22/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "frontier_x_v27": {
+      "candidate": "frontier_x_v27",
+      "mechanism": "frontier",
+      "route": "v27",
+      "mechanism_sha256": "c3be7447f79a1c4e0a9fa537b9fbd2eb7ae1a199a09690e7dfdc15da1cb0b5a4",
+      "route_sha256": "9080682756f5b9fc0f2cae25efdffa69474d40883f693b49f58be2c1893ae5d2",
+      "route_length": 719,
+      "route_aliases": [
+        "TRACE_ACTIONS",
+        "_ACTIONS",
+        "hand_actions"
+      ],
+      "main_sha256": "021ac41ea704a70e85ad06a803eba32d8dd3be7e34982c50465b7da0d96267ee",
+      "main_bytes": 153344,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/frontier_x_v27/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "frontier_x_adaptive_v14": {
+      "candidate": "frontier_x_adaptive_v14",
+      "mechanism": "frontier",
+      "route": "adaptive_v14",
+      "mechanism_sha256": "c3be7447f79a1c4e0a9fa537b9fbd2eb7ae1a199a09690e7dfdc15da1cb0b5a4",
+      "route_sha256": "04354aa03513bfc1dcfbbeaf25a4a2074317681bd3c839a9550db21fa3e0d406",
+      "route_length": 719,
+      "route_aliases": [
+        "TRACE_ACTIONS",
+        "_ACTIONS",
+        "hand_actions"
+      ],
+      "main_sha256": "769dc612d30ac45117ef9551341bec08a128451804d8172f0c5fcfd8b2b119a0",
+      "main_bytes": 152696,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/frontier_x_adaptive_v14/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "frontier_x_v13_r3": {
+      "candidate": "frontier_x_v13_r3",
+      "mechanism": "frontier",
+      "route": "v13_r3",
+      "mechanism_sha256": "c3be7447f79a1c4e0a9fa537b9fbd2eb7ae1a199a09690e7dfdc15da1cb0b5a4",
+      "route_sha256": "9d46e73be2ab901ca6fd0384221b8f42e2407cefe40cde01ab3130371b217462",
+      "route_length": 719,
+      "route_aliases": [
+        "TRACE_ACTIONS",
+        "_ACTIONS",
+        "hand_actions"
+      ],
+      "main_sha256": "5f7a487e491b3b2fee795cfa87622de6ee18ccf19ee53ade7b12058455b3a6dc",
+      "main_bytes": 153672,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/frontier_x_v13_r3/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "frontier_x_stable12": {
+      "candidate": "frontier_x_stable12",
+      "mechanism": "frontier",
+      "route": "stable12",
+      "mechanism_sha256": "c3be7447f79a1c4e0a9fa537b9fbd2eb7ae1a199a09690e7dfdc15da1cb0b5a4",
+      "route_sha256": "5ee61bbcd473c7bb59ec284b0992dc881eac24a1008463b6d0d4edf772d131ff",
+      "route_length": 719,
+      "route_aliases": [
+        "TRACE_ACTIONS",
+        "_ACTIONS",
+        "hand_actions"
+      ],
+      "main_sha256": "fda7ff11dee2b7fdc4a4d16a489386ef5766401ff93f9048222b3889a3b6c2ba",
+      "main_bytes": 155160,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/frontier_x_stable12/submission.tar.gz",
+      "root_main_modified": false
+    },
+    "frontier_x_v022c": {
+      "candidate": "frontier_x_v022c",
+      "mechanism": "frontier",
+      "route": "v022c",
+      "mechanism_sha256": "c3be7447f79a1c4e0a9fa537b9fbd2eb7ae1a199a09690e7dfdc15da1cb0b5a4",
+      "route_sha256": "c234e990fd63a168535b55de1f11289fa2bbc563b390390b49d0d65169cedb18",
+      "route_length": 719,
+      "route_aliases": [
+        "TRACE_ACTIONS",
+        "_ACTIONS",
+        "hand_actions"
+      ],
+      "main_sha256": "e0f08cca0a93cb1721c5163b3ba61de49994f8506cd7ac9fc4e65638141fd2d1",
+      "main_bytes": 154514,
+      "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/frontier_x_v022c/submission.tar.gz",
+      "root_main_modified": false
+    }
+  },
+  "root_main_modified": false
+}

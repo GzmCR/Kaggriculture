@@ -1,0 +1,17 @@
+{
+  "candidate": "hamburger_x_v27",
+  "mechanism": "hamburger",
+  "route": "v27",
+  "mechanism_sha256": "00e8ab594a39779e808dd351d0973260f4c90ddc1370e684fa46eaa184ae4546",
+  "route_sha256": "9080682756f5b9fc0f2cae25efdffa69474d40883f693b49f58be2c1893ae5d2",
+  "route_length": 719,
+  "route_aliases": [
+    "TRACE_ACTIONS",
+    "_ACTIONS",
+    "hand_actions"
+  ],
+  "main_sha256": "634f2019051d99f880af55b14483483ddc32e100d370a32c96978065c0a2221a",
+  "main_bytes": 161034,
+  "archive": "baseline/artifacts/rl_010_milk_bidirectional/cross_graft/hamburger_x_v27/submission.tar.gz",
+  "root_main_modified": false
+}

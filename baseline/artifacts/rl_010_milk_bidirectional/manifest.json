@@ -1,0 +1,30 @@
+{
+  "name": "rl010c_bidirectional_opp",
+  "status": "smoke_control_only_no_supported_models",
+  "control": "v27_order_only",
+  "feature_dim": 41,
+  "actions": [
+    "ADVANCE_25",
+    "ADVANCE_50",
+    "CONTROL",
+    "DELAY_25",
+    "DELAY_50"
+  ],
+  "allowed_actions": [
+    "ADVANCE_25",
+    "ADVANCE_50",
+    "DELAY_25",
+    "DELAY_50"
+  ],
+  "include_opponent_features": true,
+  "min_support": 24,
+  "min_expected_delta": 5.0,
+  "training_samples": 8,
+  "training_data": "baseline/artifacts/rl_010_milk_bidirectional/data_smoke/samples.jsonl",
+  "route_source": "baseline/history/v031_route_market_combo/v27_order_only/main.py",
+  "route_sha256": "bf768a5ffad82c8809654364aacb47274c31f9649a0cc2eb539b3afe2b6b80cc",
+  "main_sha256": "fdda3896243988c4ef2e6a1bf3988bcf732eea65ea835c56ac0838b9963e8aed",
+  "main_bytes": 64573,
+  "archive": "baseline/artifacts/rl_010_milk_bidirectional/submission.tar.gz",
+  "root_main_modified": false
+}

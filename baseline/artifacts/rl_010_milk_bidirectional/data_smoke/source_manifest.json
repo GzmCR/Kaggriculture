@@ -1,0 +1,102 @@
+[
+  {
+    "name": "v27_current",
+    "path": "baseline/2026-08-09/25-27-strict-future-v27-midgame-meta-reset.ipynb",
+    "family": "current_high",
+    "encoding": "b85_zlib_source",
+    "source_sha256": "f48c21166eac68d1b05a401f04f94a2eb6154e65415af64893672365ff33c7b8",
+    "source_bytes": 20813,
+    "duplicate_of": "",
+    "load_error": ""
+  },
+  {
+    "name": "v14_public",
+    "path": "baseline/2026-08-09/84-84-base-public-holdout-v14-clone-preemption.ipynb",
+    "family": "market_specialist",
+    "encoding": "b85_zlib_source",
+    "source_sha256": "a7f827b9438885b34b7fd5bf8165458a72f8bb83031a288dd4640f21ade3294b",
+    "source_bytes": 26304,
+    "duplicate_of": "",
+    "load_error": ""
+  },
+  {
+    "name": "adaptive_replay",
+    "path": "baseline/2026-08-09/02-adaptive-replay-agent.ipynb",
+    "family": "current_high",
+    "encoding": "literal_source",
+    "source_sha256": "3c41010de37114c082d481e4a4c3e42ca5148e826a140e2aa02964aca8636dd8",
+    "source_bytes": 25939,
+    "duplicate_of": "",
+    "load_error": ""
+  },
+  {
+    "name": "frontier_current",
+    "path": "baseline/2026-08-09/kaggriculture-frontier-the-soil-remembers-rain.ipynb",
+    "family": "market_specialist",
+    "encoding": "literal_source",
+    "source_sha256": "c3be7447f79a1c4e0a9fa537b9fbd2eb7ae1a199a09690e7dfdc15da1cb0b5a4",
+    "source_bytes": 142690,
+    "duplicate_of": "",
+    "load_error": ""
+  },
+  {
+    "name": "strong_barnyard",
+    "path": "baseline/2026-08-09/strong-barnyard-economist.ipynb",
+    "family": "market_specialist",
+    "encoding": "literal_source",
+    "source_sha256": "997e6bfc5234534e246e945bc61c87858ebf997ab85b0a5c9427dd4ed710f1b6",
+    "source_bytes": 27244,
+    "duplicate_of": "",
+    "load_error": ""
+  },
+  {
+    "name": "high_score_pipeline",
+    "path": "baseline/2026-08-09/my-2026-08-04-high-score-pipeline.ipynb",
+    "family": "current_high",
+    "encoding": "literal_source",
+    "source_sha256": "ed8c8420514acb5a96c0d44cfd42a8786e49c7cdc01a0de61d2e6b8997dda87a",
+    "source_bytes": 133270,
+    "duplicate_of": "",
+    "load_error": ""
+  },
+  {
+    "name": "hamburger",
+    "path": "baseline/kaggriculture-hamburger.ipynb",
+    "family": "early_rule",
+    "special": "anchor",
+    "encoding": "anchor_blob",
+    "source_sha256": "00e8ab594a39779e808dd351d0973260f4c90ddc1370e684fa46eaa184ae4546",
+    "source_bytes": 150378,
+    "duplicate_of": "",
+    "load_error": ""
+  },
+  {
+    "name": "v13_r3",
+    "path": "baseline/v13-r3-top-meta-order-safe-premium-control.ipynb",
+    "family": "market_specialist",
+    "encoding": "b85_zlib_source",
+    "source_sha256": "6f52902081fed08bb5da08d575b796437e645c5320662b448b81eb079f185cfb",
+    "source_bytes": 28715,
+    "duplicate_of": "",
+    "load_error": ""
+  },
+  {
+    "name": "v21_1",
+    "path": "baseline/177-180-fresh-top-30-v21-1-conditional-memory.ipynb",
+    "family": "market_specialist",
+    "encoding": "b85_zlib_source",
+    "source_sha256": "d9dc24ce5429ec628ead0621a160bee90725350683d7dfcc4686fcaf511f3aab",
+    "source_bytes": 428598,
+    "duplicate_of": "",
+    "load_error": ""
+  },
+  {
+    "name": "yummers",
+    "path": "baseline/kaggriculture-yummers.ipynb",
+    "family": "early_rule",
+    "source_sha256": "",
+    "source_bytes": 0,
+    "duplicate_of": "",
+    "load_error": "ValueError: no embedded agent source found in /Users/guoziming/Desktop/\u6bd4\u8d5b/Kaggriculture/baseline/kaggriculture-yummers.ipynb"
+  }
+]
