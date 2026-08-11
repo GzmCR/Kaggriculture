@@ -7,37 +7,109 @@
       "folder": "v22",
       "length": 719,
       "route_sha256": "cd4380d55c4a13c2ed4fd0c9463268c5764599f7e3f58b91e960b49d7dfd5d77",
-      "source": "/Users/guoziming/Desktop/\u6bd4\u8d5b/Kaggriculture/baseline/artifacts/v031_route_market_combo/v22_raw/main.py"
+      "source": "baseline/history/pure_routes/v22/main.py"
     },
     "Adaptive_V14": {
       "folder": "adaptive_v14",
       "length": 719,
       "route_sha256": "04354aa03513bfc1dcfbbeaf25a4a2074317681bd3c839a9550db21fa3e0d406",
-      "source": "/Users/guoziming/Desktop/\u6bd4\u8d5b/Kaggriculture/baseline/artifacts/v031_route_market_combo/adaptive_raw/main.py"
+      "source": "baseline/history/pure_routes/adaptive_v14/main.py"
     },
     "V27": {
       "folder": "v27",
       "length": 719,
       "route_sha256": "9080682756f5b9fc0f2cae25efdffa69474d40883f693b49f58be2c1893ae5d2",
-      "source": "/Users/guoziming/Desktop/\u6bd4\u8d5b/Kaggriculture/baseline/artifacts/v031_route_market_combo/v27_raw/main.py"
+      "source": "baseline/history/pure_routes/v27/main.py"
     },
     "Stable12": {
       "folder": "stable12",
       "length": 720,
       "route_sha256": "f23f023fdfe06fe45724a103569f886c7e2642d1bce8cbc5e3818b04eb009ced",
-      "source": "/Users/guoziming/Desktop/\u6bd4\u8d5b/Kaggriculture/baseline/artifacts/v023b_stable_12hands/main.py"
+      "source": "baseline/history/pure_routes/stable12/main.py"
     },
     "V022c": {
       "folder": "v022c",
       "length": 719,
       "route_sha256": "c234e990fd63a168535b55de1f11289fa2bbc563b390390b49d0d65169cedb18",
-      "source": "/Users/guoziming/Desktop/\u6bd4\u8d5b/Kaggriculture/baseline/artifacts/v022c_medoid_recovery/main.py"
+      "source": "baseline/history/pure_routes/v022c/main.py"
     },
     "V13_R3": {
       "folder": "v13_r3",
       "length": 719,
       "route_sha256": "9d46e73be2ab901ca6fd0384221b8f42e2407cefe40cde01ab3130371b217462",
       "source": "notebook-extracted"
+    },
+    "HighScore": {
+      "folder": "high_score",
+      "length": 719,
+      "route_sha256": "3ee6ea74e447cf7751675fab78c9c8dd678470eb3d2d3db9672f89d81319d1a7",
+      "source": "baseline/2026-08-09/my-2026-08-04-high-score-pipeline.ipynb"
+    },
+    "FrontierSoil": {
+      "folder": "frontier_soil",
+      "length": 720,
+      "route_sha256": "a7f4d5636a31a7aa3ae580967adcb1d80c8de3eabe339a9ca27e5ce0b0c3ae32",
+      "source": "baseline/2026-08-09/kaggriculture-frontier-the-soil-remembers-rain.ipynb"
+    },
+    "FrontierMoon": {
+      "folder": "frontier_moon",
+      "length": 720,
+      "route_sha256": "a60250d7b3419722808d19f6aade98526ac7e8496b0749b7a1ff56b28be475b6",
+      "source": "baseline/kaggriculture-frontier-the-moon-counts-melons.ipynb"
+    },
+    "AgentBuilder": {
+      "folder": "agent_builder",
+      "length": 720,
+      "route_sha256": "557755a8d0f06e1203c231c7b7d2ce4b572a1540c4a73999dceeaf9fa347fd23",
+      "source": "baseline/kaggriculture-agent-builder.ipynb"
+    },
+    "FrontierLab_0": {
+      "folder": "frontier_lab_0",
+      "length": 720,
+      "route_sha256": "5b58b9ab2c838ba3f71364e4b3dafbe6e25ff799f4a697d725059d3c820cf605",
+      "source": "baseline/kaggle-frontier-lab-strategy-improvement.ipynb#trace-0"
+    },
+    "FrontierLab_1": {
+      "folder": "frontier_lab_1",
+      "length": 720,
+      "route_sha256": "08f4ab60df2103e54803c4f57d64e0cb4ab2874e537130d2379b676d5adbcc7a",
+      "source": "baseline/kaggle-frontier-lab-strategy-improvement.ipynb#trace-1"
+    },
+    "FrontierLab_2": {
+      "folder": "frontier_lab_2",
+      "length": 720,
+      "route_sha256": "d4e34cda25604e7922c0160ab4d788e36594adce2d9cc5d947d8b6391417c0fc",
+      "source": "baseline/kaggle-frontier-lab-strategy-improvement.ipynb#trace-2"
+    },
+    "FrontierLab_3": {
+      "folder": "frontier_lab_3",
+      "length": 720,
+      "route_sha256": "81b99fbf7ed764aa680e4e868fd24919c14f31e209620c5669c0468f10ba8637",
+      "source": "baseline/kaggle-frontier-lab-strategy-improvement.ipynb#trace-3"
+    },
+    "FrontierLab_4": {
+      "folder": "frontier_lab_4",
+      "length": 720,
+      "route_sha256": "6c0b4a3de60d5e63e1ba5baacd43bf0f92a9de16cd90d22efa27f8ed65489eef",
+      "source": "baseline/kaggle-frontier-lab-strategy-improvement.ipynb#trace-4"
+    },
+    "FrontierLab_5": {
+      "folder": "frontier_lab_5",
+      "length": 720,
+      "route_sha256": "1672d13e2e1933359f3e14bcc2d002e30fdd8dd1396a343b638d6ea63ac4d6f8",
+      "source": "baseline/kaggle-frontier-lab-strategy-improvement.ipynb#trace-5"
+    },
+    "FrontierLab_6": {
+      "folder": "frontier_lab_6",
+      "length": 720,
+      "route_sha256": "0e50e5483be610ec877ce415a0c9c15273fbbc0a824bd3d94094c979f19551ad",
+      "source": "baseline/kaggle-frontier-lab-strategy-improvement.ipynb#trace-6"
+    },
+    "FrontierLab_7": {
+      "folder": "frontier_lab_7",
+      "length": 720,
+      "route_sha256": "2534b199d448fde1b8cd5e1e5720de0f7ab9043456ba37aad1c388c4c1e5d948",
+      "source": "baseline/kaggle-frontier-lab-strategy-improvement.ipynb#trace-7"
     }
   }
 }
