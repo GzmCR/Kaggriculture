@@ -15,14 +15,21 @@
     "DELAY_50"
   ],
   "include_opponent_features": true,
+  "event_steps": [
+    455
+  ],
+  "delay_cutoff": 624,
+  "delay_max_gap": 24,
+  "shed_reserve": 10,
   "min_support": 24,
   "min_expected_delta": 5.0,
-  "training_samples": 8,
-  "training_data": "baseline/artifacts/rl_010_milk_bidirectional/data_smoke/samples.jsonl",
+  "training_samples": 0,
+  "control_only": true,
+  "training_data": "baseline/artifacts/rl_010_milk_bidirectional/data_train/samples.jsonl",
   "route_source": "baseline/history/v031_route_market_combo/v27_order_only/main.py",
   "route_sha256": "bf768a5ffad82c8809654364aacb47274c31f9649a0cc2eb539b3afe2b6b80cc",
-  "main_sha256": "92d841ff20b389a2001f3019a57882edd1d22fdd2ce389e78be87f5ae19cbe25",
-  "main_bytes": 64538,
+  "main_sha256": "ddcb4746f63b4c2f831645cc688b64cf3a7223c7e3a1d19217eb706cbb41f998",
+  "main_bytes": 73530,
   "archive": "baseline/artifacts/rl_010_milk_bidirectional/rl010a_delay_only/submission.tar.gz",
   "root_main_modified": false
 }

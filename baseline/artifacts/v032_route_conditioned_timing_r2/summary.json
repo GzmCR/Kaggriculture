@@ -1,0 +1,78 @@
+{
+  "rows": 576,
+  "safe_rows": 472,
+  "safe_rate": 0.8194444444444444,
+  "safety_reasons": {
+    "cash_reserve": 98,
+    "non_target_route_diff": 10,
+    "future_target_not_fully_executed": 3,
+    "current_target_not_fully_executed": 3
+  },
+  "all_rows": {
+    "rows": 576,
+    "mae": 3.0850694444444446,
+    "bias": -1.5086805555555556,
+    "correlation": 0.9466134519782697,
+    "sign_accuracy": 1.0,
+    "positive_pred_negative_actual": 0,
+    "mean_final_margin_delta": -0.4444444444444444
+  },
+  "safe_rows_metrics": {
+    "rows": 472,
+    "mae": 2.815677966101695,
+    "bias": -2.7733050847457625,
+    "correlation": 0.985292518140706,
+    "sign_accuracy": 1.0,
+    "positive_pred_negative_actual": 0,
+    "mean_final_margin_delta": 0.2775423728813559
+  },
+  "by_item": {
+    "MILK": {
+      "rows": 190,
+      "mae": 5.863157894736842,
+      "bias": -5.757894736842105,
+      "correlation": 0.9776885188756139,
+      "sign_accuracy": 1.0,
+      "positive_pred_negative_actual": 0,
+      "mean_final_margin_delta": 0.0
+    },
+    "STRAWBERRY": {
+      "rows": 282,
+      "mae": 0.7624113475177305,
+      "bias": -0.7624113475177305,
+      "correlation": 0.9975179397534494,
+      "sign_accuracy": 1.0,
+      "positive_pred_negative_actual": 0,
+      "mean_final_margin_delta": 0.4645390070921986
+    }
+  },
+  "by_ratio": {
+    "0.01": {
+      "rows": 162,
+      "mae": 1.9938271604938271,
+      "bias": -1.9691358024691359,
+      "correlation": 0.9681446239590554,
+      "sign_accuracy": 1.0,
+      "positive_pred_negative_actual": 0,
+      "mean_final_margin_delta": 0.1111111111111111
+    },
+    "0.25": {
+      "rows": 158,
+      "mae": 2.2721518987341773,
+      "bias": -2.2468354430379747,
+      "correlation": 0.9868292328179935,
+      "sign_accuracy": 1.0,
+      "positive_pred_negative_actual": 0,
+      "mean_final_margin_delta": 0.27848101265822783
+    },
+    "0.5": {
+      "rows": 152,
+      "mae": 4.256578947368421,
+      "bias": -4.177631578947368,
+      "correlation": 0.9871613776873548,
+      "sign_accuracy": 1.0,
+      "positive_pred_negative_actual": 0,
+      "mean_final_margin_delta": 0.45394736842105265
+    }
+  }
+}

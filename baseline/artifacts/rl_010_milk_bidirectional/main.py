@@ -25,8 +25,16 @@ RL010_RATIOS = {
     "DELAY_50": 0.50,
 }
 RL010_CUTOFF = 648
+RL010_DELAY_CUTOFF = 624
 RL010_MIN_GAP = 1
 RL010_MAX_GAP = 72
+RL010_DELAY_MAX_GAP = 24
+RL010_SHED_CAPACITY = 100
+RL010_SHED_RESERVE = 10
+# The first repaired training/runtime slice is deliberately restricted to the
+# stable same-day MILK window found in V27 replays (455 -> 456).  The route
+# parser remains general so later experiments can opt into other events.
+RL010_EVENT_STEPS = (455,)
 RL010_MAX_INTERVENTIONS = 8
 RL010_MIN_SUPPORT = 24
 RL010_MIN_EXPECTED_DELTA = 5.0
@@ -98,7 +106,7 @@ def rl010_align_hands(action, obs):
     return action
 
 
-def rl010_route_opportunities(actions):
+def rl010_route_opportunities(actions, allowed_current_steps=None):
     """Find adjacent same-item route SELL events before the cutoff."""
     events = defaultdict(dict)
     for step, action in enumerate(actions or []):
@@ -118,7 +126,10 @@ def rl010_route_opportunities(actions):
             gap = int(future_step) - int(current_step)
             if current_step >= RL010_CUTOFF or future_step >= RL010_CUTOFF:
                 continue
-            if RL010_MIN_GAP <= gap <= RL010_MAX_GAP:
+            if RL010_MIN_GAP <= gap <= RL010_MAX_GAP and (
+                allowed_current_steps is None
+                or int(current_step) in {int(value) for value in allowed_current_steps}
+            ):
                 result.append({
                     "item": item,
                     "current_step": int(current_step),
@@ -239,10 +250,171 @@ def rl010_private_inventory(obs, item=RL010_ITEM):
     return total
 
 
+def rl010_shed_inventory(obs, item=RL010_ITEM):
+    """Return only inventory that the market can actually sell this turn.
+
+    Carried inventory is intentionally excluded.  Kaggriculture processes
+    farmer/hand actions before the market, but a harvested item is still in a
+    unit's inventory and cannot be sold until a later DROP/PLACE puts it in the
+    shed.
+    """
+    private = rl010_get(obs, "private", {}) or {}
+    shed = rl010_get(private, "shed", {}) or {}
+    return max(0, rl010_int(shed.get(item, 0))) if isinstance(shed, dict) else 0
+
+
 def rl010_shed_total(obs):
     private = rl010_get(obs, "private", {}) or {}
     shed = rl010_get(private, "shed", {}) or {}
     return sum(max(0, rl010_int(value)) for value in shed.values()) if isinstance(shed, dict) else 0
+
+
+def _rl010_position(value):
+    if isinstance(value, (list, tuple)) and len(value) >= 2:
+        return rl010_int(value[0]), rl010_int(value[1])
+    return None
+
+
+def _rl010_config_int(config, key, default):
+    value = rl010_get(config, key, default)
+    return max(1, rl010_int(value, default))
+
+
+def _rl010_shed_adjacent(position, board_size):
+    if position is None:
+        return False
+    half = max(1, int(board_size) // 2)
+    return position in {
+        (half - 1, half - 1),
+        (half, half - 1),
+        (half - 1, half),
+        (half, half),
+    }
+
+
+def rl010_market_shed_state(obs, action, item=RL010_ITEM, config=None):
+    """Simulate the player's pre-market shed after this turn's unit actions.
+
+    This is intentionally a small mirror of the environment's DROP/PICKUP/
+    PLACE handling.  It does not count HARVEST as market inventory: harvested
+    produce remains carried until a later turn or an explicit shed drop.
+    """
+    private = rl010_get(obs, "private", {}) or {}
+    raw_shed = rl010_get(private, "shed", {}) or {}
+    shed = {
+        str(key): max(0, rl010_int(value))
+        for key, value in raw_shed.items()
+    } if isinstance(raw_shed, dict) else {}
+    raw_inventories = list(rl010_get(private, "inventories", []) or [])
+    inventories = [
+        {
+            str(key): max(0, rl010_int(value))
+            for key, value in (inventory.items() if isinstance(inventory, dict) else [])
+        }
+        for inventory in raw_inventories
+    ]
+    farms = list(rl010_get(obs, "farms", []) or [])
+    seat = rl010_int(rl010_get(obs, "player", 0))
+    mine = farms[seat] if 0 <= seat < len(farms) else {}
+    positions = [_rl010_position(rl010_get(mine, "farmer", None))]
+    positions.extend(_rl010_position(value) for value in (rl010_get(mine, "hands", []) or []))
+    actions = [list(action.get("farmer") or ["PASS"])]
+    actions.extend(list(value or ["PASS"]) for value in action.get("hands", []) or [])
+    board_size = _rl010_config_int(config, "boardSize", 10)
+    capacity = _rl010_config_int(config, "shedCapacity", RL010_SHED_CAPACITY)
+
+    def shed_total():
+        return sum(max(0, rl010_int(value)) for value in shed.values())
+
+    def add_to_shed(name, amount):
+        amount = max(0, rl010_int(amount))
+        if amount <= 0:
+            return 0
+        room = max(0, capacity - shed_total())
+        accepted = min(amount, room)
+        if accepted:
+            shed[name] = shed.get(name, 0) + accepted
+        return accepted
+
+    for index, unit_action in enumerate(actions):
+        if index >= len(inventories):
+            inventories.append({})
+        inventory = inventories[index]
+        position = positions[index] if index < len(positions) else None
+        if not _rl010_shed_adjacent(position, board_size) or not unit_action:
+            continue
+        op = str(unit_action[0]).upper()
+        if op == "DROP":
+            # The environment clears the whole unit inventory, including
+            # overflow.  Preserve that behavior when modelling the shed cap.
+            for name, amount in list(inventory.items()):
+                add_to_shed(name, amount)
+            inventory.clear()
+        elif op == "PLACE" and len(unit_action) >= 2:
+            name = str(unit_action[1])
+            amount = max(0, rl010_int(unit_action[2], 1)) if len(unit_action) >= 3 else 1
+            held = min(amount, max(0, rl010_int(inventory.get(name, 0))))
+            accepted = add_to_shed(name, held)
+            if held:
+                inventory[name] = max(0, rl010_int(inventory.get(name, 0)) - held)
+                if inventory[name] <= 0:
+                    inventory.pop(name, None)
+            # If the shed is full, PLACE keeps the unaccepted carried item;
+            # this is conservative for sellability and matches the no-overflow
+            # path used by our routes.
+            _ = accepted
+        elif op == "PICKUP" and len(unit_action) >= 2:
+            name = str(unit_action[1])
+            amount = max(0, rl010_int(unit_action[2], 1)) if len(unit_action) >= 3 else 1
+            taken = min(amount, max(0, rl010_int(shed.get(name, 0))))
+            if taken:
+                shed[name] = max(0, shed.get(name, 0) - taken)
+                inventory[name] = inventory.get(name, 0) + taken
+                if shed[name] <= 0:
+                    shed.pop(name, None)
+
+    current_sell = rl010_sell_quantity(action, item)
+    return {
+        "shed_before": rl010_shed_inventory(obs, item),
+        "shed_after_actions": max(0, rl010_int(shed.get(item, 0))),
+        "shed_total_after_actions": shed_total(),
+        "current_sell": current_sell,
+        "capacity": capacity,
+        "sellable_extra": max(0, rl010_int(shed.get(item, 0)) - current_sell),
+    }
+
+
+def rl010_delay_guard(obs, action, opportunity, units, config=None):
+    """Safety checks specific to holding a sold unit for the next event."""
+    units = max(0, rl010_int(units))
+    step = rl010_step(obs)
+    future_step = rl010_int(opportunity.get("future_step", -1))
+    current = rl010_sell_quantity(action)
+    if units <= 0:
+        return False, "zero_units"
+    if step >= RL010_DELAY_CUTOFF:
+        return False, "delay_cutoff"
+    if future_step <= step:
+        return False, "future_not_after_current"
+    if future_step - step > RL010_DELAY_MAX_GAP:
+        return False, "delay_gap"
+    # A one-turn 23:00 -> 00:00 transition is the stable V27 MILK window
+    # used by the first repaired model.  Longer day-boundary transfers are
+    # rejected because a full day can add unmodelled production/overflow.
+    crosses_day = step // 24 != future_step // 24
+    if crosses_day and not (future_step - step == 1 and step % 24 == 23):
+        return False, "day_boundary"
+    if current <= units:
+        return False, "current_order_too_small"
+    state = rl010_market_shed_state(obs, action, config=config)
+    if state["shed_after_actions"] < current:
+        return False, "current_inventory_short"
+    # After selling q-u this turn, u units remain.  Keep a reserve for
+    # harvest/production surprises and avoid intentionally filling the shed.
+    held_total = state["shed_total_after_actions"] - current + units
+    if held_total > state["capacity"] - RL010_SHED_RESERVE:
+        return False, "shed_headroom"
+    return True, "safe"
 
 
 def rl010_features(obs, opportunity, history, base_action=None):
@@ -263,7 +435,9 @@ def rl010_features(obs, opportunity, history, base_action=None):
     other_money = rl010_float(rl010_get(other, "money", 0))
     shops = len(rl010_get(rl010_get(obs, "town", {}) or {}, "unlocked_shops", []) or [])
     market_orders = len((base_action or {}).get("market", []) or [])
-    shed_total = rl010_shed_total(obs)
+    market_state = rl010_market_shed_state(obs, base_action or {"farmer": ["PASS"], "hands": [], "market": []})
+    sellable_milk = market_state["shed_after_actions"]
+    shed_total = market_state["shed_total_after_actions"]
 
     # All continuous features are clipped to keep the fitted policy stable
     # when a new opponent has an unusually large public farm.
@@ -283,7 +457,7 @@ def rl010_features(obs, opportunity, history, base_action=None):
         max(-2.0, min(2.0, i6 / 10000.0)),
         max(-2.0, min(2.0, i12 / 10000.0)),
         max(-2.0, min(2.0, i24 / 10000.0)),
-        min(2.0, rl010_private_inventory(obs) / 100.0),
+        min(2.0, sellable_milk / 100.0),
         min(1.0, shed_total / 100.0),
         min(1.0, max(0.0, (100.0 - shed_total) / 100.0)),
         min(2.0, mine_money / 100000.0),
@@ -463,6 +637,8 @@ class RL010Runtime:
         self.last_route_action = None
         self.last_adjusted_action = None
         self.last_final_action = None
+        self.consumed_event_steps = set()
+        self.last_repayment_step = None
 
     def reset(self):
         self.history.reset()
@@ -481,21 +657,33 @@ class RL010Runtime:
         self.last_route_action = None
         self.last_adjusted_action = None
         self.last_final_action = None
+        self.consumed_event_steps = set()
+        self.last_repayment_step = None
 
-    def _apply_pending(self, action, step):
+    def _apply_pending(self, action, obs, step, config=None):
         pending = self.pending
         if not pending or int(pending.get("due_step", -1)) != int(step):
-            return action, True, 0
+            return action, True, 0, False
         trial = copy.deepcopy(action)
-        ok = rl010_adjust_sell(trial, int(pending["delta"]))
+        delta = int(pending["delta"])
+        ok = rl010_adjust_sell(trial, delta)
+        if ok:
+            # A positive repayment (DELAY) consumes extra shed inventory.  A
+            # negative repayment (ADVANCE) only reduces the future order.
+            state = rl010_market_shed_state(obs, trial, config=config)
+            ok = state["shed_after_actions"] >= rl010_sell_quantity(trial)
         if not ok:
             self.repayment_failures += 1
             self.pending = None
             self.fallbacks += 1
-            return action, False, 0
+            self.consumed_event_steps.add(int(step))
+            self.last_repayment_step = int(step)
+            return action, False, 0, True
         self.pending = None
         self.repayment_successes += 1
-        return trial, True, abs(int(pending["delta"]))
+        self.consumed_event_steps.add(int(step))
+        self.last_repayment_step = int(step)
+        return trial, True, abs(delta), True
 
     def _legal_units(self, action, obs, opportunity, action_name):
         current = rl010_sell_quantity(action)
@@ -504,8 +692,8 @@ class RL010Runtime:
         if action_name.startswith("ADVANCE"):
             ratio = RL010_RATIOS[action_name]
             desired = rl010_round_half_up(opportunity["future_quantity"] * ratio)
-            visible = rl010_private_inventory(obs)
-            return max(0, min(desired, opportunity["future_quantity"], max(0, visible - current)))
+            state = rl010_market_shed_state(obs, action)
+            return max(0, min(desired, opportunity["future_quantity"], state["sellable_extra"]))
         if action_name.startswith("DELAY"):
             ratio = RL010_RATIOS[action_name]
             desired = rl010_round_half_up(opportunity["current_quantity"] * ratio)
@@ -526,26 +714,40 @@ class RL010Runtime:
             return False, "pending_debt"
         farms = list(rl010_get(obs, "farms", []) or [])
         seat = rl010_int(rl010_get(obs, "player", 0))
+        mine = other = 0.0
         if len(farms) == 2 and seat in (0, 1):
             mine = rl010_float(rl010_get(farms[seat], "money", 0))
             other = rl010_float(rl010_get(farms[1 - seat], "money", 0))
-            if action_name.startswith("DELAY") and mine + 1000 < other:
-                return False, "cash_lag"
+        if action_name.startswith("DELAY") and len(farms) == 2 and mine + 1000 < other:
+            return False, "cash_lag"
         if action_name.startswith("ADVANCE"):
-            if rl010_sell_quantity(action) + units > rl010_private_inventory(obs):
+            state = rl010_market_shed_state(obs, action)
+            if rl010_sell_quantity(action) + units > state["shed_after_actions"]:
                 return False, "inventory_short"
+        if action_name.startswith("DELAY"):
+            allowed, reason = rl010_delay_guard(obs, action, opportunity, units)
+            if not allowed:
+                return False, reason
         if int(opportunity["future_step"]) <= step:
             return False, "future_not_after_current"
         return True, "safe"
 
-    def act(self, obs, base_action):
+    def act(self, obs, base_action, config=None):
         step = rl010_step(obs)
         if step == 0 or step < self.last_step:
             self.reset()
         self.history.observe(obs)
         action = rl010_align_hands(base_action, obs)
         self.last_route_action = copy.deepcopy(action)
-        action, repayment_ok, repayment_units = self._apply_pending(action, step)
+        action, repayment_ok, repayment_units, repayment_consumed = self._apply_pending(
+            action, obs, step, config=config
+        )
+        # A repayment turn is a transaction boundary.  Do not immediately
+        # open a second intervention on the same observation/event.
+        if repayment_consumed:
+            self.last_adjusted_action = copy.deepcopy(action)
+            self.last_step = step
+            return action
         if step >= RL010_CUTOFF:
             self.last_adjusted_action = copy.deepcopy(action)
             self.last_step = step
@@ -1568,7 +1770,7 @@ V031_CONTROLLER = 'order_only'
 # then the RL quantity transfer is applied, and only then V27's existing
 # price-impact order ranking is run.
 RL010_PAYLOAD = {'version': 'rl010', 'feature_dim': 41, 'min_support': 24, 'min_expected_delta': 5.0, 'lcb_z': 1.5, 'bad_ucb': 0.1, 'allowed_actions': ['ADVANCE_25', 'ADVANCE_50', 'DELAY_25', 'DELAY_50'], 'include_opponent_features': True, 'models': {}, 'variant': 'rl010c_bidirectional_opp'}
-_RL010_OPPORTUNITIES = rl010_route_opportunities(_ACTIONS)
+_RL010_OPPORTUNITIES = rl010_route_opportunities(_ACTIONS, RL010_EVENT_STEPS)
 _RL010_RUNTIME = RL010Runtime(payload=RL010_PAYLOAD, opportunities=_RL010_OPPORTUNITIES)
 
 def _rl010_route_action(obs, config=None):
@@ -1580,7 +1782,7 @@ def _rl010_route_action(obs, config=None):
 def agent(obs, config=None):
     try:
         route_action = _rl010_route_action(obs, config)
-        adjusted_action = _RL010_RUNTIME.act(obs, route_action)
+        adjusted_action = _RL010_RUNTIME.act(obs, route_action, config=config)
         final_action = _v031_reorder_existing(obs, adjusted_action)
         final_action = _v031_align_hands(final_action, obs)
         _RL010_RUNTIME.record_final_action(final_action)

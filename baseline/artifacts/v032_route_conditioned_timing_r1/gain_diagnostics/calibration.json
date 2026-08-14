@@ -1,0 +1,43 @@
+{
+  "version": "v032-r1-residual-v1",
+  "items": {
+    "MILK:delay": {
+      "support_groups": 12,
+      "median_residual": -372.0,
+      "coefficients": [
+        -1.8384546051187763e-14,
+        -0.6716216437038393,
+        -40.29729862223927,
+        -4.205995584851107e-15,
+        -29.920164617237138
+      ]
+    },
+    "STRAWBERRY:delay": {
+      "support_groups": 113,
+      "median_residual": -135.0,
+      "coefficients": [
+        -17.629502753722292,
+        0.11305787254968108,
+        2.053694574976852,
+        -2.0899418465936773e-14,
+        -82.49053294897051
+      ]
+    },
+    "WOOL:delay": {
+      "support_groups": 114,
+      "median_residual": -1950.5,
+      "coefficients": [
+        2838.726341632665,
+        814.6012102373461,
+        -1870.8196429403774,
+        -3.3113873774438855e-12,
+        -4902.9448973337585
+      ]
+    }
+  },
+  "global": {
+    "support_groups": 120,
+    "median_residual": -205.0,
+    "coefficients": []
+  }
+}

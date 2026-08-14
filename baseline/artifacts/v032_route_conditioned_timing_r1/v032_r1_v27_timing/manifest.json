@@ -1,0 +1,25 @@
+{
+  "candidate": "v032_r1_v27_timing",
+  "route_name": "v27",
+  "route_sha256": "9080682756f5b9fc0f2cae25efdffa69474d40883f693b49f58be2c1893ae5d2",
+  "route_length": 719,
+  "route_source": "baseline/history/v031_route_market_combo/v27_order_only/main.py",
+  "mechanism_sha256": "01a4714839f09796299dc2e4a47e6329bd988c5252892efb8c4df6e96b930cde",
+  "calibration_embedded": true,
+  "timing_enabled": true,
+  "engine": "kaggle-environments==1.32.6",
+  "runtime_inputs": [
+    "observation",
+    "embedded_anonymous_profiles",
+    "embedded_calibration"
+  ],
+  "runtime_forbidden_inputs": [
+    "replay",
+    "notebook",
+    "TeamName",
+    "score",
+    "seed",
+    "network"
+  ],
+  "root_main_modified": false
+}

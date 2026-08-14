@@ -1,0 +1,23 @@
+{
+  "candidate": "v032_v27_order_only",
+  "route_name": "v27",
+  "route_sha256": "9080682756f5b9fc0f2cae25efdffa69474d40883f693b49f58be2c1893ae5d2",
+  "route_length": 719,
+  "route_source": "baseline/history/v031_route_market_combo/v27_order_only/main.py",
+  "profile_count": 0,
+  "timing_enabled": false,
+  "engine": "kaggle-environments==1.32.6",
+  "runtime_inputs": [
+    "observation",
+    "embedded_anonymous_profiles"
+  ],
+  "runtime_forbidden_inputs": [
+    "replay",
+    "notebook",
+    "TeamName",
+    "score",
+    "seed",
+    "network"
+  ],
+  "root_main_modified": false
+}

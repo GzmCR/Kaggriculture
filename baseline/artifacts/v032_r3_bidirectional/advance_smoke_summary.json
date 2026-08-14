@@ -1,0 +1,15 @@
+{
+  "rows": 6,
+  "evaluated_rows": 0,
+  "safe_rows": 0,
+  "safe_rate_evaluated": 0.0,
+  "skipped_rows": 6,
+  "skip_reasons": {
+    "no_warehouse_inventory": 6
+  },
+  "safe_prediction": {
+    "n": 0
+  },
+  "safe_final_margin_mean": null,
+  "by_item_kind": {}
+}

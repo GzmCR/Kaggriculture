@@ -8,7 +8,14 @@ import json
 import tarfile
 from pathlib import Path
 
-from rl_010_milk_bidirectional import rl010_fit_models, rl010_load_samples
+from rl_010_milk_bidirectional import (
+    RL010_DELAY_CUTOFF,
+    RL010_DELAY_MAX_GAP,
+    RL010_EVENT_STEPS,
+    RL010_SHED_RESERVE,
+    rl010_fit_models,
+    rl010_load_samples,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -16,6 +23,40 @@ BASE_SOURCE = ROOT / "baseline/history/v031_route_market_combo/v27_order_only/ma
 DEFAULT_SAMPLES = ROOT / "baseline/artifacts/rl_010_milk_bidirectional/data_train/samples.jsonl"
 OUT_HISTORY = ROOT / "baseline/history/rl_010_milk_bidirectional"
 OUT_ARTIFACT = ROOT / "baseline/artifacts/rl_010_milk_bidirectional"
+REQUIRED_ENGINE_VERSION = "1.32.6"
+
+
+def _validate_training_data(samples_path):
+    """Reject samples that were collected under a different game engine.
+
+    A paired counterfactual is only meaningful when the environment's market,
+    animal production, and turn order match the target engine.  Older RL-010
+    data was collected under 1.32.2 and is intentionally not fit silently.
+    """
+    report_path = Path(samples_path).parent / "collection_report.json"
+    if not report_path.exists():
+        raise RuntimeError(
+            f"missing collection report beside {samples_path}; "
+            "recollect RL-010 data under kaggle-environments 1.32.6"
+        )
+    report = json.loads(report_path.read_text(encoding="utf-8"))
+    actual = str(report.get("engine_version", "unknown"))
+    if actual != REQUIRED_ENGINE_VERSION or not report.get("training_data_valid", False):
+        raise RuntimeError(
+            "refusing to fit RL-010 data collected under "
+            f"{actual}; required {REQUIRED_ENGINE_VERSION}. "
+            "The old 1.32.2 data is diagnostic only."
+        )
+    return report
+
+
+def _manifest_path(path):
+    """Use repo-relative paths when possible, absolute paths otherwise."""
+    path = Path(path).resolve()
+    try:
+        return str(path.relative_to(ROOT))
+    except ValueError:
+        return str(path)
 
 
 def build_source(payload):
@@ -29,7 +70,8 @@ def build_source(payload):
 # then the RL quantity transfer is applied, and only then V27's existing
 # price-impact order ranking is run.
 RL010_PAYLOAD = {payload_text}
-_RL010_OPPORTUNITIES = rl010_route_opportunities(_ACTIONS)
+_RL010_EVENT_FILTER = RL010_EVENT_STEPS or None
+_RL010_OPPORTUNITIES = rl010_route_opportunities(_ACTIONS, _RL010_EVENT_FILTER)
 _RL010_RUNTIME = RL010Runtime(payload=RL010_PAYLOAD, opportunities=_RL010_OPPORTUNITIES)
 
 def _rl010_route_action(obs, config=None):
@@ -41,7 +83,7 @@ def _rl010_route_action(obs, config=None):
 def agent(obs, config=None):
     try:
         route_action = _rl010_route_action(obs, config)
-        adjusted_action = _RL010_RUNTIME.act(obs, route_action)
+        adjusted_action = _RL010_RUNTIME.act(obs, route_action, config=config)
         final_action = _v031_reorder_existing(obs, adjusted_action)
         final_action = _v031_align_hands(final_action, obs)
         _RL010_RUNTIME.record_final_action(final_action)
@@ -71,9 +113,15 @@ VARIANTS = {
 }
 
 
-def build(samples_path=DEFAULT_SAMPLES, output=OUT_ARTIFACT, variant="rl010c_bidirectional_opp"):
+def build(
+    samples_path=DEFAULT_SAMPLES,
+    output=OUT_ARTIFACT,
+    variant="rl010c_bidirectional_opp",
+    control_only=False,
+):
     samples_path = Path(samples_path).resolve()
-    samples = rl010_load_samples(samples_path)
+    collection_report = None if control_only else _validate_training_data(samples_path)
+    samples = [] if control_only else rl010_load_samples(samples_path)
     if variant not in VARIANTS:
         raise ValueError(f"unknown RL-010 variant: {variant}")
     settings = VARIANTS[variant]
@@ -104,29 +152,45 @@ def build(samples_path=DEFAULT_SAMPLES, output=OUT_ARTIFACT, variant="rl010c_bid
         "actions": ["ADVANCE_25", "ADVANCE_50", "CONTROL", "DELAY_25", "DELAY_50"],
         "allowed_actions": settings["allowed_actions"],
         "include_opponent_features": settings["include_opponent_features"],
+        "event_steps": list(RL010_EVENT_STEPS),
+        "event_selection": (
+            "all_route_milk_events" if not RL010_EVENT_STEPS else "explicit_steps"
+        ),
+        "delay_cutoff": RL010_DELAY_CUTOFF,
+        "delay_max_gap": RL010_DELAY_MAX_GAP,
+        "shed_reserve": RL010_SHED_RESERVE,
         "min_support": payload["min_support"],
         "min_expected_delta": payload["min_expected_delta"],
         "training_samples": len(samples),
-        "training_data": str(samples_path.relative_to(ROOT)),
-        "route_source": str(BASE_SOURCE.relative_to(ROOT)),
+        "control_only": bool(control_only),
+        "engine_version": (
+            "control_only_no_training" if collection_report is None
+            else collection_report.get("engine_version")
+        ),
+        "training_data": _manifest_path(samples_path),
+        "route_source": _manifest_path(BASE_SOURCE),
         "route_sha256": hashlib.sha256(BASE_SOURCE.read_bytes()).hexdigest(),
         "main_sha256": hashlib.sha256(data).hexdigest(),
         "main_bytes": len(data),
-        "archive": str(archive_path.relative_to(ROOT)),
+        "archive": _manifest_path(archive_path),
         "root_main_modified": False,
     }
     (output / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
     return manifest, report
 
 
-def build_all(samples_path=DEFAULT_SAMPLES, output_root=OUT_ARTIFACT):
+def build_all(samples_path=DEFAULT_SAMPLES, output_root=OUT_ARTIFACT, control_only=False):
     output_root = Path(output_root).resolve()
     results = {}
     for variant in VARIANTS:
-        results[variant] = build(samples_path, output_root / variant, variant)[0]
+        results[variant] = build(
+            samples_path, output_root / variant, variant, control_only=control_only
+        )[0]
     # Keep the full opponent-feature version at the historical root location
     # so older runners continue to find ``rl010``.
-    root_manifest, root_report = build(samples_path, output_root, "rl010c_bidirectional_opp")
+    root_manifest, root_report = build(
+        samples_path, output_root, "rl010c_bidirectional_opp", control_only=control_only
+    )
     OUT_HISTORY.mkdir(parents=True, exist_ok=True)
     (OUT_HISTORY / "main.py").write_bytes((output_root / "main.py").read_bytes())
     results["primary"] = root_manifest
@@ -139,9 +203,16 @@ if __name__ == "__main__":
     parser.add_argument("--output", type=Path, default=OUT_ARTIFACT)
     parser.add_argument("--variant", choices=sorted(VARIANTS), default="rl010c_bidirectional_opp")
     parser.add_argument("--all-variants", action="store_true")
+    parser.add_argument(
+        "--control-only",
+        action="store_true",
+        help="build a legal no-model smoke package; do not fit historical samples",
+    )
     args = parser.parse_args()
     if args.all_variants:
-        print(json.dumps(build_all(args.samples, args.output), indent=2))
+        print(json.dumps(build_all(args.samples, args.output, control_only=args.control_only), indent=2))
     else:
-        manifest, report = build(args.samples, args.output, args.variant)
+        manifest, report = build(
+            args.samples, args.output, args.variant, control_only=args.control_only
+        )
         print(json.dumps({"manifest": manifest, "fit": report}, indent=2))

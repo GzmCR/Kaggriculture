@@ -22,7 +22,18 @@ TRAIN_SEEDS = (17, 42, 2026, 217, 317, 733)
 VALIDATION_SEEDS = (811, 919, 1021, 1123, 1229, 1337)
 
 
-def build_split(split, output=None, seeds=None, events=None, opponents=None):
+def build_split(
+    split,
+    output=None,
+    seeds=None,
+    events=None,
+    opponents=None,
+    treatment_actions=None,
+    min_step=None,
+    max_step=None,
+    max_events=None,
+    allow_engine_mismatch=False,
+):
     split = str(split).lower()
     if split not in {"train", "validation", "val"}:
         raise ValueError("split must be train or validation")
@@ -35,6 +46,11 @@ def build_split(split, output=None, seeds=None, events=None, opponents=None):
         tuple(int(seed) for seed in seeds),
         tuple(int(event) for event in (events or DEFAULT_EVENTS)),
         tuple(opponents or []),
+        allow_engine_mismatch=allow_engine_mismatch,
+        treatment_actions=treatment_actions,
+        min_step=min_step,
+        max_step=max_step,
+        max_events=max_events,
     )
     report["split"] = "validation" if split != "train" else "train"
     report["seed_policy"] = {
@@ -56,6 +72,21 @@ if __name__ == "__main__":
     parser.add_argument("--seed", action="append", type=int, default=None)
     parser.add_argument("--event", action="append", type=int, default=None)
     parser.add_argument("--opponent", action="append", default=None)
+    parser.add_argument(
+        "--action",
+        action="append",
+        dest="treatment_actions",
+        choices=["ADVANCE_25", "ADVANCE_50", "DELAY_25", "DELAY_50"],
+        help="counterfactual action(s); omit for all four actions",
+    )
+    parser.add_argument("--min-step", type=int, default=None)
+    parser.add_argument("--max-step", type=int, default=None)
+    parser.add_argument("--max-events", type=int, default=None)
+    parser.add_argument(
+        "--allow-engine-mismatch",
+        action="store_true",
+        help="diagnostic only; mismatched-engine data must not be fitted",
+    )
     args = parser.parse_args()
     report = build_split(
         args.split,
@@ -63,5 +94,10 @@ if __name__ == "__main__":
         args.seed,
         args.event,
         args.opponent,
+        args.treatment_actions,
+        args.min_step,
+        args.max_step,
+        args.max_events,
+        args.allow_engine_mismatch,
     )
     print(json.dumps(report, indent=2, ensure_ascii=True))

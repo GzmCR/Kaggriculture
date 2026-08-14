@@ -1,0 +1,37 @@
+{
+  "name": "rl010b_bidirectional_no_opp",
+  "status": "fitted_v27_order_only_bidirectional_milk",
+  "control": "v27_order_only",
+  "feature_dim": 41,
+  "actions": [
+    "ADVANCE_25",
+    "ADVANCE_50",
+    "CONTROL",
+    "DELAY_25",
+    "DELAY_50"
+  ],
+  "allowed_actions": [
+    "ADVANCE_25",
+    "ADVANCE_50",
+    "DELAY_25",
+    "DELAY_50"
+  ],
+  "include_opponent_features": false,
+  "event_steps": [],
+  "event_selection": "all_route_milk_events",
+  "delay_cutoff": 624,
+  "delay_max_gap": 72,
+  "shed_reserve": 10,
+  "min_support": 24,
+  "min_expected_delta": 5.0,
+  "training_samples": 5520,
+  "control_only": false,
+  "engine_version": "1.32.6",
+  "training_data": "baseline/artifacts/rl_010_milk_bidirectional/data_train_full/samples.jsonl",
+  "route_source": "baseline/history/v031_route_market_combo/v27_order_only/main.py",
+  "route_sha256": "bf768a5ffad82c8809654364aacb47274c31f9649a0cc2eb539b3afe2b6b80cc",
+  "main_sha256": "60797278e5b2ebb0b2c65f4ea54586de6363404a745e0b286794e8a78b4bb99a",
+  "main_bytes": 217809,
+  "archive": "baseline/artifacts/rl_010_milk_bidirectional/fitted_full/rl010b_bidirectional_no_opp/submission.tar.gz",
+  "root_main_modified": false
+}

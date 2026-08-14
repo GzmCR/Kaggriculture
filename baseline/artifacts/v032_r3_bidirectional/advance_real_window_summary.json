@@ -1,0 +1,37 @@
+{
+  "rows": 3,
+  "evaluated_rows": 1,
+  "safe_rows": 1,
+  "safe_rate_evaluated": 1.0,
+  "skipped_rows": 2,
+  "skip_reasons": {
+    "no_warehouse_inventory": 2
+  },
+  "safe_prediction": {
+    "n": 1,
+    "mae": 0.0,
+    "bias": 0.0,
+    "sign_accuracy": 1.0,
+    "positive_prediction_negative_actual": 0,
+    "mean_predicted": 11.0,
+    "mean_actual": 11.0
+  },
+  "safe_final_margin_mean": 11.0,
+  "by_item_kind": {
+    "STRAWBERRY|ADVANCE": {
+      "rows": 1,
+      "safe_rows": 1,
+      "safe_rate": 1.0,
+      "prediction": {
+        "n": 1,
+        "mae": 0.0,
+        "bias": 0.0,
+        "sign_accuracy": 1.0,
+        "positive_prediction_negative_actual": 0,
+        "mean_predicted": 11.0,
+        "mean_actual": 11.0
+      },
+      "mean_actual_final_margin_delta": 11.0
+    }
+  }
+}

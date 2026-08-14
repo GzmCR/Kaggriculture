@@ -1,26 +1,9 @@
 {
   "groups": {},
-  "skipped_groups": {
-    "MILK|216|264|ADVANCE_25": {
-      "rows": 2,
-      "support": 2
-    },
-    "MILK|216|264|ADVANCE_50": {
-      "rows": 2,
-      "support": 2
-    },
-    "MILK|216|264|DELAY_25": {
-      "rows": 2,
-      "support": 2
-    },
-    "MILK|216|264|DELAY_50": {
-      "rows": 2,
-      "support": 2
-    }
-  },
-  "samples": 8,
+  "skipped_groups": {},
+  "samples": 0,
   "models": 0,
-  "mean_margin_delta": -8654.0,
+  "mean_margin_delta": 0.0,
   "min_support": 24,
   "actions": [
     "ADVANCE_25",
