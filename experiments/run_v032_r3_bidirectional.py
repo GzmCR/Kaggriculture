@@ -274,12 +274,91 @@ def _expected_counts(kind, control_start, control_end, transfer):
     return control_start - int(transfer), control_end + int(transfer)
 
 
-def run_pair(route_path, opponent_spec, seed, seat, item, event, transfer):
-    route_module = _load_module(route_path, f"route_{seed}_{seat}_{item}")
+def _new_cache():
+    return {
+        "captures": {},
+        "controls": {},
+        "stats": {
+            "capture_runs": 0,
+            "opponent_loads": 0,
+            "control_runs": 0,
+            "candidate_runs": 0,
+            "capture_cache_hits": 0,
+            "control_cache_hits": 0,
+        },
+    }
+
+
+def _spec_cache_key(opponent_spec):
+    return str(
+        opponent_spec.get("source_sha256")
+        or opponent_spec.get("name")
+        or opponent_spec.get("path")
+    )
+
+
+def _capture_cached(route_path, opponent_spec, seed, seat, cache):
+    """Capture one normal game per opponent/seed/seat.
+
+    The captured observations and actions are immutable inputs for all item,
+    event, horizon, and transfer candidates in this run.  Reusing them does
+    not change the paired-game semantics; it only removes duplicate 720-turn
+    capture games.
+    """
+    key = (str(route_path), _spec_cache_key(opponent_spec), int(seed), int(seat))
+    if key in cache["captures"]:
+        cache["stats"]["capture_cache_hits"] += 1
+        return cache["captures"][key]
+    route_module = _load_module(route_path, f"route_{seed}_{seat}")
     opponent, metadata = load_spec(opponent_spec)
-    route_rec, opp_rec, seat, capture_done = r2runner._capture(
+    cache["stats"]["opponent_loads"] += 1
+    route_rec, opp_rec, actual_seat, capture_done = r2runner._capture(
         route_module, opponent, seed, seat
     )
+    entry = {
+        "route_module": route_module,
+        "route_rec": route_rec,
+        "opp_rec": opp_rec,
+        "seat": actual_seat,
+        "capture_done": capture_done,
+        "metadata": metadata,
+    }
+    cache["captures"][key] = entry
+    cache["stats"]["capture_runs"] += 1
+    return entry
+
+
+def _control_cached(route_path, opponent_spec, seed, seat, item,
+                    opp_rec, cache):
+    """Run one V27 control game per opponent/seed/seat/item."""
+    key = (str(route_path), _spec_cache_key(opponent_spec), int(seed), int(seat), str(item).upper())
+    if key in cache["controls"]:
+        cache["stats"]["control_cache_hits"] += 1
+        return cache["controls"][key]
+    control_module = _load_module(route_path, f"control_{seed}_{seat}_{item}")
+    control_rec = r2runner._Recorder(control_module.agent)
+    fixed_opponent = r2runner._FixedTape(opp_rec.actions)
+    control_players = (
+        [control_rec, fixed_opponent] if int(seat) == 0
+        else [fixed_opponent, control_rec]
+    )
+    control_actual = r2runner._run(control_players, seed, item, "r3_control")
+    entry = {"actual": control_actual, "rec": control_rec}
+    cache["controls"][key] = entry
+    cache["stats"]["control_runs"] += 1
+    return entry
+
+
+def run_pair(route_path, opponent_spec, seed, seat, item, event, transfer,
+             cache=None):
+    cache = cache or _new_cache()
+    captured = _capture_cached(route_path, opponent_spec, seed, seat, cache)
+    route_module = captured["route_module"]
+    route_rec = captured["route_rec"]
+    opp_rec = captured["opp_rec"]
+    seat = int(captured["seat"])
+    capture_done = captured["capture_done"]
+    metadata = captured["metadata"]
     item = str(item).upper()
     kind = str(event["kind"]).upper()
     start, end = int(event["start_step"]), int(event["end_step"])
@@ -337,15 +416,11 @@ def run_pair(route_path, opponent_spec, seed, seat, item, event, transfer):
         "order_context_by_step": order_context,
     }
 
-    opponent_tape = opp_rec.actions
-    control_module = _load_module(route_path, f"control_{seed}_{seat}_{item}")
-    control_rec = r2runner._Recorder(control_module.agent)
-    fixed_opponent = r2runner._FixedTape(opponent_tape)
-    control_players = (
-        [control_rec, fixed_opponent] if int(seat) == 0
-        else [fixed_opponent, control_rec]
+    control_entry = _control_cached(
+        route_path, opponent_spec, seed, seat, item, opp_rec, cache
     )
-    control_actual = r2runner._run(control_players, seed, item, "r3_control")
+    control_actual = control_entry["actual"]
+    control_rec = control_entry["rec"]
 
     control_sim = r2_simulate_interval(
         orders_by_step=control_market[0],
@@ -394,10 +469,12 @@ def run_pair(route_path, opponent_spec, seed, seat, item, event, transfer):
     timing_agent = _TimingRoute(
         timing_module, kind, start, end, item, transfer, timing_rec
     )
+    fixed_opponent = r2runner._FixedTape(opp_rec.actions)
     candidate_players = (
         [timing_agent, fixed_opponent] if int(seat) == 0
         else [fixed_opponent, timing_agent]
     )
+    cache["stats"]["candidate_runs"] += 1
     candidate_actual = r2runner._run(candidate_players, seed, item, "r3_candidate")
 
     candidate_start = _commit_count(candidate_actual["commits"], seat, start)
@@ -542,12 +619,14 @@ def _events_for_mode(actions, item, mode, min_step, max_step, max_events):
 
 
 def collect(opponent_names, seeds, seats, items, mode, max_events,
-            output, min_step=None, max_step=None):
+            output, min_step=None, max_step=None, progress_every=25):
     specs = _specs(opponent_names)
     actions = _route_actions()
     output = Path(output)
     output.parent.mkdir(parents=True, exist_ok=True)
     rows = []
+    cache = _new_cache()
+    completed = 0
     with output.open("w", encoding="utf-8") as handle:
         for spec in specs:
             for seed in seeds:
@@ -563,15 +642,45 @@ def collect(opponent_names, seeds, seats, items, mode, max_events,
                             ):
                                 row = run_pair(
                                     ROUTE_PATH, spec, seed, seat, item,
-                                    event, transfer,
+                                    event, transfer, cache=cache,
                                 )
                                 rows.append(row)
                                 handle.write(json.dumps(row, ensure_ascii=False) + "\n")
                                 handle.flush()
+                                completed += 1
+                                if progress_every and completed % int(progress_every) == 0:
+                                    stats = cache["stats"]
+                                    print(
+                                        "[V032-R3] rows={} captures={} controls={} candidates={} "
+                                        "cache_hits={}/{}".format(
+                                            completed,
+                                            stats["capture_runs"],
+                                            stats["control_runs"],
+                                            stats["candidate_runs"],
+                                            stats["capture_cache_hits"],
+                                            stats["control_cache_hits"],
+                                        ),
+                                        flush=True,
+                                    )
+    run_stats = {
+        "rows": len(rows),
+        "output": str(output),
+        "opponents": len(specs),
+        "seeds": list(seeds),
+        "seats": list(seats),
+        "items": list(items),
+        "mode": mode,
+        "cache": dict(cache["stats"]),
+    }
+    output.with_name(output.stem + "_run_stats.json").write_text(
+        json.dumps(run_stats, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
     print(json.dumps({
         "rows": len(rows), "output": str(output),
         "opponents": len(specs), "seeds": list(seeds),
         "seats": list(seats), "items": list(items), "mode": mode,
+        "cache": cache["stats"],
     }, ensure_ascii=False, indent=2))
     return rows
 
@@ -660,11 +769,14 @@ if __name__ == "__main__":
                         help="cap events per kind/item; 0 means all")
     parser.add_argument("--min-step", type=int, default=None)
     parser.add_argument("--max-step", type=int, default=None)
+    parser.add_argument("--progress-every", type=int, default=25,
+                        help="print cache progress every N rows; 0 disables")
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     args = parser.parse_args()
     rows = collect(
         args.opponents, args.seeds, args.seats, args.items, args.mode,
         args.max_events, args.output, args.min_step, args.max_step,
+        args.progress_every,
     )
     summary_path = args.output.with_name(args.output.stem + "_summary.json")
     summary_path.write_text(json.dumps(summarize(rows), indent=2) + "\n",

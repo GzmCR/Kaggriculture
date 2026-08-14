@@ -8,6 +8,11 @@ R3 固定 V27 `order_only` 路线，只对 `MILK`、`STRAWBERRY`、`MELON`、`WO
 
 所有结果都是离线 paired diagnostics，不替换根目录 `main.py`。
 
+Runner 已对同一 `(opponent, seed, seat)` 缓存 capture，对同一商品缓存
+control 对局；只有真正通过库存检查的 candidate 才再次运行完整环境。运行时
+会打印 `capture_runs`、`control_runs`、`candidate_runs` 和 cache hit 数量，并
+把它们写入与 JSONL 同名的 `_run_stats.json`。
+
 ## 快速 smoke
 
 先从一个有机会产生 STRAWBERRY 提前库存的晚期窗口开始：
@@ -57,6 +62,10 @@ PYTHONPATH=experiments python experiments/run_v032_r3_bidirectional.py \
   --items MILK STRAWBERRY MELON WOOL \
   --output baseline/artifacts/v032_r3_bidirectional/advance_phase1.jsonl
 ```
+
+如果只想做快速筛选，可以加 `--max-events 1 --progress-every 25`；前者每个
+商品/控制类型只取一个事件，后者每 25 行打印一次进度。`--progress-every 0`
+可以关闭进度输出。
 
 ## 第二阶段：提前与延后
 
