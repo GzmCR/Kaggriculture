@@ -1,0 +1,21 @@
+{
+  "name": "rl_003_trade_timing",
+  "status": "event_level_delay_one",
+  "control": "v22_price_impact_route",
+  "action_count": 5,
+  "actions": {
+    "0": "v22 control",
+    "1": "delay one MILK unit",
+    "2": "delay one WOOL unit",
+    "3": "delay one STRAWBERRY unit",
+    "4": "delay one MELON unit"
+  },
+  "feature_dim": 40,
+  "max_delayed_orders": 8,
+  "source_notebook": "baseline\\44-46-strict-future-top-30-v22-price-impact.ipynb",
+  "source_sha256": "62fb5a5f66f0011092a2b51e3192879ba583d5d815d761f176091c615657147a",
+  "main_sha256": "654e83404644e76b85f89c38c34f7e2e70d751c061803377db02ca8654ab5da9",
+  "main_bytes": 38608,
+  "archive": "baseline\\artifacts\\rl_003_trade_timing\\submission.tar.gz",
+  "root_main_modified": false
+}
