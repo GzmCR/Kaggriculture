@@ -70,6 +70,10 @@ def test_transfer_cannot_delete_lockstep_slot():
 
 def test_cutoff_and_empty_calibration_fallback():
     module = _load("v032_r1_v27_timing")
+    # The checked-in timing candidate contains fitted calibration.  This test
+    # is specifically for the empty-payload fallback, so isolate it from the
+    # embedded production payload rather than assuming the artifact is empty.
+    module.V032_R1_CALIBRATION = {}
     assert module._v032_r1_calibration("MILK", "advance", [1, 2, 3, 4, 5]) is None
     state = module._V032_R1_STATE[0]
     state["pending"] = None

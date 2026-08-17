@@ -245,6 +245,10 @@ def _overflow(actions, start, end):
 
 def _skip_row(opponent_name, source_hash, seed, seat, item, event, transfer,
               reason, available=None):
+    if isinstance(reason, (list, tuple, set)):
+        reasons = [str(value) for value in reason]
+    else:
+        reasons = [str(reason)]
     return {
         "status": "SKIPPED",
         "opponent": opponent_name,
@@ -261,7 +265,7 @@ def _skip_row(opponent_name, source_hash, seed, seat, item, event, transfer,
         "transfer": int(transfer),
         "available_extra_inventory": available,
         "safe": 0,
-        "safety_reasons": [str(reason)],
+        "safety_reasons": sorted(set(reasons)),
         "predicted_local_margin_delta": None,
         "actual_interval_margin_delta": None,
         "actual_final_margin_delta": None,
@@ -295,6 +299,90 @@ def _spec_cache_key(opponent_spec):
         or opponent_spec.get("name")
         or opponent_spec.get("path")
     )
+
+
+def _row_key(row):
+    """Return the stable identity of one paired counterfactual row.
+
+    A row is uniquely determined by the opponent source, game condition, and
+    one route event/transfer.  Results and diagnostics are deliberately not
+    part of the key, so a partially written JSONL can be resumed safely.
+    """
+    def field(name, default):
+        value = row.get(name)
+        return default if value is None else int(value)
+
+    return (
+        str(row.get("source_hash") or row.get("opponent") or ""),
+        field("seed", 0),
+        field("seat", 0),
+        str(row.get("item", "")).upper(),
+        str(row.get("kind", "")).upper(),
+        field("start_step", -1),
+        field("end_step", -1),
+        field("horizon", 0),
+        field("transfer", 0),
+    )
+
+
+def _event_key(opponent_spec, seed, seat, item, event, transfer):
+    return _row_key({
+        "source_hash": _spec_cache_key(opponent_spec),
+        "seed": seed,
+        "seat": seat,
+        "item": item,
+        "kind": event["kind"],
+        "start_step": event["start_step"],
+        "end_step": event["end_step"],
+        "horizon": event["horizon"],
+        "transfer": transfer,
+    })
+
+
+def _load_existing_rows(path):
+    """Load completed rows and identify a possibly incomplete final line.
+
+    The runner writes one JSON object per line.  If the process is interrupted
+    while writing the final object, that tail is discarded before appending;
+    malformed interior lines are treated as corruption instead of silently
+    changing the experiment.
+    """
+    path = Path(path)
+    if not path.exists():
+        return [], set(), 0, 0
+    data = path.read_bytes()
+    rows = []
+    keys = set()
+    malformed = 0
+    valid_end = 0
+    offset = 0
+    for line in data.splitlines(keepends=True):
+        line_end = offset + len(line)
+        stripped = line.strip()
+        if not stripped:
+            valid_end = line_end
+            offset = line_end
+            continue
+        try:
+            row = json.loads(line)
+        except Exception as exc:
+            # A final line without a complete JSON object is the normal
+            # interruption case.  Anything before it needs human attention.
+            if line_end == len(data):
+                malformed += 1
+                break
+            raise RuntimeError(
+                f"malformed JSONL line {len(rows) + malformed + 1} in {path}"
+            ) from exc
+        if not isinstance(row, dict):
+            raise RuntimeError(f"JSONL row is not an object in {path}")
+        key = _row_key(row)
+        if key not in keys:
+            rows.append(row)
+            keys.add(key)
+        valid_end = line_end
+        offset = line_end
+    return rows, keys, valid_end, malformed
 
 
 def _capture_cached(route_path, opponent_spec, seed, seat, cache):
@@ -350,7 +438,7 @@ def _control_cached(route_path, opponent_spec, seed, seat, item,
 
 
 def run_pair(route_path, opponent_spec, seed, seat, item, event, transfer,
-             cache=None):
+             cache=None, skip_unsafe_candidates=False):
     cache = cache or _new_cache()
     captured = _capture_cached(route_path, opponent_spec, seed, seat, cache)
     route_module = captured["route_module"]
@@ -416,12 +504,6 @@ def run_pair(route_path, opponent_spec, seed, seat, item, event, transfer,
         "order_context_by_step": order_context,
     }
 
-    control_entry = _control_cached(
-        route_path, opponent_spec, seed, seat, item, opp_rec, cache
-    )
-    control_actual = control_entry["actual"]
-    control_rec = control_entry["rec"]
-
     control_sim = r2_simulate_interval(
         orders_by_step=control_market[0],
         opponent_orders_by_step=control_market[1],
@@ -453,6 +535,18 @@ def run_pair(route_path, opponent_spec, seed, seat, item, event, transfer,
         )
         if not safe_delay:
             safety_reasons.extend(delay_reasons)
+
+    if safety_reasons and skip_unsafe_candidates:
+        return _skip_row(
+            opponent_spec["name"], source_hash, seed, seat, item,
+            event, transfer, safety_reasons, available,
+        )
+
+    control_entry = _control_cached(
+        route_path, opponent_spec, seed, seat, item, opp_rec, cache
+    )
+    control_actual = control_entry["actual"]
+    control_rec = control_entry["rec"]
 
     control_start = _commit_count(control_actual["commits"], seat, start)
     control_end = _commit_count(control_actual["commits"], seat, end)
@@ -619,15 +713,32 @@ def _events_for_mode(actions, item, mode, min_step, max_step, max_events):
 
 
 def collect(opponent_names, seeds, seats, items, mode, max_events,
-            output, min_step=None, max_step=None, progress_every=25):
+            output, min_step=None, max_step=None, progress_every=25,
+            resume=False, flush_every=50, skip_unsafe_candidates=False):
     specs = _specs(opponent_names)
     actions = _route_actions()
     output = Path(output)
     output.parent.mkdir(parents=True, exist_ok=True)
-    rows = []
+    existing_rows = []
+    existing_keys = set()
+    malformed_tail = 0
+    if resume:
+        existing_rows, existing_keys, valid_end, malformed_tail = (
+            _load_existing_rows(output)
+        )
+        if malformed_tail:
+            with output.open("r+b") as handle:
+                handle.truncate(valid_end)
+            print(
+                f"[V032-R3] truncated {malformed_tail} incomplete final line",
+                flush=True,
+            )
+    rows = list(existing_rows)
     cache = _new_cache()
     completed = 0
-    with output.open("w", encoding="utf-8") as handle:
+    skipped_existing = 0
+    file_mode = "a" if resume and output.exists() else "w"
+    with output.open(file_mode, encoding="utf-8") as handle:
         for spec in specs:
             for seed in seeds:
                 for seat in seats:
@@ -640,14 +751,23 @@ def collect(opponent_names, seeds, seats, items, mode, max_events,
                             for transfer in r3_quantity_candidates(
                                 source_quantity, source_quantity
                             ):
+                                key = _event_key(
+                                    spec, seed, seat, item, event, transfer
+                                )
+                                if key in existing_keys:
+                                    skipped_existing += 1
+                                    continue
                                 row = run_pair(
                                     ROUTE_PATH, spec, seed, seat, item,
                                     event, transfer, cache=cache,
+                                    skip_unsafe_candidates=skip_unsafe_candidates,
                                 )
                                 rows.append(row)
+                                existing_keys.add(_row_key(row))
                                 handle.write(json.dumps(row, ensure_ascii=False) + "\n")
-                                handle.flush()
                                 completed += 1
+                                if flush_every and completed % int(flush_every) == 0:
+                                    handle.flush()
                                 if progress_every and completed % int(progress_every) == 0:
                                     stats = cache["stats"]
                                     print(
@@ -662,6 +782,7 @@ def collect(opponent_names, seeds, seats, items, mode, max_events,
                                         ),
                                         flush=True,
                                     )
+        handle.flush()
     run_stats = {
         "rows": len(rows),
         "output": str(output),
@@ -670,6 +791,13 @@ def collect(opponent_names, seeds, seats, items, mode, max_events,
         "seats": list(seats),
         "items": list(items),
         "mode": mode,
+        "resumed": bool(resume),
+        "existing_rows": len(existing_rows),
+        "skipped_existing": skipped_existing,
+        "new_rows": completed,
+        "malformed_tail_lines": malformed_tail,
+        "skip_unsafe_candidates": bool(skip_unsafe_candidates),
+        "flush_every": int(flush_every),
         "cache": dict(cache["stats"]),
     }
     output.with_name(output.stem + "_run_stats.json").write_text(
@@ -681,6 +809,10 @@ def collect(opponent_names, seeds, seats, items, mode, max_events,
         "opponents": len(specs), "seeds": list(seeds),
         "seats": list(seats), "items": list(items), "mode": mode,
         "cache": cache["stats"],
+        "resumed": bool(resume),
+        "existing_rows": len(existing_rows),
+        "skipped_existing": skipped_existing,
+        "new_rows": completed,
     }, ensure_ascii=False, indent=2))
     return rows
 
@@ -723,16 +855,17 @@ def summarize(rows):
                 if row.get("item") == item and row.get("kind") == kind
             ]
             if group:
+                safe_group = [row for row in group if row.get("safe")]
                 by_item_kind[f"{item}|{kind}"] = {
                     "rows": len(group),
-                    "safe_rows": sum(1 for row in group if row.get("safe")),
-                    "safe_rate": sum(1 for row in group if row.get("safe")) / len(group),
-                    "prediction": metric([row for row in group if row.get("safe")],
+                    "safe_rows": len(safe_group),
+                    "safe_rate": len(safe_group) / len(group),
+                    "prediction": metric(safe_group,
                                           "predicted_local_margin_delta",
                                           "actual_interval_margin_delta"),
                     "mean_actual_final_margin_delta": sum(
-                        float(row["actual_final_margin_delta"]) for row in group
-                    ) / len(group),
+                        float(row["actual_final_margin_delta"]) for row in safe_group
+                    ) / len(safe_group) if safe_group else None,
                 }
     return {
         "rows": len(rows),
@@ -771,12 +904,21 @@ if __name__ == "__main__":
     parser.add_argument("--max-step", type=int, default=None)
     parser.add_argument("--progress-every", type=int, default=25,
                         help="print cache progress every N rows; 0 disables")
+    parser.add_argument("--flush-every", type=int, default=50,
+                        help="flush JSONL every N new rows; 0 flushes only at end")
+    parser.add_argument("--resume", action="store_true",
+                        help="append to an existing JSONL and skip completed rows")
+    parser.add_argument(
+        "--skip-unsafe-candidates", action="store_true",
+        help="skip full candidate games rejected by the delay safety precheck",
+    )
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     args = parser.parse_args()
     rows = collect(
         args.opponents, args.seeds, args.seats, args.items, args.mode,
         args.max_events, args.output, args.min_step, args.max_step,
-        args.progress_every,
+        args.progress_every, args.resume, args.flush_every,
+        args.skip_unsafe_candidates,
     )
     summary_path = args.output.with_name(args.output.stem + "_summary.json")
     summary_path.write_text(json.dumps(summarize(rows), indent=2) + "\n",

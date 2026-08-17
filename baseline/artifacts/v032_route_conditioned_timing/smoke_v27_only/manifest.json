@@ -1,0 +1,11 @@
+{
+  "candidates": [
+    "v032_v27_order_only",
+    "v032_v27_timing"
+  ],
+  "seeds": [
+    17
+  ],
+  "nowinlog": "C:\\Users\\Administrator\\Desktop\\code\\kaggriculture\\baseline\\artifacts\\25:27 Strict-Future | v27 Midgame Meta Reset\\nowinlog",
+  "engine": "kaggle-environments==1.32.6"
+}

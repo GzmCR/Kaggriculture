@@ -1,0 +1,23 @@
+{
+  "candidate": "v032_8c4s_order_only",
+  "route_name": "8c4s",
+  "route_sha256": "d854c7d6b9f373d31feb57ef1e6cc399c5218bca171fc5801a6a9b14e8f0c09b",
+  "route_length": 719,
+  "route_source": "baseline\\2026-08-09\\v16-rc5-high-score-8c-4s-premium-market-lead.ipynb",
+  "profile_count": 0,
+  "timing_enabled": false,
+  "engine": "kaggle-environments==1.32.6",
+  "runtime_inputs": [
+    "observation",
+    "embedded_anonymous_profiles"
+  ],
+  "runtime_forbidden_inputs": [
+    "replay",
+    "notebook",
+    "TeamName",
+    "score",
+    "seed",
+    "network"
+  ],
+  "root_main_modified": false
+}

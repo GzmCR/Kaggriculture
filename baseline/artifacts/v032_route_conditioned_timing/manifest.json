@@ -1,0 +1,101 @@
+{
+  "routes": {
+    "v27": {
+      "order_only": {
+        "candidate": "v032_v27_order_only",
+        "route_name": "v27",
+        "route_sha256": "9080682756f5b9fc0f2cae25efdffa69474d40883f693b49f58be2c1893ae5d2",
+        "route_length": 719,
+        "route_source": "baseline\\history\\v031_route_market_combo\\v27_order_only\\main.py",
+        "profile_count": 0,
+        "timing_enabled": false,
+        "engine": "kaggle-environments==1.32.6",
+        "runtime_inputs": [
+          "observation",
+          "embedded_anonymous_profiles"
+        ],
+        "runtime_forbidden_inputs": [
+          "replay",
+          "notebook",
+          "TeamName",
+          "score",
+          "seed",
+          "network"
+        ],
+        "root_main_modified": false
+      },
+      "timing": {
+        "candidate": "v032_v27_timing",
+        "route_name": "v27",
+        "route_sha256": "9080682756f5b9fc0f2cae25efdffa69474d40883f693b49f58be2c1893ae5d2",
+        "route_length": 719,
+        "route_source": "baseline\\history\\v031_route_market_combo\\v27_order_only\\main.py",
+        "profile_count": 0,
+        "timing_enabled": true,
+        "engine": "kaggle-environments==1.32.6",
+        "runtime_inputs": [
+          "observation",
+          "embedded_anonymous_profiles"
+        ],
+        "runtime_forbidden_inputs": [
+          "replay",
+          "notebook",
+          "TeamName",
+          "score",
+          "seed",
+          "network"
+        ],
+        "root_main_modified": false
+      }
+    },
+    "8c4s": {
+      "order_only": {
+        "candidate": "v032_8c4s_order_only",
+        "route_name": "8c4s",
+        "route_sha256": "d854c7d6b9f373d31feb57ef1e6cc399c5218bca171fc5801a6a9b14e8f0c09b",
+        "route_length": 719,
+        "route_source": "baseline\\2026-08-09\\v16-rc5-high-score-8c-4s-premium-market-lead.ipynb",
+        "profile_count": 0,
+        "timing_enabled": false,
+        "engine": "kaggle-environments==1.32.6",
+        "runtime_inputs": [
+          "observation",
+          "embedded_anonymous_profiles"
+        ],
+        "runtime_forbidden_inputs": [
+          "replay",
+          "notebook",
+          "TeamName",
+          "score",
+          "seed",
+          "network"
+        ],
+        "root_main_modified": false
+      },
+      "timing": {
+        "candidate": "v032_8c4s_timing",
+        "route_name": "8c4s",
+        "route_sha256": "d854c7d6b9f373d31feb57ef1e6cc399c5218bca171fc5801a6a9b14e8f0c09b",
+        "route_length": 719,
+        "route_source": "baseline\\2026-08-09\\v16-rc5-high-score-8c-4s-premium-market-lead.ipynb",
+        "profile_count": 0,
+        "timing_enabled": true,
+        "engine": "kaggle-environments==1.32.6",
+        "runtime_inputs": [
+          "observation",
+          "embedded_anonymous_profiles"
+        ],
+        "runtime_forbidden_inputs": [
+          "replay",
+          "notebook",
+          "TeamName",
+          "score",
+          "seed",
+          "network"
+        ],
+        "root_main_modified": false
+      }
+    }
+  },
+  "profile_source": "none"
+}

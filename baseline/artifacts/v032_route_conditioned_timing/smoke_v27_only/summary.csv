@@ -1,0 +1,5 @@
+all_done,candidate,errors,games,invalid,losses,max_p99_ms,mean_margin,min_margin,opponent,score_rate,ties,win_rate,wins
+1,v032_v27_order_only,0,2,0,0,0.329,113409.5,81979.0,random,1.0,0,1.0,2
+1,v032_v27_order_only,0,2,0,0,0.3609,135894.5,133096.0,starter,1.0,0,1.0,2
+1,v032_v27_timing,0,2,0,0,0.2794,177802.0,176770.0,random,1.0,0,1.0,2
+1,v032_v27_timing,0,2,0,0,0.3165,135894.5,133096.0,starter,1.0,0,1.0,2

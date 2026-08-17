@@ -1,0 +1,99 @@
+{
+  "rows": 35376,
+  "evaluated_rows": 7760,
+  "safe_rows": 7005,
+  "safe_rate_evaluated": 0.9027061855670103,
+  "skipped_rows": 27616,
+  "skip_reasons": {
+    "no_warehouse_inventory": 26913,
+    "shed_capacity": 423,
+    "cash_reserve": 280
+  },
+  "safe_prediction": {
+    "n": 7005,
+    "mae": 0.7206281227694504,
+    "bias": -0.036545324768022844,
+    "sign_accuracy": 0.9940813810110974,
+    "positive_prediction_negative_actual": 14,
+    "mean_predicted": -24.269093504639542,
+    "mean_actual": -24.23254817987152
+  },
+  "safe_final_margin_mean": -23.01884368308351,
+  "by_item_kind": {
+    "MILK|DELAY": {
+      "rows": 2729,
+      "safe_rows": 2638,
+      "safe_rate": 0.9666544521802858,
+      "prediction": {
+        "n": 2638,
+        "mae": 1.1940864291129645,
+        "bias": -0.3616376042456406,
+        "sign_accuracy": 0.9907590759075907,
+        "positive_prediction_negative_actual": 10,
+        "mean_predicted": -20.065579984836997,
+        "mean_actual": -19.703942380591357
+      },
+      "mean_actual_final_margin_delta": -16.471569370735406
+    },
+    "STRAWBERRY|ADVANCE": {
+      "rows": 15,
+      "safe_rows": 15,
+      "safe_rate": 1.0,
+      "prediction": {
+        "n": 15,
+        "mae": 0.0,
+        "bias": 0.0,
+        "sign_accuracy": 1.0,
+        "positive_prediction_negative_actual": 0,
+        "mean_predicted": 12.4,
+        "mean_actual": 12.4
+      },
+      "mean_actual_final_margin_delta": 12.4
+    },
+    "STRAWBERRY|DELAY": {
+      "rows": 1886,
+      "safe_rows": 1504,
+      "safe_rate": 0.7974549310710498,
+      "prediction": {
+        "n": 1504,
+        "mae": 0.6615691489361702,
+        "bias": 0.18816489361702127,
+        "sign_accuracy": 1.0,
+        "positive_prediction_negative_actual": 0,
+        "mean_predicted": -35.27061170212766,
+        "mean_actual": -35.45877659574468
+      },
+      "mean_actual_final_margin_delta": -37.6781914893617
+    },
+    "MELON|DELAY": {
+      "rows": 2145,
+      "safe_rows": 2029,
+      "safe_rate": 0.9459207459207459,
+      "prediction": {
+        "n": 2029,
+        "mae": 0.19270576638738296,
+        "bias": 0.14539181862986694,
+        "sign_accuracy": 1.0,
+        "positive_prediction_negative_actual": 0,
+        "mean_predicted": -30.343518974864466,
+        "mean_actual": -30.48891079349433
+      },
+      "mean_actual_final_margin_delta": -30.636274026614096
+    },
+    "WOOL|DELAY": {
+      "rows": 985,
+      "safe_rows": 819,
+      "safe_rate": 0.8314720812182741,
+      "prediction": {
+        "n": 819,
+        "mae": 0.6251526251526252,
+        "bias": 0.14652014652014653,
+        "sign_accuracy": 0.9801980198019802,
+        "positive_prediction_negative_actual": 4,
+        "mean_predicted": -3.2283272283272284,
+        "mean_actual": -3.374847374847375
+      },
+      "mean_actual_final_margin_delta": 1.0354090354090355
+    }
+  }
+}

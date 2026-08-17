@@ -1,0 +1,13 @@
+[
+  {
+    "route": "v27",
+    "control": "v032_v27_order_only",
+    "timing": "v032_v27_timing",
+    "paired_games": 4,
+    "timing_nonnegative": 4,
+    "timing_negative": 0,
+    "mean_timing_margin_delta": 32196.25,
+    "min_timing_margin_delta": 0.0,
+    "max_timing_margin_delta": 96855.0
+  }
+]

@@ -1,0 +1,79 @@
+{
+  "rows": 13464,
+  "evaluated_rows": 15,
+  "safe_rows": 15,
+  "safe_rate_evaluated": 1.0,
+  "skipped_rows": 13449,
+  "skip_reasons": {
+    "no_warehouse_inventory": 13449
+  },
+  "safe_prediction": {
+    "n": 15,
+    "mae": 0.0,
+    "bias": 0.0,
+    "sign_accuracy": 1.0,
+    "positive_prediction_negative_actual": 0,
+    "mean_predicted": 12.4,
+    "mean_actual": 12.4
+  },
+  "safe_final_margin_mean": 12.4,
+  "by_item_kind": {
+    "STRAWBERRY|ADVANCE": {
+      "rows": 15,
+      "safe_rows": 15,
+      "safe_rate": 1.0,
+      "prediction": {
+        "n": 15,
+        "mae": 0.0,
+        "bias": 0.0,
+        "sign_accuracy": 1.0,
+        "positive_prediction_negative_actual": 0,
+        "mean_predicted": 12.4,
+        "mean_actual": 12.4
+      },
+      "mean_actual_final_margin_delta": 12.4
+    }
+  },
+  "detail": [
+    {
+      "item": "STRAWBERRY",
+      "kind": "ADVANCE",
+      "horizon": 1,
+      "transfer": 1,
+      "rows": 5,
+      "safe_rows": 5,
+      "mean_predicted_local_margin": 11.0,
+      "mean_actual_interval_margin": 11.0,
+      "mean_actual_final_margin": 11.0,
+      "positive_prediction_negative_actual": 0
+    },
+    {
+      "item": "STRAWBERRY",
+      "kind": "ADVANCE",
+      "horizon": 2,
+      "transfer": 1,
+      "rows": 5,
+      "safe_rows": 5,
+      "mean_predicted_local_margin": 13.2,
+      "mean_actual_interval_margin": 13.2,
+      "mean_actual_final_margin": 13.2,
+      "positive_prediction_negative_actual": 0
+    },
+    {
+      "item": "STRAWBERRY",
+      "kind": "ADVANCE",
+      "horizon": 3,
+      "transfer": 1,
+      "rows": 5,
+      "safe_rows": 5,
+      "mean_predicted_local_margin": 13.0,
+      "mean_actual_interval_margin": 13.0,
+      "mean_actual_final_margin": 13.0,
+      "positive_prediction_negative_actual": 0
+    }
+  ],
+  "status_counts": {
+    "SKIPPED": 13449,
+    "EVALUATED": 15
+  }
+}

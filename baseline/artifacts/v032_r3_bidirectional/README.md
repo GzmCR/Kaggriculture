@@ -94,3 +94,45 @@ PYTHONPATH=experiments python experiments/run_v032_r3_bidirectional.py \
 被当成可训练样本；这正是 R3 用来避免“虚空提前卖”的关键约束。没有实际 SELL
 事件的商品会自然跳过。R3 先用于验证某商品/某 horizon 是否在多个对手和 seed
 上稳定有效，再考虑接入运行时控制器。
+
+## 已完成阶段二结果（2026-08-16）
+
+阶段二使用 `v27_current`、`v13_r3`、`adaptive_replay`、`frontier_current`，
+6 个 seeds、两个 seat、4 个商品，共 `35,376` 条事件记录。结果文件为：
+
+```text
+combined_phase2_cached.jsonl
+combined_phase2_cached_summary.json
+combined_phase2_cached_run_stats.json
+```
+
+| 指标 | 结果 |
+| --- | ---: |
+| evaluated rows | 7,760 |
+| safe rows | 7,005 |
+| skipped rows | 27,616 |
+| safe candidate mean final margin | -23.02 |
+| local prediction MAE | 0.72 |
+| local prediction sign accuracy | 99.4% |
+
+绝大多数提前候选因为没有真实 shed 余量而跳过。唯一有效的提前样本是
+`STRAWBERRY` 的 15 条 1-unit 候选，平均最终差约 `+12.4`，不足以支持通用
+抢跑策略。延后候选总体为负，不能直接替换 V27 control；少数长间隔
+`MILK/STRAWBERRY/WOOL` 事件只作为后续状态门控的候选，不作为已验证结论。
+
+阶段二是 paired counterfactual 诊断，不是完整运行时策略 benchmark；每个
+事件行并非独立样本，最终晋级仍必须使用完整 720 回合对局。
+
+中断后可使用以下命令续跑，不会重复已有 JSONL 行：
+
+```powershell
+$env:PYTHONPATH="experiments"
+D:\kg311\python.exe experiments\run_v032_r3_bidirectional.py `
+  --mode combined `
+  --opponents v27_current v13_r3 adaptive_replay frontier_current `
+  --seeds 17 42 2026 217 317 733 `
+  --seats 0 1 `
+  --items MILK STRAWBERRY MELON WOOL `
+  --resume --skip-unsafe-candidates --flush-every 100 `
+  --output baseline/artifacts/v032_r3_bidirectional/combined_phase2_cached.jsonl
+```

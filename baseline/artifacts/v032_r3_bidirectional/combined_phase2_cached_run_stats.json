@@ -1,0 +1,39 @@
+{
+  "rows": 35376,
+  "output": "baseline\\artifacts\\v032_r3_bidirectional\\combined_phase2_cached.jsonl",
+  "opponents": 4,
+  "seeds": [
+    17,
+    42,
+    2026,
+    217,
+    317,
+    733
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "items": [
+    "MILK",
+    "STRAWBERRY",
+    "MELON",
+    "WOOL"
+  ],
+  "mode": "combined",
+  "resumed": true,
+  "existing_rows": 32869,
+  "skipped_existing": 32869,
+  "new_rows": 2507,
+  "malformed_tail_lines": 0,
+  "skip_unsafe_candidates": true,
+  "flush_every": 100,
+  "cache": {
+    "capture_runs": 4,
+    "opponent_loads": 4,
+    "control_runs": 14,
+    "candidate_runs": 534,
+    "capture_cache_hits": 2503,
+    "control_cache_hits": 520
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "rows": 13464,
+  "output": "baseline\\artifacts\\v032_r3_bidirectional\\advance_phase1_cached.jsonl",
+  "opponents": 4,
+  "seeds": [
+    17,
+    42,
+    2026
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "items": [
+    "MILK",
+    "STRAWBERRY",
+    "MELON",
+    "WOOL"
+  ],
+  "mode": "advance",
+  "cache": {
+    "capture_runs": 24,
+    "opponent_loads": 24,
+    "control_runs": 1,
+    "candidate_runs": 15,
+    "capture_cache_hits": 13440,
+    "control_cache_hits": 14
+  }
+}
